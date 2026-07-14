@@ -229,9 +229,9 @@ def add_edge(root, edge, port_map, manifest):
     target_node, target_port = endpoint_id(target_endpoint)
     source_cell = port_map.get(source_node, {}).get(source_port, source_node)
     target_cell = port_map.get(target_node, {}).get(target_port, target_node)
-    if source_port and source_cell == source_node:
+    if source_port and source_node in port_map and source_port not in port_map.get(source_node, {}):
         manifest["warnings"].append({"type": "missing_component_port", "node": source_node, "port": source_port})
-    if target_port and target_cell == target_node:
+    if target_port and target_node in port_map and target_port not in port_map.get(target_node, {}):
         manifest["warnings"].append({"type": "missing_component_port", "node": target_node, "port": target_port})
     route = edge.get("route", {})
     style = route.get(

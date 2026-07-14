@@ -129,6 +129,9 @@ output/
 - Alignment is port-based, not merely bounding-box based: for a main chain, every component's actual `out1`/next `in1` port center should share the same y coordinate within 1 px. Move component geometry to satisfy port alignment.
 - Port alignment must apply only to nodes explicitly assigned to the inferred main chain. Do not align feedforward, feedback, side-path, or auxiliary gains to the main-chain lane.
 - Preserve or deliberately assign separate lanes for feedforward/feedback components such as `b2`, `g1`, `c1`, `a1`, `a2`, and `a3`; collapsing these side-path nodes into the main chain is a high-severity layout error.
+- Feedforward gains that feed the same downstream sum must remain independently visible with distinct geometries, lanes, and labels. Stacking `0.8`, `0.3`, and `0.05` gains at the same coordinates is a high-severity `feedforward_gain_missing_or_hidden` error.
+- Known selector patterns must collapse visually into catalog components while keeping XML facts unchanged: `Constant(+alphaDeltaVBE) + Constant(-alphaDeltaVBE) + Switch` uses `bipolar_reference_selector_alpha_inline`; `Constant(+VBE) + Constant(-VBE) + Switch` uses `bipolar_reference_selector_vbe_inline`.
+- When selector collapse is used, do not draw the consumed Constants or Switch as visible generic boxes. Add a trace field such as `collapsed_source_facts` on the selector LayoutSpec node.
 - Top-side inputs should align their bottom port x coordinate with the receiving top port x coordinate before routing vertically downward.
 - Branch points must be explicit `junction_dot_inline` nodes in LayoutSpec when a line visually splits or when a feedback bus feeds multiple sums.
 - For a branch between two connected components, place the junction dot on the main segment between the source output port and the main target input port, preferably near the midpoint of those two ports. Do not visually split branches directly at the previous component's output port.

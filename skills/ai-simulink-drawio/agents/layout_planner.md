@@ -21,6 +21,7 @@ Write `layout_spec.json` matching `schemas/layout_spec.schema.json`.
 - Support gain orientation: `right`, `left`, `up`, `down`.
 - Prefer direct orthogonal routes, then one-bend routes, then outer lanes only when needed.
 - Choose catalog component keys for `Sum`, `Gain`, `DiscreteTransferFcn`, `Integrator`, `Relay`, quantizers, and known visual blocks whenever available.
+- When a known multi-block visual component exists in the catalog, collapse it visually in `LayoutSpec` while preserving all original XML facts in `SemanticSpec`.
 
 ## Layout Principles
 
@@ -29,6 +30,9 @@ Write `layout_spec.json` matching `schemas/layout_spec.schema.json`.
 - Feedback paths should usually use lower or upper outer lanes.
 - Feedforward paths should use compact one-bend routes when they do not cross components.
 - Multi-lane control diagrams should preserve visually distinct lanes: upper feedforward lane, main chain lane, lower feedforward lanes, and long feedback lane.
+- Feedforward gains must remain individually visible. If several feedforward gains terminate at the same sum, assign separate y lanes and separate routes; never stack them at identical geometry or hide them behind one another.
+- A side-path gain is considered missing if its semantic node exists but its visual node overlaps another side-path gain by more than 20 percent.
+- Preserve side-path gain labels independently: for example `0.8`, `0.3`, and `0.05` feeding one summing node must render as three separate gain templates, not one visible gain.
 - Branch junctions should sit on the visible branch source lane and be visually clear.
 - Component ports are visual routing decisions and may differ from XML port side, but source-target topology must not change.
 - Top-side inputs such as `E(z)` should use a bottom source port and vertical-down route into the target when this is visually shortest.
@@ -44,6 +48,16 @@ Write `layout_spec.json` matching `schemas/layout_spec.schema.json`.
 - When revising junctions, replace old split dots rather than adding overlapping duplicates for the same source segment.
 - Use Greek visual labels for gain labels whose XML names are `alpha1`, `alpha2`, or `alpha3`; keep XML names unchanged in `source_facts`.
 - Never emit negative waypoints unless the canvas origin and bounds intentionally include them.
+
+## Visual Collapse Patterns
+
+- Reference selector patterns must use catalog selector templates instead of drawing raw Constant and Switch blocks:
+  - `Constant(+alphaDeltaVBE) + Constant(-alphaDeltaVBE) + Switch` -> one visual node with `component_key: "bipolar_reference_selector_alpha_inline"`.
+  - `Constant(+VBE) + Constant(-VBE) + Switch` -> one visual node with `component_key: "bipolar_reference_selector_vbe_inline"`.
+- The collapsed selector node should include a trace field such as `collapsed_source_facts` listing the original Constant and Switch source IDs. Do not remove or rewrite those facts in `semantic_spec.json`.
+- Once collapsed, do not also draw the individual Constant or Switch nodes as separate visible generic blocks. Their labels are provided by the selector template.
+- Routes that semantically target the Switch should visually target the collapsed selector's `control` or `out1` ports as appropriate.
+- If selector constants or switches are drawn as overlapping generic text boxes, treat this as `selector_pattern_not_collapsed` and revise LayoutSpec.
 
 ## Forbidden
 
