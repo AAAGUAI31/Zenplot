@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QAReport",
+  "type": "object",
+  "required": ["passed", "overall_score", "semantic_score", "routing_score", "layout_score", "style_score", "issues", "passed_checks"],
+  "properties": {
+    "passed": {"type": "boolean"},
+    "overall_score": {"type": "number"},
+    "semantic_score": {"type": "number"},
+    "routing_score": {"type": "number"},
+    "layout_score": {"type": "number"},
+    "style_score": {"type": "number"},
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "severity", "targets", "description"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string"},
+          "severity": {"enum": ["low", "medium", "high"]},
+          "targets": {"type": "array", "items": {"type": "string"}},
+          "description": {"type": "string"},
+          "evidence": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "passed_checks": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

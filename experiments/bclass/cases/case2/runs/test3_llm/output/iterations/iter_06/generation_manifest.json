@@ -1,0 +1,131 @@
+{
+  "status": "generated",
+  "layout_spec": "layout_spec.json",
+  "component_catalog": "drawio_component_catalog.xml",
+  "component_templates_used": {
+    "b_b1": "gain_inline",
+    "b_sum1": "sum_inline",
+    "b_nt1": "discrete_transfer_inline",
+    "b_c2": "gain_inline",
+    "b_nt2": "discrete_transfer_inline",
+    "b_sum2": "sum_inline",
+    "b_c3": "gain_inline",
+    "b_nt3": "discrete_transfer_inline",
+    "b_c4": "gain_inline",
+    "b_nt4": "discrete_transfer_inline",
+    "b_a4": "gain_inline",
+    "b_a3": "gain_inline",
+    "b_a2": "gain_inline",
+    "b_a1": "gain_inline",
+    "b_b2": "gain_inline",
+    "b_g1": "gain_inline",
+    "b_c1": "gain_inline",
+    "b_sum_out": "sum_inline",
+    "b_single_bit_quantizer": "one_bit_quantizer_inline",
+    "j_mid_x_b1": "junction_dot_inline",
+    "j_mid_nt1_c2": "junction_dot_inline",
+    "j_mid_nt2_sum2": "junction_dot_inline",
+    "j_mid_nt3_c4": "junction_dot_inline",
+    "j_mid_nt4_a4": "junction_dot_inline",
+    "j_mid_q_y": "junction_dot_inline"
+  },
+  "node_to_mxcell": {
+    "b_x_z": "b_x_z",
+    "b_b1": "b_b1",
+    "b_sum1": "b_sum1",
+    "b_nt1": "b_nt1",
+    "b_c2": "b_c2",
+    "b_nt2": "b_nt2",
+    "b_sum2": "b_sum2",
+    "b_c3": "b_c3",
+    "b_nt3": "b_nt3",
+    "b_c4": "b_c4",
+    "b_nt4": "b_nt4",
+    "b_a4": "b_a4",
+    "b_a3": "b_a3",
+    "b_a2": "b_a2",
+    "b_a1": "b_a1",
+    "b_b2": "b_b2",
+    "b_g1": "b_g1",
+    "b_c1": "b_c1",
+    "b_sum_out": "b_sum_out",
+    "b_single_bit_quantizer": "b_single_bit_quantizer",
+    "b_y_z": "b_y_z",
+    "j_mid_x_b1": "j_mid_x_b1",
+    "j_mid_nt1_c2": "j_mid_nt1_c2",
+    "j_mid_nt2_sum2": "j_mid_nt2_sum2",
+    "j_mid_nt3_c4": "j_mid_nt3_c4",
+    "j_mid_nt4_a4": "j_mid_nt4_a4",
+    "j_mid_q_y": "j_mid_q_y"
+  },
+  "edge_to_mxcell": {
+    "e_line_0": "e_line_0",
+    "e_line_1": "e_line_1",
+    "e_line_2": "e_line_2",
+    "e_line_3": "e_line_3",
+    "e_line_4": "e_line_4",
+    "e_line_5": "e_line_5",
+    "e_line_6": "e_line_6",
+    "e_line_7": "e_line_7",
+    "e_line_8": "e_line_8",
+    "e_line_9": "e_line_9",
+    "e_line_10": "e_line_10",
+    "e_line_11": "e_line_11",
+    "e_line_12": "e_line_12",
+    "e_line_13": "e_line_13",
+    "e_line_14": "e_line_14",
+    "e_line_15": "e_line_15",
+    "e_line_16": "e_line_16",
+    "e_line_17": "e_line_17",
+    "e_line_18": "e_line_18",
+    "e_line_19": "e_line_19",
+    "e_line_20": "e_line_20",
+    "e_line_21": "e_line_21",
+    "e_line_22": "e_line_22",
+    "e_line_23": "e_line_23",
+    "e_line_24": "e_line_24",
+    "e_line_25": "e_line_25"
+  },
+  "warnings": [
+    {
+      "type": "missing_component_port",
+      "node": "j_mid_nt3_c4",
+      "port": "center"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "j_mid_nt2_sum2",
+      "port": "center"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "j_mid_nt1_c2",
+      "port": "center"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_sum_out",
+      "port": "in4"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "j_mid_x_b1",
+      "port": "center"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_sum_out",
+      "port": "in5"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "j_mid_nt4_a4",
+      "port": "center"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "j_mid_q_y",
+      "port": "center"
+    }
+  ]
+}

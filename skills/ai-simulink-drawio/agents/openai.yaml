@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Simulink Draw.io"
+  short_description: "AI workflow from Simulink XML to editable draw.io and PNG"
+  default_prompt: "Use $ai-simulink-drawio to convert this system_root.xml into an editable draw.io diagram and PNG preview through SemanticSpec, LayoutSpec, visual QA, and LayoutPatch iteration."

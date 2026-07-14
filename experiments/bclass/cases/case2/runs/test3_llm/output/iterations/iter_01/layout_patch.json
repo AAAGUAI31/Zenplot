@@ -1,0 +1,9 @@
+{
+  "operations": [
+    "align_main_ports",
+    "align_top_inputs",
+    "insert_junction_dot_inline",
+    "convert_alpha_labels"
+  ],
+  "reason": "Fix port-level zigzags, branch dots, and Greek alpha labels."
+}

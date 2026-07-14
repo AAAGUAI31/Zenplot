@@ -1,0 +1,18 @@
+{
+    "GraphicalInterface":{
+        "PreCompExecutionDomainType":"Unset",
+        "RootInports":[
+            {
+                "Name":"Vin",
+                "SampleTime":"-1"
+            }
+        ],
+        "RootOutports":[
+            {
+                "Name":"BS"
+            }
+        ],
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"ode4"
+    }
+}

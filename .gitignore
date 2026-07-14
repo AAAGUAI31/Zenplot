@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
+*.dtmp
+*.bak
+
+# Local generated outputs. Curated experiment outputs may be committed under
+# experiments/**/runs/**/final or documented case folders.
+outputs/*
+!outputs/.gitkeep
+
+# Large local-only archives or unpacked dependencies.
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz

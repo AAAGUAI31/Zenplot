@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.6",
+    "qa_focus": "Case2 midspan branch junctions"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 94,
+    "layout_score": 92
+  },
+  "issues": [],
+  "positive_checks": [
+    "Branches visually start from junction_dot_inline nodes.",
+    "Junction dots are placed on main segments between connected components.",
+    "Semantic source is preserved separately from visual branch source where needed."
+  ]
+}

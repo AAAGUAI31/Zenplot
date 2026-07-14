@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.7",
+    "qa_focus": "deduplicate midspan branch junctions"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 94,
+    "layout_score": 93
+  },
+  "issues": [],
+  "positive_checks": [
+    "One junction dot is used for each visual split.",
+    "Branch edges start from midspan junction dots.",
+    "Old overlapping junction dots were removed."
+  ]
+}

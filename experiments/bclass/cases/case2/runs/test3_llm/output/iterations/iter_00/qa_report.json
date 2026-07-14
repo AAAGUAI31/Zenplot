@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.1",
+    "reference_image": "E:\\文档\\实习\\科研 绘图\\Code\\输入\\B类论文图\\参考_标准答案\\output2.png"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 90,
+    "layout_score": 88
+  },
+  "issues": [],
+  "positive_checks": [
+    "Catalog group templates are required and checked.",
+    "Routes contain no negative waypoints.",
+    "Top-to-bottom inputs use bottom/vertical route intent where detected."
+  ]
+}

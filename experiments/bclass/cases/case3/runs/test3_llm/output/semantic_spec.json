@@ -1,0 +1,592 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source_format": "simulink_system_root_xml",
+    "source_file": "E:\\文档\\实习\\科研 绘图\\Code\\输入\\B类论文图\\test3_LLM\\case3\\recognized_system_root.xml"
+  },
+  "source_facts": {
+    "nodes": [
+      {
+        "sid": "1",
+        "id": "b_sine_wave_function",
+        "name": "Sine Wave Function",
+        "block_type": "Inport",
+        "parameters": {
+          "Position": "[40, 255, 125, 325]",
+          "ZOrder": "1"
+        },
+        "port_counts": {
+          "in": "0",
+          "out": "1"
+        },
+        "position": [
+          40.0,
+          255.0,
+          125.0,
+          325.0
+        ]
+      },
+      {
+        "sid": "2",
+        "id": "b_input_sum",
+        "name": "input_sum",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[170, 265, 218, 313]",
+          "ZOrder": "2"
+        },
+        "port_counts": {
+          "in": "2",
+          "out": "1"
+        },
+        "position": [
+          170.0,
+          265.0,
+          218.0,
+          313.0
+        ]
+      },
+      {
+        "sid": "3",
+        "id": "b_add",
+        "name": "Add",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[330, 250, 385, 305]",
+          "ZOrder": "3"
+        },
+        "port_counts": {
+          "in": "2",
+          "out": "1"
+        },
+        "position": [
+          330.0,
+          250.0,
+          385.0,
+          305.0
+        ]
+      },
+      {
+        "sid": "4",
+        "id": "b_unit_delay",
+        "name": "Unit Delay",
+        "block_type": "UnitDelay",
+        "parameters": {
+          "Position": "[455, 240, 525, 310]",
+          "ZOrder": "4",
+          "Delay": "1/z"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          455.0,
+          240.0,
+          525.0,
+          310.0
+        ]
+      },
+      {
+        "sid": "5",
+        "id": "b_k1",
+        "name": "K1",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[365, 405, 425, 453]",
+          "ZOrder": "5",
+          "Gain": "K1"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          365.0,
+          405.0,
+          425.0,
+          453.0
+        ]
+      },
+      {
+        "sid": "6",
+        "id": "b_add1",
+        "name": "Add1",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[660, 250, 715, 305]",
+          "ZOrder": "6"
+        },
+        "port_counts": {
+          "in": "2",
+          "out": "1"
+        },
+        "position": [
+          660.0,
+          250.0,
+          715.0,
+          305.0
+        ]
+      },
+      {
+        "sid": "7",
+        "id": "b_unit_delay1",
+        "name": "Unit Delay1",
+        "block_type": "UnitDelay",
+        "parameters": {
+          "Position": "[785, 240, 855, 310]",
+          "ZOrder": "7",
+          "Delay": "1/z"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          785.0,
+          240.0,
+          855.0,
+          310.0
+        ]
+      },
+      {
+        "sid": "8",
+        "id": "b_k2",
+        "name": "K2",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[690, 405, 750, 453]",
+          "ZOrder": "8",
+          "Gain": "K2"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          690.0,
+          405.0,
+          750.0,
+          453.0
+        ]
+      },
+      {
+        "sid": "9",
+        "id": "b_gain",
+        "name": "Gain",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[700, 105, 760, 150]",
+          "ZOrder": "9",
+          "Gain": "1"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          700.0,
+          105.0,
+          760.0,
+          150.0
+        ]
+      },
+      {
+        "sid": "10",
+        "id": "b_gain1",
+        "name": "Gain1",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[700, 190, 760, 235]",
+          "ZOrder": "10",
+          "Gain": "2"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          700.0,
+          190.0,
+          760.0,
+          235.0
+        ]
+      },
+      {
+        "sid": "11",
+        "id": "b_output_sum",
+        "name": "output_sum",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[980, 260, 1035, 315]",
+          "ZOrder": "11"
+        },
+        "port_counts": {
+          "in": "4",
+          "out": "1"
+        },
+        "position": [
+          980.0,
+          260.0,
+          1035.0,
+          315.0
+        ]
+      },
+      {
+        "sid": "12",
+        "id": "b_3_bit_quantizer",
+        "name": "3-bit Quantizer",
+        "block_type": "Relay",
+        "parameters": {
+          "Position": "[1070, 245, 1165, 320]",
+          "ZOrder": "12"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          1070.0,
+          245.0,
+          1165.0,
+          320.0
+        ]
+      },
+      {
+        "sid": "13",
+        "id": "b_to_workspace",
+        "name": "To Workspace",
+        "block_type": "Outport",
+        "parameters": {
+          "Position": "[1220, 255, 1330, 310]",
+          "ZOrder": "13"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "0"
+        },
+        "position": [
+          1220.0,
+          255.0,
+          1330.0,
+          310.0
+        ]
+      },
+      {
+        "sid": "14",
+        "id": "b_dwa",
+        "name": "DWA",
+        "block_type": "SubSystem",
+        "parameters": {
+          "Position": "[980, 505, 1070, 595]",
+          "ZOrder": "14"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          980.0,
+          505.0,
+          1070.0,
+          595.0
+        ]
+      },
+      {
+        "sid": "15",
+        "id": "b_gain4",
+        "name": "Gain4",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[470, 560, 530, 605]",
+          "ZOrder": "15",
+          "Gain": "1"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          470.0,
+          560.0,
+          530.0,
+          605.0
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "line_0",
+        "src": "1#out:1",
+        "dst": "2#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_1",
+        "src": "2#out:1",
+        "dst": "3#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_2",
+        "src": "3#out:1",
+        "dst": "4#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_3",
+        "src": "4#out:1",
+        "dst": "6#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_4",
+        "src": "6#out:1",
+        "dst": "7#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_5",
+        "src": "7#out:1",
+        "dst": "11#in:3",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_6",
+        "src": "11#out:1",
+        "dst": "12#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_7",
+        "src": "12#out:1",
+        "dst": "13#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_8",
+        "src": "4#out:1",
+        "dst": "5#in:1",
+        "points": [
+          0.0,
+          145.0,
+          -80.0,
+          0.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_9",
+        "src": "5#out:1",
+        "dst": "3#in:2",
+        "points": [
+          -130.0,
+          0.0,
+          0.0,
+          -145.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_10",
+        "src": "7#out:1",
+        "dst": "8#in:1",
+        "points": [
+          0.0,
+          145.0,
+          -95.0,
+          0.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_11",
+        "src": "8#out:1",
+        "dst": "6#in:2",
+        "points": [
+          -130.0,
+          0.0,
+          0.0,
+          -145.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_12",
+        "src": "1#out:1",
+        "dst": "9#in:1",
+        "points": [
+          0.0,
+          -185.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_13",
+        "src": "9#out:1",
+        "dst": "11#in:1",
+        "points": [
+          170.0,
+          0.0,
+          0.0,
+          143.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_14",
+        "src": "4#out:1",
+        "dst": "10#in:1",
+        "points": [
+          80.0,
+          0.0,
+          0.0,
+          -90.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_15",
+        "src": "10#out:1",
+        "dst": "11#in:2",
+        "points": [
+          300.0,
+          0.0,
+          0.0,
+          75.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_16",
+        "src": "12#out:1",
+        "dst": "14#in:1",
+        "points": [
+          0.0,
+          330.0,
+          -100.0,
+          0.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_17",
+        "src": "14#out:1",
+        "dst": "15#in:1",
+        "points": [
+          -440.0,
+          0.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_18",
+        "src": "15#out:1",
+        "dst": "2#in:2",
+        "points": [
+          -330.0,
+          0.0,
+          0.0,
+          -275.0
+        ],
+        "branches": []
+      }
+    ],
+    "branches": [],
+    "annotations": [
+      {
+        "id": "ann_0",
+        "text": ""
+      },
+      {
+        "id": "ann_1",
+        "text": ""
+      }
+    ],
+    "system_properties": {
+      "Location": "[80, 80, 1500, 850]",
+      "ZoomFactor": "100",
+      "SIDHighWatermark": "35"
+    }
+  },
+  "inferred_semantics": {
+    "main_signal_flow": [
+      {
+        "nodes": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "15",
+          "6",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "supporting_facts": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "15",
+          "6",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ]
+      }
+    ],
+    "feedback_loops": [],
+    "feedforward_paths": [],
+    "functional_groups": [],
+    "semantic_roles": {
+      "1": "input",
+      "2": "adder",
+      "3": "adder",
+      "4": "unitdelay",
+      "5": "gain",
+      "6": "adder",
+      "7": "unitdelay",
+      "8": "gain",
+      "9": "gain",
+      "10": "gain",
+      "11": "adder",
+      "12": "quantizer",
+      "13": "output",
+      "14": "visual_subsystem",
+      "15": "gain"
+    },
+    "preferred_signal_directions": {
+      "1": "right",
+      "2": "right",
+      "3": "right",
+      "4": "right",
+      "5": "right",
+      "6": "right",
+      "7": "right",
+      "8": "right",
+      "9": "right",
+      "10": "right",
+      "11": "right",
+      "12": "right",
+      "13": "right",
+      "14": "right",
+      "15": "right"
+    }
+  },
+  "uncertainties": []
+}

@@ -1,0 +1,946 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source": "simulink_system_json",
+    "target": "drawio_xml"
+  },
+  "canvas": {
+    "width": 1670,
+    "height": 700,
+    "grid_size": 10
+  },
+  "nodes": [
+    {
+      "id": "x_z",
+      "source_sid": "1",
+      "kind": "block",
+      "semantic_type": "inport",
+      "label": "X(z)",
+      "geometry": {
+        "x": 25,
+        "y": 150.0,
+        "w": 65,
+        "h": 35.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 25,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "right",
+          "x": 90,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "text",
+        "stroke_width": 3.0,
+        "font_size": 24,
+        "font_style": 1
+      },
+      "label_bindings": {
+        "main": "X(z)"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "sum1",
+      "source_sid": "2",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 120,
+        "y": 145.0,
+        "w": 45,
+        "h": 45.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 120.0,
+          "y": 167.5
+        },
+        "in2": {
+          "side": "bottom",
+          "x": 142.5,
+          "y": 190.0
+        },
+        "in3": {
+          "side": "template",
+          "x": 142.5,
+          "y": 188.8165
+        },
+        "out1": {
+          "side": "template",
+          "x": 163.8165,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "alpha1",
+      "source_sid": "3",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "alpha1",
+      "geometry": {
+        "x": 205,
+        "y": 135.0,
+        "w": 80,
+        "h": 65.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 206.376,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 283.624,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "alpha1"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "h1",
+      "source_sid": "4",
+      "kind": "block",
+      "semantic_type": "delay_integrator",
+      "label": "H1",
+      "geometry": {
+        "x": 330,
+        "y": 127.5,
+        "w": 120,
+        "h": 80.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 331.464,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 448.536,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "H1"
+      },
+      "orientation": "right",
+      "component_key": "discrete_transfer_inline"
+    },
+    {
+      "id": "sum2",
+      "source_sid": "5",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 520,
+        "y": 145.0,
+        "w": 45,
+        "h": 45.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 520.0,
+          "y": 167.5
+        },
+        "in2": {
+          "side": "bottom",
+          "x": 542.5,
+          "y": 190.0
+        },
+        "in3": {
+          "side": "template",
+          "x": 542.5,
+          "y": 188.8165
+        },
+        "out1": {
+          "side": "template",
+          "x": 563.8165,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "alpha2",
+      "source_sid": "6",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "alpha2",
+      "geometry": {
+        "x": 610,
+        "y": 135.0,
+        "w": 80,
+        "h": 65.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 611.376,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 688.624,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "alpha2"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "h2",
+      "source_sid": "7",
+      "kind": "block",
+      "semantic_type": "delay_integrator",
+      "label": "H2",
+      "geometry": {
+        "x": 735,
+        "y": 127.5,
+        "w": 120,
+        "h": 80.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 736.464,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 853.5360000000001,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "H2"
+      },
+      "orientation": "right",
+      "component_key": "discrete_transfer_inline"
+    },
+    {
+      "id": "sum3",
+      "source_sid": "8",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 930,
+        "y": 145.0,
+        "w": 45,
+        "h": 45.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 930.0,
+          "y": 167.5
+        },
+        "in2": {
+          "side": "bottom",
+          "x": 952.5,
+          "y": 190.0
+        },
+        "in3": {
+          "side": "template",
+          "x": 952.5,
+          "y": 188.8165
+        },
+        "out1": {
+          "side": "template",
+          "x": 973.8165,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "alpha3",
+      "source_sid": "9",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "alpha3",
+      "geometry": {
+        "x": 1020,
+        "y": 135.0,
+        "w": 80,
+        "h": 65.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 1021.376,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 1098.624,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "alpha3"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "h3",
+      "source_sid": "10",
+      "kind": "block",
+      "semantic_type": "delay_integrator",
+      "label": "H3",
+      "geometry": {
+        "x": 1145,
+        "y": 127.5,
+        "w": 120,
+        "h": 80.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 1146.464,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 1263.536,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "H3"
+      },
+      "orientation": "right",
+      "component_key": "discrete_transfer_inline"
+    },
+    {
+      "id": "sum_out",
+      "source_sid": "11",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 1320,
+        "y": 145.0,
+        "w": 45,
+        "h": 45.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 1321.1835,
+          "y": 167.5
+        },
+        "in2": {
+          "side": "top",
+          "x": 1342.5,
+          "y": 145.0
+        },
+        "in3": {
+          "side": "template",
+          "x": 1342.5,
+          "y": 188.8165
+        },
+        "out1": {
+          "side": "template",
+          "x": 1363.8165,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "e_z",
+      "source_sid": "12",
+      "kind": "block",
+      "semantic_type": "inport",
+      "label": "E(z)",
+      "geometry": {
+        "x": 1310,
+        "y": 20,
+        "w": 70,
+        "h": 35
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 1310,
+          "y": 37.5
+        },
+        "out1": {
+          "side": "bottom",
+          "x": 1345.0,
+          "y": 55.0
+        }
+      },
+      "style": {
+        "shape": "text",
+        "stroke_width": 3.0,
+        "font_size": 24,
+        "font_style": 1
+      },
+      "label_bindings": {
+        "main": "E(z)"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "y_z",
+      "source_sid": "13",
+      "kind": "block",
+      "semantic_type": "outport",
+      "label": "Y(z)",
+      "geometry": {
+        "x": 1440,
+        "y": 150.0,
+        "w": 70,
+        "h": 35.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 1440,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "right",
+          "x": 1510,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "text",
+        "stroke_width": 3.0,
+        "font_size": 24,
+        "font_style": 1
+      },
+      "label_bindings": {
+        "main": "Y(z)"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "dac",
+      "source_sid": "14",
+      "kind": "block",
+      "semantic_type": "dac",
+      "label": "DAC",
+      "geometry": {
+        "x": 1145,
+        "y": 385,
+        "w": 145,
+        "h": 80
+      },
+      "ports": {
+        "in1": {
+          "side": "right",
+          "x": 1290,
+          "y": 425.0
+        },
+        "out1": {
+          "side": "left",
+          "x": 1145,
+          "y": 425.0
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 22,
+        "font_style": 1
+      },
+      "label_bindings": {
+        "main": "DAC"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "j_e14",
+      "source_sid": "junction_e14",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 1045.75,
+        "y": 422.0,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 1048.75,
+          "y": 425.0
+        },
+        "out1": {
+          "side": "center",
+          "x": 1048.75,
+          "y": 425.0
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "dac.out1",
+        "target": "sum3.in2"
+      }
+    },
+    {
+      "id": "j_fanout_sum_out_2",
+      "source_sid": "j_fanout_sum_out_2",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 1398.908,
+        "y": 164.5,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 1401.908,
+          "y": 167.5
+        },
+        "out1": {
+          "side": "center",
+          "x": 1401.908,
+          "y": 167.5
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "sum_out.out1",
+        "target": "y_z.in1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "x_z.out1",
+      "targets": [
+        "sum1.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e2",
+      "source": "sum1.out1",
+      "targets": [
+        "alpha1.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e3",
+      "source": "alpha1.out1",
+      "targets": [
+        "h1.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e4",
+      "source": "h1.out1",
+      "targets": [
+        "sum2.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e5",
+      "source": "sum2.out1",
+      "targets": [
+        "alpha2.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e6",
+      "source": "alpha2.out1",
+      "targets": [
+        "h2.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e7",
+      "source": "h2.out1",
+      "targets": [
+        "sum3.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e8",
+      "source": "sum3.out1",
+      "targets": [
+        "alpha3.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e9",
+      "source": "alpha3.out1",
+      "targets": [
+        "h3.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e10",
+      "source": "h3.out1",
+      "targets": [
+        "sum_out.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e11",
+      "source": "e_z.out1",
+      "targets": [
+        "sum_out.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1342.5,
+            55.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e12",
+      "source": "sum_out.out1",
+      "targets": [
+        "y_z.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1401.908,
+            167.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_sum_out_2"
+    },
+    {
+      "id": "e13",
+      "source": "j_fanout_sum_out_2.out1",
+      "targets": [
+        "dac.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1401.908,
+            425.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_sum_out_2"
+    },
+    {
+      "id": "e14",
+      "source": "dac.out1",
+      "targets": [
+        "sum1.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            142.5,
+            425.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e14_b1",
+      "source": "j_e14.out1",
+      "targets": [
+        "sum2.in2"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            542.5,
+            425.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e14"
+    },
+    {
+      "id": "e14_b2",
+      "source": "dac.out1",
+      "targets": [
+        "sum3.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1048.75,
+            425.0
+          ],
+          [
+            952.5,
+            425.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e14"
+    }
+  ],
+  "labels": [],
+  "constraints": {
+    "avoid_node_overlap": true,
+    "avoid_edge_through_blocks": true,
+    "orthogonal_edges": true,
+    "feedback_bus_outside_main_chain": true
+  },
+  "qa": {
+    "issues": []
+  }
+}

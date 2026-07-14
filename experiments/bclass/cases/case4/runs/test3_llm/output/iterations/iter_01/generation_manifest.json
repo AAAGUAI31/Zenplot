@@ -1,0 +1,64 @@
+{
+  "status": "generated",
+  "layout_spec": "layout_spec.json",
+  "component_catalog": "drawio_component_catalog.xml",
+  "component_templates_used": {
+    "b_sum1": "sum_inline",
+    "b_alpha1": "gain_inline",
+    "b_h1": "discrete_transfer_inline",
+    "b_sum2": "sum_inline",
+    "b_alpha2": "gain_inline",
+    "b_h2": "discrete_transfer_inline",
+    "b_sum3": "sum_inline",
+    "b_alpha3": "gain_inline",
+    "b_h3": "discrete_transfer_inline",
+    "b_sum_out": "sum_inline",
+    "j_b_sum1": "junction_dot_inline",
+    "j_b_sum2": "junction_dot_inline",
+    "j_b_sum3": "junction_dot_inline"
+  },
+  "node_to_mxcell": {
+    "b_x_z": "b_x_z",
+    "b_sum1": "b_sum1",
+    "b_alpha1": "b_alpha1",
+    "b_h1": "b_h1",
+    "b_sum2": "b_sum2",
+    "b_alpha2": "b_alpha2",
+    "b_h2": "b_h2",
+    "b_sum3": "b_sum3",
+    "b_alpha3": "b_alpha3",
+    "b_h3": "b_h3",
+    "b_sum_out": "b_sum_out",
+    "b_e_z": "b_e_z",
+    "b_y_z": "b_y_z",
+    "b_dac": "b_dac",
+    "j_b_sum1": "j_b_sum1",
+    "j_b_sum2": "j_b_sum2",
+    "j_b_sum3": "j_b_sum3"
+  },
+  "edge_to_mxcell": {
+    "e_line_0": "e_line_0",
+    "e_line_1": "e_line_1",
+    "e_line_2": "e_line_2",
+    "e_line_3": "e_line_3",
+    "e_line_4": "e_line_4",
+    "e_line_5": "e_line_5",
+    "e_line_6": "e_line_6",
+    "e_line_7": "e_line_7",
+    "e_line_8": "e_line_8",
+    "e_line_9": "e_line_9",
+    "e_line_10": "e_line_10",
+    "e_line_11": "e_line_11",
+    "e_line_12": "e_line_12",
+    "e_line_13": "e_line_13",
+    "e_line_13_b0": "e_line_13_b0",
+    "e_line_13_b1": "e_line_13_b1"
+  },
+  "warnings": [
+    {
+      "type": "missing_component_port",
+      "node": "b_e_z",
+      "port": "bottom"
+    }
+  ]
+}

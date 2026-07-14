@@ -1,0 +1,55 @@
+{
+  "catalog": "drawio_component_catalog.xml",
+  "components": {
+    "gain_inline": {
+      "block_types": ["Gain"],
+      "supported_orientations": ["right", "left", "up", "down"],
+      "ports": ["in1", "out1"],
+      "editable_fields": ["main"]
+    },
+    "sum_inline": {
+      "block_types": ["Sum"],
+      "supported_orientations": ["right"],
+      "ports": ["in1", "in2", "in3", "out1"],
+      "editable_fields": []
+    },
+    "continuous_integrator_inline": {
+      "block_types": ["Integrator"],
+      "supported_orientations": ["right"],
+      "ports": ["in1", "out1"],
+      "editable_fields": []
+    },
+    "discrete_transfer_inline": {
+      "block_types": ["DiscreteTransferFcn", "UnitDelay"],
+      "semantic_types": ["delay_integrator", "discrete_transfer"],
+      "supported_orientations": ["right"],
+      "ports": ["in1", "out1"],
+      "editable_fields": []
+    },
+    "one_bit_quantizer_inline": {
+      "block_types": ["Relay"],
+      "semantic_types": ["quantizer"],
+      "supported_orientations": ["right"],
+      "ports": ["in1", "out1"],
+      "editable_fields": []
+    },
+    "bipolar_reference_selector_alpha_inline": {
+      "semantic_types": ["reference_selector_alpha"],
+      "supported_orientations": ["right"],
+      "ports": ["control", "out1"],
+      "editable_fields": ["main"]
+    },
+    "bipolar_reference_selector_vbe_inline": {
+      "semantic_types": ["reference_selector_vbe"],
+      "supported_orientations": ["right"],
+      "ports": ["control", "out1"],
+      "editable_fields": ["main"]
+    },
+    "junction_dot_inline": {
+      "semantic_types": ["branch_junction"],
+      "supported_orientations": ["right"],
+      "ports": ["center"],
+      "editable_fields": []
+    }
+  }
+}

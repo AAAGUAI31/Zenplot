@@ -1,0 +1,120 @@
+{
+  "status": "generated",
+  "layout_spec": "layout_spec.json",
+  "component_catalog": "drawio_component_catalog.xml",
+  "component_templates_used": {
+    "b_0_05_ff": "gain_inline",
+    "b_0_3_ff": "gain_inline",
+    "b_0_8_ff": "gain_inline",
+    "b_0_8_input": "gain_inline",
+    "b_1_bit_quantizer": "one_bit_quantizer_inline",
+    "b_integrator_1": "continuous_integrator_inline",
+    "b_integrator_2": "continuous_integrator_inline",
+    "b_integrator_3": "continuous_integrator_inline",
+    "b_error_sum": "sum_inline",
+    "b_feedforward_sum": "sum_inline"
+  },
+  "node_to_mxcell": {
+    "b_vin": "b_vin",
+    "b_vbe": "b_vbe",
+    "b_alphadeltavbe": "b_alphadeltavbe",
+    "b_0_05_ff": "b_0_05_ff",
+    "b_0_3_ff": "b_0_3_ff",
+    "b_0_8_ff": "b_0_8_ff",
+    "b_0_8_input": "b_0_8_input",
+    "b_1_bit_quantizer": "b_1_bit_quantizer",
+    "b_integrator_1": "b_integrator_1",
+    "b_integrator_2": "b_integrator_2",
+    "b_integrator_3": "b_integrator_3",
+    "b_vbe_switch": "b_vbe_switch",
+    "b_alphadeltavbe_switch": "b_alphadeltavbe_switch",
+    "b_error_sum": "b_error_sum",
+    "b_feedforward_sum": "b_feedforward_sum",
+    "b_bs": "b_bs"
+  },
+  "edge_to_mxcell": {
+    "e_line_0": "e_line_0",
+    "e_line_1": "e_line_1",
+    "e_line_2": "e_line_2",
+    "e_line_3_b0": "e_line_3_b0",
+    "e_line_3_b1": "e_line_3_b1",
+    "e_line_4_b0": "e_line_4_b0",
+    "e_line_4_b1": "e_line_4_b1",
+    "e_line_5": "e_line_5",
+    "e_line_6": "e_line_6",
+    "e_line_7": "e_line_7",
+    "e_line_8_b0_b0": "e_line_8_b0_b0",
+    "e_line_8_b0_b1": "e_line_8_b0_b1",
+    "e_line_8_b1": "e_line_8_b1",
+    "e_line_9": "e_line_9",
+    "e_line_10": "e_line_10",
+    "e_line_11": "e_line_11",
+    "e_line_12": "e_line_12",
+    "e_line_13": "e_line_13",
+    "e_line_14": "e_line_14",
+    "e_line_15": "e_line_15",
+    "e_line_16": "e_line_16"
+  },
+  "warnings": [
+    {
+      "type": "missing_component_port",
+      "node": "b_alphadeltavbe_switch",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_vbe_switch",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_alphadeltavbe",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_alphadeltavbe_switch",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_alphadeltavbe",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_alphadeltavbe_switch",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_vbe",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_vbe_switch",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_vbe",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_vbe_switch",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_alphadeltavbe_switch",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_vbe_switch",
+      "port": "out1"
+    }
+  ]
+}

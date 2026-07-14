@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/simulink-system-json/v0.1/schema.json",
+  "title": "SimulinkSystemJSON v0.1",
+  "type": "object",
+  "required": ["meta", "system", "blocks", "lines", "annotations", "layout", "style", "evidence"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["version", "source", "target"],
+      "additionalProperties": true
+    },
+    "system": {
+      "type": "object",
+      "required": ["properties"],
+      "properties": {
+        "properties": {"type": "object", "additionalProperties": true}
+      },
+      "additionalProperties": true
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sid", "id", "name", "block_type", "parameters", "position", "z_order"],
+        "additionalProperties": true
+      }
+    },
+    "lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["src", "dst", "points", "branches", "z_order"],
+        "additionalProperties": true
+      }
+    },
+    "annotations": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+    "layout": {"type": "object", "additionalProperties": true},
+    "style": {"type": "object", "additionalProperties": true},
+    "evidence": {"type": "object", "additionalProperties": true}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,7 @@
+{
+  "operations": [
+    "rerun_case1",
+    "insert_midspan_junctions"
+  ],
+  "reason": "Rerun case1 with current branch-junction skill rules."
+}

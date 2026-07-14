@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SemanticSpec",
+  "type": "object",
+  "required": ["meta", "source_facts", "inferred_semantics", "uncertainties"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["source_format", "source_file"],
+      "properties": {
+        "source_format": {"type": "string"},
+        "source_file": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "source_facts": {
+      "type": "object",
+      "required": ["nodes", "edges", "branches", "annotations", "system_properties"],
+      "properties": {
+        "nodes": {"type": "array", "items": {"type": "object"}},
+        "edges": {"type": "array", "items": {"type": "object"}},
+        "branches": {"type": "array", "items": {"type": "object"}},
+        "annotations": {"type": "array", "items": {"type": "object"}},
+        "system_properties": {"type": "object"}
+      },
+      "additionalProperties": false
+    },
+    "inferred_semantics": {
+      "type": "object",
+      "required": ["main_signal_flow", "feedback_loops", "feedforward_paths", "functional_groups", "semantic_roles", "preferred_signal_directions"],
+      "properties": {
+        "main_signal_flow": {"type": "array"},
+        "feedback_loops": {"type": "array"},
+        "feedforward_paths": {"type": "array"},
+        "functional_groups": {"type": "array"},
+        "semantic_roles": {"type": "object"},
+        "preferred_signal_directions": {"type": "object"}
+      },
+      "additionalProperties": true
+    },
+    "uncertainties": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": false
+}

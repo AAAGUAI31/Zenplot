@@ -1,0 +1,4 @@
+interface:
+  display_name: "B-Class Diagram to System Root XML"
+  short_description: "Recognize B-class block diagrams and emit Simulink system_root.xml"
+  default_prompt: "Use $bclass-diagram-to-system-root-xml to convert this B-class paper block diagram into SimulinkSystemJSON and system_root.xml."

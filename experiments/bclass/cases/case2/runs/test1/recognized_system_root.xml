@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='utf-8'?>
+<System>
+  <P Name="Location">[80, 80, 1500, 850]</P>
+  <P Name="ZoomFactor">100</P>
+  <P Name="SIDHighWatermark">41</P>
+  <Block BlockType="Inport" Name="X(z)" SID="1">
+    <PortCounts in="0" out="1" />
+    <P Name="Position">[30, 245, 90, 273]</P>
+    <P Name="ZOrder">1</P>
+  </Block>
+  <Block BlockType="Gain" Name="b1" SID="2">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[115, 230, 165, 280]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Gain">b1</P>
+  </Block>
+  <Block BlockType="Sum" Name="sum1" SID="3">
+    <PortCounts in="2" out="1" />
+    <P Name="Position">[185, 235, 221, 271]</P>
+    <P Name="ZOrder">3</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="NT1" SID="4">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[250, 220, 320, 290]</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Numerator">z^-1</P>
+    <P Name="Denominator">1-z^-1</P>
+  </Block>
+  <Block BlockType="Gain" Name="c2" SID="5">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[365, 230, 420, 280]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Gain">c2</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="NT2" SID="6">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[465, 220, 535, 290]</P>
+    <P Name="ZOrder">6</P>
+    <P Name="Numerator">z^-1</P>
+    <P Name="Denominator">1-z^-1</P>
+  </Block>
+  <Block BlockType="Sum" Name="sum2" SID="7">
+    <PortCounts in="2" out="1" />
+    <P Name="Position">[595, 235, 631, 271]</P>
+    <P Name="ZOrder">7</P>
+  </Block>
+  <Block BlockType="Gain" Name="c3" SID="8">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[675, 230, 730, 280]</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Gain">c3</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="NT3" SID="9">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[775, 220, 845, 290]</P>
+    <P Name="ZOrder">9</P>
+    <P Name="Numerator">z^-1</P>
+    <P Name="Denominator">1-z^-1</P>
+  </Block>
+  <Block BlockType="Gain" Name="c4" SID="10">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[900, 230, 955, 280]</P>
+    <P Name="ZOrder">10</P>
+    <P Name="Gain">c4</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="NT4" SID="11">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1005, 220, 1075, 290]</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Numerator">z^-1</P>
+    <P Name="Denominator">1-z^-1</P>
+  </Block>
+  <Block BlockType="Gain" Name="a4" SID="12">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1115, 230, 1170, 280]</P>
+    <P Name="ZOrder">12</P>
+    <P Name="Gain">a4</P>
+  </Block>
+  <Block BlockType="Gain" Name="a3" SID="13">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1115, 340, 1170, 390]</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Gain">a3</P>
+  </Block>
+  <Block BlockType="Gain" Name="a2" SID="14">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1115, 460, 1170, 510]</P>
+    <P Name="ZOrder">14</P>
+    <P Name="Gain">a2</P>
+  </Block>
+  <Block BlockType="Gain" Name="a1" SID="15">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1115, 575, 1170, 625]</P>
+    <P Name="ZOrder">15</P>
+    <P Name="Gain">a1</P>
+  </Block>
+  <Block BlockType="Gain" Name="b2" SID="16">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[485, 70, 540, 120]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="Gain">b2</P>
+  </Block>
+  <Block BlockType="Gain" Name="g1" SID="17">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[840, 125, 895, 175]</P>
+    <P Name="ZOrder">17</P>
+    <P Name="Gain">g1</P>
+  </Block>
+  <Block BlockType="Gain" Name="c1" SID="18">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[195, 420, 250, 470]</P>
+    <P Name="ZOrder">18</P>
+    <P Name="Gain">c1</P>
+  </Block>
+  <Block BlockType="Sum" Name="sum_out" SID="19">
+    <PortCounts in="5" out="1" />
+    <P Name="Position">[1315, 245, 1357, 287]</P>
+    <P Name="ZOrder">19</P>
+  </Block>
+  <Block BlockType="Relay" Name="Single-bit Quantizer" SID="20">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1395, 235, 1460, 300]</P>
+    <P Name="ZOrder">20</P>
+  </Block>
+  <Block BlockType="Outport" Name="Y(z)" SID="21">
+    <PortCounts in="1" out="0" />
+    <P Name="Position">[1550, 245, 1620, 273]</P>
+    <P Name="ZOrder">21</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Dst">2#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">2#out:1</P>
+    <P Name="Dst">3#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">3#out:1</P>
+    <P Name="Dst">4#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">4#out:1</P>
+    <P Name="Dst">5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">5#out:1</P>
+    <P Name="Dst">6#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Dst">7#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">7#out:1</P>
+    <P Name="Dst">8#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">8#out:1</P>
+    <P Name="Dst">9#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Dst">10#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">10#out:1</P>
+    <P Name="Dst">11#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">11#out:1</P>
+    <P Name="Dst">12#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">12#out:1</P>
+    <P Name="Dst">19#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Points">[0, 90]</P>
+    <P Name="Dst">13#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">13#out:1</P>
+    <P Name="Points">[130, 0]</P>
+    <P Name="Dst">19#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Points">[0, 210]</P>
+    <P Name="Dst">14#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">14#out:1</P>
+    <P Name="Points">[145, 0]</P>
+    <P Name="Dst">19#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">4#out:1</P>
+    <P Name="Points">[0, 320]</P>
+    <P Name="Dst">15#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">15#out:1</P>
+    <P Name="Points">[145, 0]</P>
+    <P Name="Dst">19#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">19</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Points">[0, -180]</P>
+    <P Name="Dst">16#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">16#out:1</P>
+    <P Name="Points">[780, 0, 0, 180]</P>
+    <P Name="Dst">19#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">21</P>
+    <P Name="Src">11#out:1</P>
+    <P Name="Points">[0, -85]</P>
+    <P Name="Dst">17#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">22</P>
+    <P Name="Src">17#out:1</P>
+    <P Name="Points">[-245, 0, 0, 85]</P>
+    <P Name="Dst">7#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">23</P>
+    <P Name="Src">19#out:1</P>
+    <P Name="Dst">20#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">20#out:1</P>
+    <P Name="Dst">21#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">25</P>
+    <P Name="Src">20#out:1</P>
+    <P Name="Points">[0, 370, -1265, 0, 0, -170]</P>
+    <P Name="Dst">18#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">18#out:1</P>
+    <P Name="Points">[0, -150]</P>
+    <P Name="Dst">3#in:2</P>
+  </Line>
+</System>

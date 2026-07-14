@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "diagram_type": "fourth_order_delta_sigma_modulator",
+    "domain": "signal_flow_block_diagram",
+    "version": "0.1",
+    "source": "paper_image"
+  },
+  "nodes": [
+    {"id": "xin", "type": "input", "label": "X(z)", "ports": ["out"]},
+    {"id": "b1", "type": "gain", "label": "b1", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "sum1", "type": "sum", "label": "+", "shape": "circle", "ports": ["in1", "in2", "out"], "signs": {"in1": "+", "in2": "-"}},
+    {"id": "nt1", "type": "transfer", "label": "z^-1 / (1 - z^-1)", "ports": ["in", "out"]},
+    {"id": "c2", "type": "gain", "label": "c2", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "nt2", "type": "transfer", "label": "z^-1 / (1 - z^-1)", "ports": ["in", "out"]},
+    {"id": "sum2", "type": "sum", "label": "+", "shape": "circle", "ports": ["in1", "in2", "out"], "signs": {"in1": "+", "in2": "-"}},
+    {"id": "c3", "type": "gain", "label": "c3", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "nt3", "type": "transfer", "label": "z^-1 / (1 - z^-1)", "ports": ["in", "out"]},
+    {"id": "c4", "type": "gain", "label": "c4", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "nt4", "type": "transfer", "label": "z^-1 / (1 - z^-1)", "ports": ["in", "out"]},
+    {"id": "a4", "type": "gain", "label": "a4", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "a3", "type": "gain", "label": "a3", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "a2", "type": "gain", "label": "a2", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "a1", "type": "gain", "label": "a1", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "b2", "type": "gain", "label": "b2", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "g1", "type": "gain", "label": "g1", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "final_sum", "type": "sum", "label": "+", "shape": "circle", "ports": ["in1", "in2", "in3", "in4", "in5", "out"]},
+    {"id": "quantizer", "type": "quantizer", "label": "Single-bit Quantizer", "ports": ["in", "out"]},
+    {"id": "yout", "type": "output", "label": "Y(z)", "ports": ["in"]}
+  ],
+  "edges": [
+    {"from": "xin.out", "to": ["b1.in", "b2.in"], "type": "branch"},
+    {"from": "b1.out", "to": "sum1.in1", "type": "main"},
+    {"from": "sum1.out", "to": "nt1.in", "type": "main"},
+    {"from": "nt1.out", "to": ["c2.in", "a1.in"], "type": "branch"},
+    {"from": "c2.out", "to": "nt2.in", "type": "main"},
+    {"from": "nt2.out", "to": ["sum2.in1", "a2.in"], "type": "branch"},
+    {"from": "sum2.out", "to": "c3.in", "type": "main"},
+    {"from": "c3.out", "to": "nt3.in", "type": "main"},
+    {"from": "nt3.out", "to": ["c4.in", "a3.in"], "type": "branch"},
+    {"from": "c4.out", "to": "nt4.in", "type": "main"},
+    {"from": "nt4.out", "to": ["a4.in", "g1.in"], "type": "branch"},
+    {"from": "a4.out", "to": "final_sum.in1", "type": "feedforward"},
+    {"from": "a3.out", "to": "final_sum.in2", "type": "feedforward", "route": "lower"},
+    {"from": "a2.out", "to": "final_sum.in3", "type": "feedforward", "route": "lower"},
+    {"from": "a1.out", "to": "final_sum.in4", "type": "feedforward", "route": "lower"},
+    {"from": "b2.out", "to": "final_sum.in5", "type": "feedforward", "route": "top_outer"},
+    {"from": "final_sum.out", "to": "quantizer.in", "type": "main"},
+    {"from": "quantizer.out", "to": ["yout.in", "sum1.in2"], "type": "feedback_branch", "route": "bottom_outer"},
+    {"from": "g1.out", "to": "sum2.in2", "type": "feedback", "route": "upper"}
+  ],
+  "layout": {
+    "direction": "left_to_right",
+    "main_chain": ["xin", "b1", "sum1", "nt1", "c2", "nt2", "sum2", "c3", "nt3", "c4", "nt4", "a4", "final_sum", "quantizer", "yout"],
+    "upper_branches": [["xin", "b2", "final_sum"], ["nt4", "g1", "sum2"]],
+    "lower_branches": [["nt1", "a1", "final_sum"], ["nt2", "a2", "final_sum"], ["nt3", "a3", "final_sum"]],
+    "top_feedback": ["b2", "final_sum"],
+    "bias_nodes": []
+  },
+  "style": {
+    "theme": "paper_black_white",
+    "line_style": "orthogonal",
+    "arrow": true,
+    "font": "latex_math",
+    "gain_shape": "triangle",
+    "sum_shape": "circle",
+    "quantizer_shape": "relay",
+    "junction_style": "solid_dot"
+  }
+}

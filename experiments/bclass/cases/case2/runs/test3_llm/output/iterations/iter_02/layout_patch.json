@@ -1,0 +1,7 @@
+{
+  "operations": [
+    "restore_multilane_side_paths",
+    "exclude_side_paths_from_main_alignment"
+  ],
+  "reason": "Case2 side-path gains were incorrectly collapsed into the main lane."
+}

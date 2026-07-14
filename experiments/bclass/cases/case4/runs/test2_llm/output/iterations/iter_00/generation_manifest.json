@@ -1,0 +1,39 @@
+{
+  "status": "generated",
+  "generator": "ai-simulink-drawio",
+  "component_catalog": "E:\\文档\\实习\\科研 绘图\\skills\\ai-simulink-drawio\\assets\\drawio_component_catalog.xml",
+  "node_to_mxcell": {
+    "b_x_z": "b_x_z",
+    "b_sum1": "b_sum1",
+    "b_alpha1": "b_alpha1",
+    "b_h1": "b_h1",
+    "b_sum2": "b_sum2",
+    "b_alpha2": "b_alpha2",
+    "b_h2": "b_h2",
+    "b_sum3": "b_sum3",
+    "b_alpha3": "b_alpha3",
+    "b_h3": "b_h3",
+    "b_sum_out": "b_sum_out",
+    "b_e_z": "b_e_z",
+    "b_y_z": "b_y_z",
+    "b_dac": "b_dac"
+  },
+  "edge_to_mxcell": {
+    "l0": "e_l0",
+    "l1": "e_l1",
+    "l2": "e_l2",
+    "l3": "e_l3",
+    "l4": "e_l4",
+    "l5": "e_l5",
+    "l6": "e_l6",
+    "l7": "e_l7",
+    "l8": "e_l8",
+    "l9": "e_l9",
+    "l10": "e_l10",
+    "l11": "e_l11",
+    "l12": "e_l12",
+    "l13": "e_l13",
+    "l13_b0": "e_l13_b0",
+    "l13_b1": "e_l13_b1"
+  }
+}

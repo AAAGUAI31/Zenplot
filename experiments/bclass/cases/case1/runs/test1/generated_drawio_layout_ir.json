@@ -1,0 +1,1109 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source": "simulink_system_json",
+    "target": "drawio_xml"
+  },
+  "canvas": {
+    "width": 1400,
+    "height": 700,
+    "grid_size": 10
+  },
+  "nodes": [
+    {
+      "id": "vin",
+      "source_sid": "1",
+      "kind": "block",
+      "semantic_type": "inport",
+      "label": "Vin",
+      "geometry": {
+        "x": 45,
+        "y": 245,
+        "w": 30,
+        "h": 20
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 45,
+          "y": 255.0
+        },
+        "out1": {
+          "side": "right",
+          "x": 75,
+          "y": 255.0
+        }
+      },
+      "style": {
+        "shape": "text",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "Vin"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "b_0_05_ff",
+      "source_sid": "12",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "0.05",
+      "geometry": {
+        "x": 720,
+        "y": 235,
+        "w": 50,
+        "h": 50
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 720.86,
+          "y": 260.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 769.14,
+          "y": 260.0
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "0.05"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "b_0_3_ff",
+      "source_sid": "11",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "0.3",
+      "geometry": {
+        "x": 720,
+        "y": 145,
+        "w": 50,
+        "h": 50
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 720.86,
+          "y": 170.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 769.14,
+          "y": 170.0
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "0.3"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "b_0_8_ff",
+      "source_sid": "10",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "0.8",
+      "geometry": {
+        "x": 720,
+        "y": 75,
+        "w": 50,
+        "h": 50
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 720.86,
+          "y": 100.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 769.14,
+          "y": 100.0
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "0.8"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "b_0_8_input",
+      "source_sid": "2",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "0.8",
+      "geometry": {
+        "x": 110,
+        "y": 226,
+        "w": 50,
+        "h": 58
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 110.86,
+          "y": 255.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 159.14,
+          "y": 255.0
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "0.8"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "b_1_bit_quantizer",
+      "source_sid": "8",
+      "kind": "block",
+      "semantic_type": "quantizer",
+      "label": "Q",
+      "geometry": {
+        "x": 920,
+        "y": 215,
+        "w": 55,
+        "h": 70
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 920.8855,
+          "y": 250.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 974.1145,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "Q"
+      },
+      "orientation": "right",
+      "component_key": "one_bit_quantizer_inline"
+    },
+    {
+      "id": "integrator_1",
+      "source_sid": "4",
+      "kind": "block",
+      "semantic_type": "integrator",
+      "label": "∫",
+      "geometry": {
+        "x": 315,
+        "y": 215,
+        "w": 70,
+        "h": 70
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 316.029,
+          "y": 250.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 383.971,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "∫"
+      },
+      "orientation": "right",
+      "component_key": "continuous_integrator_inline"
+    },
+    {
+      "id": "integrator_2",
+      "source_sid": "5",
+      "kind": "block",
+      "semantic_type": "integrator",
+      "label": "∫",
+      "geometry": {
+        "x": 470,
+        "y": 215,
+        "w": 70,
+        "h": 70
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 471.029,
+          "y": 250.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 538.971,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "∫"
+      },
+      "orientation": "right",
+      "component_key": "continuous_integrator_inline"
+    },
+    {
+      "id": "integrator_3",
+      "source_sid": "6",
+      "kind": "block",
+      "semantic_type": "integrator",
+      "label": "∫",
+      "geometry": {
+        "x": 625,
+        "y": 215,
+        "w": 70,
+        "h": 70
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 626.029,
+          "y": 250.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 693.971,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "∫"
+      },
+      "orientation": "right",
+      "component_key": "continuous_integrator_inline"
+    },
+    {
+      "id": "vbe_switch",
+      "source_sid": "18",
+      "kind": "block",
+      "semantic_type": "switch",
+      "label": "VBE switch",
+      "geometry": {
+        "x": 285,
+        "y": 10,
+        "w": 165,
+        "h": 130
+      },
+      "ports": {
+        "control": {
+          "side": "template",
+          "x": 442.64099999999996,
+          "y": 76.482
+        },
+        "out1": {
+          "side": "template",
+          "x": 356.445,
+          "y": 125.232
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+/- VBE"
+      },
+      "orientation": "right",
+      "component_key": "bipolar_reference_selector_vbe_inline"
+    },
+    {
+      "id": "alphadeltavbe_switch",
+      "source_sid": "15",
+      "kind": "block",
+      "semantic_type": "switch",
+      "label": "alphaDeltaVBE switch",
+      "geometry": {
+        "x": 100,
+        "y": 10,
+        "w": 165,
+        "h": 130
+      },
+      "ports": {
+        "control": {
+          "side": "template",
+          "x": 257.64099999999996,
+          "y": 76.482
+        },
+        "out1": {
+          "side": "template",
+          "x": 171.445,
+          "y": 125.232
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+/- alpha Delta VBE"
+      },
+      "orientation": "right",
+      "component_key": "bipolar_reference_selector_alpha_inline"
+    },
+    {
+      "id": "error_sum",
+      "source_sid": "3",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 205,
+        "y": 235,
+        "w": 30,
+        "h": 30
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 205.0,
+          "y": 250.0
+        },
+        "in2": {
+          "side": "top",
+          "x": 220.0,
+          "y": 235.0
+        },
+        "in3": {
+          "side": "top",
+          "x": 230.0,
+          "y": 235.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 234.211,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "feedforward_sum",
+      "source_sid": "7",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 845,
+        "y": 235,
+        "w": 30,
+        "h": 30
+      },
+      "ports": {
+        "in1": {
+          "side": "top",
+          "x": 860.0,
+          "y": 235.0
+        },
+        "in2": {
+          "side": "top",
+          "x": 870.0,
+          "y": 235.0
+        },
+        "in3": {
+          "side": "left",
+          "x": 845.0,
+          "y": 250.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 874.211,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "bs",
+      "source_sid": "9",
+      "kind": "block",
+      "semantic_type": "outport",
+      "label": "BS",
+      "geometry": {
+        "x": 1080,
+        "y": 245,
+        "w": 30,
+        "h": 20
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 1080,
+          "y": 255.0
+        },
+        "out1": {
+          "side": "right",
+          "x": 1110,
+          "y": 255.0
+        }
+      },
+      "style": {
+        "shape": "text",
+        "stroke_width": 1.4,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "BS"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "j_e4",
+      "source_sid": "junction_e4",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 424.5,
+        "y": 247.0,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 427.5,
+          "y": 250.0
+        },
+        "out1": {
+          "side": "center",
+          "x": 427.5,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "integrator_1.out1",
+        "target": "integrator_2.in1"
+      }
+    },
+    {
+      "id": "j_e5",
+      "source_sid": "junction_e5",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 579.5,
+        "y": 247.0,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 582.5,
+          "y": 250.0
+        },
+        "out1": {
+          "side": "center",
+          "x": 582.5,
+          "y": 250.0
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "integrator_2.out1",
+        "target": "integrator_3.in1"
+      }
+    },
+    {
+      "id": "j_e9",
+      "source_sid": "junction_e9",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 1024.057,
+        "y": 249.5,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 1027.057,
+          "y": 252.5
+        },
+        "out1": {
+          "side": "center",
+          "x": 1027.057,
+          "y": 252.5
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "b_1_bit_quantizer.out1",
+        "target": "bs.in1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "vin.out1",
+      "targets": [
+        "b_0_8_input.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e2",
+      "source": "b_0_8_input.out1",
+      "targets": [
+        "error_sum.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e3",
+      "source": "error_sum.out1",
+      "targets": [
+        "integrator_1.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e4_b1",
+      "source": "integrator_1.out1",
+      "targets": [
+        "integrator_2.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            427.5,
+            250.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e4"
+    },
+    {
+      "id": "e4_b2",
+      "source": "j_e4.out1",
+      "targets": [
+        "b_0_8_ff.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            427.5,
+            145.0
+          ],
+          [
+            692.86,
+            145.0
+          ],
+          [
+            692.86,
+            100.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e4"
+    },
+    {
+      "id": "e5_b1",
+      "source": "integrator_2.out1",
+      "targets": [
+        "integrator_3.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            582.5,
+            250.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e5"
+    },
+    {
+      "id": "e5_b2",
+      "source": "j_e5.out1",
+      "targets": [
+        "b_0_3_ff.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            582.5,
+            200.0
+          ],
+          [
+            692.86,
+            200.0
+          ],
+          [
+            692.86,
+            170.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e5"
+    },
+    {
+      "id": "e6",
+      "source": "integrator_3.out1",
+      "targets": [
+        "b_0_05_ff.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            693.971,
+            260.0
+          ],
+          [
+            693.971,
+            260.0
+          ],
+          [
+            692.86,
+            260.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e7",
+      "source": "b_0_05_ff.out1",
+      "targets": [
+        "feedforward_sum.in3"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            769.14,
+            250.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e8",
+      "source": "feedforward_sum.out1",
+      "targets": [
+        "b_1_bit_quantizer.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e9_b2",
+      "source": "j_e9.out1",
+      "targets": [
+        "alphadeltavbe_switch.control"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1027.057,
+            76.482
+          ],
+          [
+            1027.057,
+            5.0
+          ],
+          [
+            257.641,
+            5.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e9"
+    },
+    {
+      "id": "e9_b3",
+      "source": "j_e9.out1",
+      "targets": [
+        "vbe_switch.control"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1027.057,
+            76.482
+          ],
+          [
+            1027.057,
+            5.0
+          ],
+          [
+            442.641,
+            5.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e9"
+    },
+    {
+      "id": "e9_b4",
+      "source": "b_1_bit_quantizer.out1",
+      "targets": [
+        "bs.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1027.057,
+            252.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      },
+      "junction_node": "j_e9"
+    },
+    {
+      "id": "e10",
+      "source": "b_0_8_ff.out1",
+      "targets": [
+        "feedforward_sum.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            860.0,
+            100.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e11",
+      "source": "b_0_3_ff.out1",
+      "targets": [
+        "feedforward_sum.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            870.0,
+            170.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e16",
+      "source": "alphadeltavbe_switch.out1",
+      "targets": [
+        "error_sum.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            171.445,
+            5.0
+          ],
+          [
+            15.0,
+            5.0
+          ],
+          [
+            15.0,
+            300.0
+          ],
+          [
+            192.0,
+            300.0
+          ],
+          [
+            192.0,
+            235.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e17",
+      "source": "vbe_switch.out1",
+      "targets": [
+        "error_sum.in3"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            356.445,
+            5.0
+          ],
+          [
+            15.0,
+            5.0
+          ],
+          [
+            15.0,
+            300.0
+          ],
+          [
+            202.0,
+            300.0
+          ],
+          [
+            202.0,
+            235.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 1.3,
+        "arrow": "classic"
+      }
+    }
+  ],
+  "labels": [
+    {
+      "id": "ann_19",
+      "text": "Drawing style: black-and-white academic block diagram; thin orthogonal signal lines; triangular gains; circular summing nodes; three boxed continuous integrators; compact sans-serif math labels.",
+      "geometry": {
+        "x": 170,
+        "y": 320,
+        "w": 861,
+        "h": 20
+      },
+      "style": {
+        "font_size": 13,
+        "font_style": "normal"
+      }
+    },
+    {
+      "id": "ann_22",
+      "text": "e",
+      "geometry": {
+        "x": 250,
+        "y": 225,
+        "w": 20,
+        "h": 20
+      },
+      "style": {
+        "font_size": 13,
+        "font_style": "normal"
+      }
+    }
+  ],
+  "constraints": {
+    "avoid_node_overlap": true,
+    "avoid_edge_through_blocks": true,
+    "orthogonal_edges": true,
+    "feedback_bus_outside_main_chain": true
+  },
+  "qa": {
+    "issues": []
+  }
+}

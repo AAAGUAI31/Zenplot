@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source_format": "simulink_system_root_xml",
+    "source_file": "E:\\文档\\实习\\科研 绘图\\Code\\输入\\B类论文图\\test3_LLM\\case4\\recognized_system_root.xml"
+  },
+  "source_facts": {
+    "nodes": [
+      {
+        "sid": "1",
+        "id": "b_x_z",
+        "name": "X(z)",
+        "block_type": "Inport",
+        "parameters": {
+          "Position": "[25, 155, 90, 190]",
+          "ZOrder": "1"
+        },
+        "port_counts": {
+          "in": "0",
+          "out": "1"
+        },
+        "position": [
+          25.0,
+          155.0,
+          90.0,
+          190.0
+        ]
+      },
+      {
+        "sid": "2",
+        "id": "b_sum1",
+        "name": "sum1",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[120, 145, 165, 190]",
+          "ZOrder": "2"
+        },
+        "port_counts": {
+          "in": "2",
+          "out": "1"
+        },
+        "position": [
+          120.0,
+          145.0,
+          165.0,
+          190.0
+        ]
+      },
+      {
+        "sid": "3",
+        "id": "b_alpha1",
+        "name": "alpha1",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[205, 130, 285, 195]",
+          "ZOrder": "3",
+          "Gain": "alpha1"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          205.0,
+          130.0,
+          285.0,
+          195.0
+        ]
+      },
+      {
+        "sid": "4",
+        "id": "b_h1",
+        "name": "H1",
+        "block_type": "DiscreteTransferFcn",
+        "parameters": {
+          "Position": "[330, 120, 450, 200]",
+          "ZOrder": "4",
+          "Numerator": "z^-1",
+          "Denominator": "1-z^-1"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          330.0,
+          120.0,
+          450.0,
+          200.0
+        ]
+      },
+      {
+        "sid": "5",
+        "id": "b_sum2",
+        "name": "sum2",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[520, 145, 565, 190]",
+          "ZOrder": "5"
+        },
+        "port_counts": {
+          "in": "2",
+          "out": "1"
+        },
+        "position": [
+          520.0,
+          145.0,
+          565.0,
+          190.0
+        ]
+      },
+      {
+        "sid": "6",
+        "id": "b_alpha2",
+        "name": "alpha2",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[610, 130, 690, 195]",
+          "ZOrder": "6",
+          "Gain": "alpha2"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          610.0,
+          130.0,
+          690.0,
+          195.0
+        ]
+      },
+      {
+        "sid": "7",
+        "id": "b_h2",
+        "name": "H2",
+        "block_type": "DiscreteTransferFcn",
+        "parameters": {
+          "Position": "[735, 120, 855, 200]",
+          "ZOrder": "7",
+          "Numerator": "z^-1",
+          "Denominator": "1-z^-1"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          735.0,
+          120.0,
+          855.0,
+          200.0
+        ]
+      },
+      {
+        "sid": "8",
+        "id": "b_sum3",
+        "name": "sum3",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[930, 145, 975, 190]",
+          "ZOrder": "8"
+        },
+        "port_counts": {
+          "in": "2",
+          "out": "1"
+        },
+        "position": [
+          930.0,
+          145.0,
+          975.0,
+          190.0
+        ]
+      },
+      {
+        "sid": "9",
+        "id": "b_alpha3",
+        "name": "alpha3",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[1020, 130, 1100, 195]",
+          "ZOrder": "9",
+          "Gain": "alpha3"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          1020.0,
+          130.0,
+          1100.0,
+          195.0
+        ]
+      },
+      {
+        "sid": "10",
+        "id": "b_h3",
+        "name": "H3",
+        "block_type": "DiscreteTransferFcn",
+        "parameters": {
+          "Position": "[1145, 120, 1265, 200]",
+          "ZOrder": "10",
+          "Numerator": "z^-1",
+          "Denominator": "1-z^-1"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          1145.0,
+          120.0,
+          1265.0,
+          200.0
+        ]
+      },
+      {
+        "sid": "11",
+        "id": "b_sum_out",
+        "name": "sum_out",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[1320, 145, 1365, 190]",
+          "ZOrder": "11"
+        },
+        "port_counts": {
+          "in": "2",
+          "out": "1"
+        },
+        "position": [
+          1320.0,
+          145.0,
+          1365.0,
+          190.0
+        ]
+      },
+      {
+        "sid": "12",
+        "id": "b_e_z",
+        "name": "E(z)",
+        "block_type": "Inport",
+        "parameters": {
+          "Position": "[1310, 20, 1380, 55]",
+          "ZOrder": "12"
+        },
+        "port_counts": {
+          "in": "0",
+          "out": "1"
+        },
+        "position": [
+          1310.0,
+          20.0,
+          1380.0,
+          55.0
+        ]
+      },
+      {
+        "sid": "13",
+        "id": "b_y_z",
+        "name": "Y(z)",
+        "block_type": "Outport",
+        "parameters": {
+          "Position": "[1440, 155, 1510, 190]",
+          "ZOrder": "13"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "0"
+        },
+        "position": [
+          1440.0,
+          155.0,
+          1510.0,
+          190.0
+        ]
+      },
+      {
+        "sid": "14",
+        "id": "b_dac",
+        "name": "DAC",
+        "block_type": "SubSystem",
+        "parameters": {
+          "Position": "[1145, 385, 1290, 465]",
+          "ZOrder": "14"
+        },
+        "port_counts": {
+          "in": "1",
+          "out": "1"
+        },
+        "position": [
+          1145.0,
+          385.0,
+          1290.0,
+          465.0
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "line_0",
+        "src": "1#out:1",
+        "dst": "2#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_1",
+        "src": "2#out:1",
+        "dst": "3#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_2",
+        "src": "3#out:1",
+        "dst": "4#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_3",
+        "src": "4#out:1",
+        "dst": "5#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_4",
+        "src": "5#out:1",
+        "dst": "6#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_5",
+        "src": "6#out:1",
+        "dst": "7#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_6",
+        "src": "7#out:1",
+        "dst": "8#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_7",
+        "src": "8#out:1",
+        "dst": "9#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_8",
+        "src": "9#out:1",
+        "dst": "10#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_9",
+        "src": "10#out:1",
+        "dst": "11#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_10",
+        "src": "12#out:1",
+        "dst": "11#in:2",
+        "points": [
+          0.0,
+          110.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_11",
+        "src": "11#out:1",
+        "dst": "13#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "line_12",
+        "src": "11#out:1",
+        "dst": "14#in:1",
+        "points": [
+          38.0,
+          0.0,
+          0.0,
+          275.0,
+          -210.0,
+          0.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "line_13",
+        "src": "14#out:1",
+        "dst": "2#in:2",
+        "points": [
+          -1010.0,
+          0.0,
+          0.0,
+          -250.0
+        ],
+        "branches": [
+          {
+            "id": "line_13_b0",
+            "dst": "5#in:2",
+            "points": [
+              400.0,
+              0.0,
+              0.0,
+              -250.0
+            ],
+            "branches": []
+          },
+          {
+            "id": "line_13_b1",
+            "dst": "8#in:2",
+            "points": [
+              810.0,
+              0.0,
+              0.0,
+              -250.0
+            ],
+            "branches": []
+          }
+        ]
+      }
+    ],
+    "branches": [
+      {
+        "id": "line_13",
+        "src": "14#out:1",
+        "dst": "2#in:2",
+        "points": [
+          -1010.0,
+          0.0,
+          0.0,
+          -250.0
+        ],
+        "branches": [
+          {
+            "id": "line_13_b0",
+            "dst": "5#in:2",
+            "points": [
+              400.0,
+              0.0,
+              0.0,
+              -250.0
+            ],
+            "branches": []
+          },
+          {
+            "id": "line_13_b1",
+            "dst": "8#in:2",
+            "points": [
+              810.0,
+              0.0,
+              0.0,
+              -250.0
+            ],
+            "branches": []
+          }
+        ]
+      }
+    ],
+    "annotations": [],
+    "system_properties": {
+      "Location": "[80, 80, 1500, 850]",
+      "ZoomFactor": "100",
+      "SIDHighWatermark": "34"
+    }
+  },
+  "inferred_semantics": {
+    "main_signal_flow": [
+      {
+        "nodes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "supporting_facts": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ]
+      }
+    ],
+    "feedback_loops": [],
+    "feedforward_paths": [],
+    "functional_groups": [],
+    "semantic_roles": {
+      "1": "input",
+      "2": "adder",
+      "3": "gain",
+      "4": "delay_integrator",
+      "5": "adder",
+      "6": "gain",
+      "7": "delay_integrator",
+      "8": "adder",
+      "9": "gain",
+      "10": "delay_integrator",
+      "11": "adder",
+      "12": "input",
+      "13": "output",
+      "14": "visual_subsystem"
+    },
+    "preferred_signal_directions": {
+      "1": "right",
+      "2": "right",
+      "3": "right",
+      "4": "right",
+      "5": "right",
+      "6": "right",
+      "7": "right",
+      "8": "right",
+      "9": "right",
+      "10": "right",
+      "11": "right",
+      "12": "right",
+      "13": "right",
+      "14": "right"
+    }
+  },
+  "uncertainties": []
+}

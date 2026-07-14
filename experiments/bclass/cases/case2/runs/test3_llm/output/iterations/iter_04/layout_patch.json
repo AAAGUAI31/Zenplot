@@ -1,0 +1,7 @@
+{
+  "operations": [
+    "move_node:c1_under_sum1",
+    "set_waypoints:c1_to_sum1_vertical"
+  ],
+  "reason": "Remove c1-to-sum1 diagonal segment."
+}

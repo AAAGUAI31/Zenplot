@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LayoutSpec",
+  "type": "object",
+  "required": ["canvas", "nodes", "edges", "groups", "alignments", "layout_rationale"],
+  "properties": {
+    "canvas": {"type": "object"},
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source_fact_id", "component_key", "geometry", "orientation", "ports"],
+        "properties": {
+          "id": {"type": "string"},
+          "source_fact_id": {"type": "string"},
+          "component_key": {"type": "string"},
+          "geometry": {"type": "object"},
+          "orientation": {"enum": ["right", "left", "up", "down"]},
+          "ports": {"type": "object"},
+          "label": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "targets", "route"],
+        "properties": {
+          "id": {"type": "string"},
+          "source": {"type": "string"},
+          "targets": {"type": "array", "items": {"type": "string"}},
+          "route": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "groups": {"type": "array"},
+    "alignments": {"type": "array"},
+    "layout_rationale": {"type": "object"}
+  },
+  "additionalProperties": true
+}

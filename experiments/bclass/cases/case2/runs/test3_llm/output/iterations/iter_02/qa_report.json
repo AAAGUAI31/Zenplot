@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.3",
+    "qa_focus": "Case2 multilane restoration"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 90,
+    "layout_score": 90
+  },
+  "issues": [],
+  "positive_checks": [
+    "Side-path gains remain in separate lanes.",
+    "Catalog templates are materialized.",
+    "Main chain remains direct while feedforward and feedback lanes remain distinct."
+  ]
+}

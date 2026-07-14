@@ -1,0 +1,7 @@
+{
+  "operations": [
+    "insert_midspan_junctions",
+    "reroute_branches_from_junctions"
+  ],
+  "reason": "General branch rule: split from midspan junction dot, not directly from upstream output."
+}

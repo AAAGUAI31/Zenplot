@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<System>
+  <P Name="Location">[80, 80, 1500, 850]</P>
+  <P Name="ZoomFactor">100</P>
+  <P Name="SIDHighWatermark">34</P>
+  <Block BlockType="Inport" Name="X(z)" SID="1">
+    <PortCounts in="0" out="1" />
+    <P Name="Position">[25, 155, 90, 190]</P>
+    <P Name="ZOrder">1</P>
+  </Block>
+  <Block BlockType="Sum" Name="sum1" SID="2">
+    <PortCounts in="2" out="1" />
+    <P Name="Position">[120, 145, 165, 190]</P>
+    <P Name="ZOrder">2</P>
+  </Block>
+  <Block BlockType="Gain" Name="alpha1" SID="3">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[205, 130, 285, 195]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Gain">alpha1</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="H1" SID="4">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[330, 120, 450, 200]</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Numerator">z^-1</P>
+    <P Name="Denominator">1-z^-1</P>
+  </Block>
+  <Block BlockType="Sum" Name="sum2" SID="5">
+    <PortCounts in="2" out="1" />
+    <P Name="Position">[520, 145, 565, 190]</P>
+    <P Name="ZOrder">5</P>
+  </Block>
+  <Block BlockType="Gain" Name="alpha2" SID="6">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[610, 130, 690, 195]</P>
+    <P Name="ZOrder">6</P>
+    <P Name="Gain">alpha2</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="H2" SID="7">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[735, 120, 855, 200]</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Numerator">z^-1</P>
+    <P Name="Denominator">1-z^-1</P>
+  </Block>
+  <Block BlockType="Sum" Name="sum3" SID="8">
+    <PortCounts in="2" out="1" />
+    <P Name="Position">[930, 145, 975, 190]</P>
+    <P Name="ZOrder">8</P>
+  </Block>
+  <Block BlockType="Gain" Name="alpha3" SID="9">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1020, 130, 1100, 195]</P>
+    <P Name="ZOrder">9</P>
+    <P Name="Gain">alpha3</P>
+  </Block>
+  <Block BlockType="DiscreteTransferFcn" Name="H3" SID="10">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1145, 120, 1265, 200]</P>
+    <P Name="ZOrder">10</P>
+    <P Name="Numerator">z^-1</P>
+    <P Name="Denominator">1-z^-1</P>
+  </Block>
+  <Block BlockType="Sum" Name="sum_out" SID="11">
+    <PortCounts in="2" out="1" />
+    <P Name="Position">[1320, 145, 1365, 190]</P>
+    <P Name="ZOrder">11</P>
+  </Block>
+  <Block BlockType="Inport" Name="E(z)" SID="12">
+    <PortCounts in="0" out="1" />
+    <P Name="Position">[1310, 20, 1380, 55]</P>
+    <P Name="ZOrder">12</P>
+  </Block>
+  <Block BlockType="Outport" Name="Y(z)" SID="13">
+    <PortCounts in="1" out="0" />
+    <P Name="Position">[1440, 155, 1510, 190]</P>
+    <P Name="ZOrder">13</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="DAC" SID="14">
+    <PortCounts in="1" out="1" />
+    <P Name="Position">[1145, 385, 1290, 465]</P>
+    <P Name="ZOrder">14</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Dst">2#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">2#out:1</P>
+    <P Name="Dst">3#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">3#out:1</P>
+    <P Name="Dst">4#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">4#out:1</P>
+    <P Name="Dst">5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">5#out:1</P>
+    <P Name="Dst">6#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Dst">7#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">7#out:1</P>
+    <P Name="Dst">8#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">8#out:1</P>
+    <P Name="Dst">9#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Dst">10#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">10#out:1</P>
+    <P Name="Dst">11#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">12#out:1</P>
+    <P Name="Points">[0, 110]</P>
+    <P Name="Dst">11#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">11#out:1</P>
+    <P Name="Dst">13#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">11#out:1</P>
+    <P Name="Points">[38, 0, 0, 275, -210, 0]</P>
+    <P Name="Dst">14#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">14#out:1</P>
+    <P Name="Points">[-1010, 0, 0, -250]</P>
+    <P Name="Dst">2#in:2</P>
+    <Branch>
+      <P Name="ZOrder">0</P>
+      <P Name="Points">[400, 0, 0, -250]</P>
+      <P Name="Dst">5#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">0</P>
+      <P Name="Points">[810, 0, 0, -250]</P>
+      <P Name="Dst">8#in:2</P>
+    </Branch>
+  </Line>
+</System>

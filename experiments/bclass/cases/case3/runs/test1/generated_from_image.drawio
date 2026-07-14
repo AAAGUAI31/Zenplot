@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Codex" version="24.7.17" type="device">
+  <diagram id="simulink-layout" name="Simulink Layout">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1490" pageHeight="765" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sine_wave_function" value="Sine Wave Function" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Arial;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="255" width="85" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sine_wave_function__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="sine_wave_function">
+          <mxGeometry as="geometry" x="-2.0" y="33.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="sine_wave_function__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="sine_wave_function">
+          <mxGeometry as="geometry" x="83.0" y="33.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="input_sum" value="" style="group;componentKey=sum_inline;templateWidth=38;templateHeight=38;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="170" y="265" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="input_sum__sum-inline-body" value="+" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="input_sum">
+          <mxGeometry x="0.0" y="0.0" width="48.0" height="48.0" as="geometry" />
+        </mxCell>
+        <mxCell id="input_sum__sum-inline-in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="input_sum">
+          <mxGeometry x="-1.263158" y="20.210527" width="2.526316" height="7.578947" as="geometry" />
+        </mxCell>
+        <mxCell id="input_sum__sum-inline-in2" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in2;" vertex="1" parent="input_sum">
+          <mxGeometry x="20.210527" y="46.736842" width="7.578947" height="2.526316" as="geometry" />
+        </mxCell>
+        <mxCell id="input_sum__sum-inline-in3" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in3;" vertex="1" parent="input_sum">
+          <mxGeometry x="20.210527" y="45.474442" width="7.578947" height="2.526316" as="geometry" />
+        </mxCell>
+        <mxCell id="input_sum__sum-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="input_sum">
+          <mxGeometry x="45.474442" y="20.210527" width="2.526316" height="7.578947" as="geometry" />
+        </mxCell>
+        <mxCell id="add" value="" style="group;componentKey=sum_inline;templateWidth=38;templateHeight=38;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="330" y="250" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="add__sum-inline-body" value="+" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="add">
+          <mxGeometry x="0.0" y="0.0" width="55.0" height="55.0" as="geometry" />
+        </mxCell>
+        <mxCell id="add__sum-inline-in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="add">
+          <mxGeometry x="-1.447369" y="23.157895" width="2.894737" height="8.684211" as="geometry" />
+        </mxCell>
+        <mxCell id="add__sum-inline-in2" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in2;" vertex="1" parent="add">
+          <mxGeometry x="23.157895" y="53.552631" width="8.684211" height="2.894737" as="geometry" />
+        </mxCell>
+        <mxCell id="add__sum-inline-in3" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in3;" vertex="1" parent="add">
+          <mxGeometry x="23.157895" y="52.106131" width="8.684211" height="2.894737" as="geometry" />
+        </mxCell>
+        <mxCell id="add__sum-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="add">
+          <mxGeometry x="52.106131" y="23.157895" width="2.894737" height="8.684211" as="geometry" />
+        </mxCell>
+        <mxCell id="unit_delay" value="Unit Delay" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="455" y="240" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="unit_delay__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="unit_delay">
+          <mxGeometry as="geometry" x="-2.0" y="33.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="unit_delay__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="unit_delay">
+          <mxGeometry as="geometry" x="68.0" y="33.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="k1" value="" style="group;componentKey=gain_inline;templateWidth=58;templateHeight=44;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="365" y="405" width="60" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="k1__gain-inline-triangle" value="K1" style="shape=triangle;direction=east;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="k1">
+          <mxGeometry x="0.0" y="0.0" width="60.0" height="48.0" as="geometry" />
+        </mxCell>
+        <mxCell id="k1__gain-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="k1">
+          <mxGeometry x="-0.002483" y="20.727273" width="2.068966" height="6.545455" as="geometry" />
+        </mxCell>
+        <mxCell id="k1__gain-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="k1">
+          <mxGeometry x="57.933517" y="20.727273" width="2.068966" height="6.545455" as="geometry" />
+        </mxCell>
+        <mxCell id="add1" value="" style="group;componentKey=sum_inline;templateWidth=38;templateHeight=38;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="660" y="250" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="add1__sum-inline-body" value="+" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="add1">
+          <mxGeometry x="0.0" y="0.0" width="55.0" height="55.0" as="geometry" />
+        </mxCell>
+        <mxCell id="add1__sum-inline-in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="add1">
+          <mxGeometry x="-1.447369" y="23.157895" width="2.894737" height="8.684211" as="geometry" />
+        </mxCell>
+        <mxCell id="add1__sum-inline-in2" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in2;" vertex="1" parent="add1">
+          <mxGeometry x="23.157895" y="53.552631" width="8.684211" height="2.894737" as="geometry" />
+        </mxCell>
+        <mxCell id="add1__sum-inline-in3" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in3;" vertex="1" parent="add1">
+          <mxGeometry x="23.157895" y="52.106131" width="8.684211" height="2.894737" as="geometry" />
+        </mxCell>
+        <mxCell id="add1__sum-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="add1">
+          <mxGeometry x="52.106131" y="23.157895" width="2.894737" height="8.684211" as="geometry" />
+        </mxCell>
+        <mxCell id="unit_delay1" value="Unit Delay1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="785" y="240" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="unit_delay1__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="unit_delay1">
+          <mxGeometry as="geometry" x="-2.0" y="33.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="unit_delay1__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="unit_delay1">
+          <mxGeometry as="geometry" x="68.0" y="33.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="k2" value="" style="group;componentKey=gain_inline;templateWidth=58;templateHeight=44;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="690" y="405" width="60" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="k2__gain-inline-triangle" value="K2" style="shape=triangle;direction=east;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="k2">
+          <mxGeometry x="0.0" y="0.0" width="60.0" height="48.0" as="geometry" />
+        </mxCell>
+        <mxCell id="k2__gain-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="k2">
+          <mxGeometry x="-0.002483" y="20.727273" width="2.068966" height="6.545455" as="geometry" />
+        </mxCell>
+        <mxCell id="k2__gain-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="k2">
+          <mxGeometry x="57.933517" y="20.727273" width="2.068966" height="6.545455" as="geometry" />
+        </mxCell>
+        <mxCell id="gain" value="" style="group;componentKey=gain_inline;templateWidth=58;templateHeight=44;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="700" y="105" width="60" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="gain__gain-inline-triangle" value="1" style="shape=triangle;direction=east;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="gain">
+          <mxGeometry x="0.0" y="0.0" width="60.0" height="45.0" as="geometry" />
+        </mxCell>
+        <mxCell id="gain__gain-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="gain">
+          <mxGeometry x="-0.002483" y="19.431818" width="2.068966" height="6.136364" as="geometry" />
+        </mxCell>
+        <mxCell id="gain__gain-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="gain">
+          <mxGeometry x="57.933517" y="19.431818" width="2.068966" height="6.136364" as="geometry" />
+        </mxCell>
+        <mxCell id="gain1" value="" style="group;componentKey=gain_inline;templateWidth=58;templateHeight=44;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="700" y="190" width="60" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="gain1__gain-inline-triangle" value="2" style="shape=triangle;direction=east;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="gain1">
+          <mxGeometry x="0.0" y="0.0" width="60.0" height="45.0" as="geometry" />
+        </mxCell>
+        <mxCell id="gain1__gain-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="gain1">
+          <mxGeometry x="-0.002483" y="19.431818" width="2.068966" height="6.136364" as="geometry" />
+        </mxCell>
+        <mxCell id="gain1__gain-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="gain1">
+          <mxGeometry x="57.933517" y="19.431818" width="2.068966" height="6.136364" as="geometry" />
+        </mxCell>
+        <mxCell id="output_sum" value="+" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="output_sum__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="output_sum">
+          <mxGeometry as="geometry" x="-2.0" y="9.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="output_sum__port_in2" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in2;" vertex="1" parent="output_sum">
+          <mxGeometry as="geometry" x="-2.0" y="20.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="output_sum__port_in3" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in3;" vertex="1" parent="output_sum">
+          <mxGeometry as="geometry" x="-2.0" y="31.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="output_sum__port_in4" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in4;" vertex="1" parent="output_sum">
+          <mxGeometry as="geometry" x="-2.0" y="42.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="output_sum__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="output_sum">
+          <mxGeometry as="geometry" x="53.0" y="25.5" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="b_3_bit_quantizer" value="" style="group;componentKey=one_bit_quantizer_inline;templateWidth=62;templateHeight=78;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1070" y="245" width="95" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="b_3_bit_quantizer__quantizer-inline-box" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;strokeWidth=2.2;" vertex="1" parent="b_3_bit_quantizer">
+          <mxGeometry x="0.0" y="0.0" width="95.0" height="75.0" as="geometry" />
+        </mxCell>
+        <mxCell id="b_3_bit_quantizer__quantizer-inline-step" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=4;rounded=0;" edge="1" parent="b_3_bit_quantizer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="21.451613" y="52.884615" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="45.967742" y="52.884615" />
+              <mxPoint x="45.967742" y="24.038462" />
+            </Array>
+            <mxPoint x="78.145161" y="24.038462" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b_3_bit_quantizer__quantizer-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="b_3_bit_quantizer">
+          <mxGeometry x="-0.002758" y="34.615384" width="3.064516" height="5.769231" as="geometry" />
+        </mxCell>
+        <mxCell id="b_3_bit_quantizer__quantizer-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="b_3_bit_quantizer">
+          <mxGeometry x="91.938242" y="34.615384" width="3.064516" height="5.769231" as="geometry" />
+        </mxCell>
+        <mxCell id="to_workspace" value="To Workspace" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Arial;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="255" width="110" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="to_workspace__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="to_workspace">
+          <mxGeometry as="geometry" x="-2.0" y="25.5" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="to_workspace__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="to_workspace">
+          <mxGeometry as="geometry" x="108.0" y="25.5" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="dwa" value="DWA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="980" y="505" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dwa__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="dwa">
+          <mxGeometry as="geometry" x="-2.0" y="43.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="dwa__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="dwa">
+          <mxGeometry as="geometry" x="88.0" y="43.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="gain4" value="" style="group;componentKey=gain_inline;templateWidth=58;templateHeight=44;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="470" y="560" width="60" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="gain4__gain-inline-triangle" value="1" style="shape=triangle;direction=east;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="gain4">
+          <mxGeometry x="0.0" y="0.0" width="60.0" height="45.0" as="geometry" />
+        </mxCell>
+        <mxCell id="gain4__gain-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="gain4">
+          <mxGeometry x="-0.002483" y="19.431818" width="2.068966" height="6.136364" as="geometry" />
+        </mxCell>
+        <mxCell id="gain4__gain-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="gain4">
+          <mxGeometry x="57.933517" y="19.431818" width="2.068966" height="6.136364" as="geometry" />
+        </mxCell>
+        <mxCell id="j_fanout_sine_wave_function_1" value="" style="ellipse;html=1;shape=ellipse;fillColor=#000000;strokeColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="145.131" y="286.5" width="7" height="7" as="geometry" />
+        </mxCell>
+        <mxCell id="j_fanout_sine_wave_function_1__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="j_fanout_sine_wave_function_1">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="j_fanout_sine_wave_function_1__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="j_fanout_sine_wave_function_1">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="j_fanout_unit_delay_2" value="" style="ellipse;html=1;shape=ellipse;fillColor=#000000;strokeColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="590.223" y="273.25" width="7" height="7" as="geometry" />
+        </mxCell>
+        <mxCell id="j_fanout_unit_delay_2__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="j_fanout_unit_delay_2">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="j_fanout_unit_delay_2__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="j_fanout_unit_delay_2">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="j_fanout_unit_delay1_3" value="" style="ellipse;html=1;shape=ellipse;fillColor=#000000;strokeColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="914.5" y="281.0" width="7" height="7" as="geometry" />
+        </mxCell>
+        <mxCell id="j_fanout_unit_delay1_3__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="j_fanout_unit_delay1_3">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="j_fanout_unit_delay1_3__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="j_fanout_unit_delay1_3">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="j_fanout_b_3_bit_quantizer_4" value="" style="ellipse;html=1;shape=ellipse;fillColor=#000000;strokeColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1188.735" y="279.5" width="7" height="7" as="geometry" />
+        </mxCell>
+        <mxCell id="j_fanout_b_3_bit_quantizer_4__port_in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="j_fanout_b_3_bit_quantizer_4">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="j_fanout_b_3_bit_quantizer_4__port_out1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="j_fanout_b_3_bit_quantizer_4">
+          <mxGeometry as="geometry" x="1.0" y="1.0" width="4.0" height="4.0" />
+        </mxCell>
+        <mxCell id="ann_101" value="INT1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Arial;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="210" width="285" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="ann_102" value="INT2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Arial;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="210" width="280" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="sine_wave_function__port_out1" target="input_sum__sum-inline-in1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="input_sum__sum-inline-out" target="add__sum-inline-in1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="216.738" y="277.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="add__sum-inline-out" target="unit_delay__port_in1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="unit_delay__port_out1" target="add1__sum-inline-in1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="add1__sum-inline-out" target="unit_delay1__port_in1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="unit_delay1__port_out1" target="output_sum__port_in3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="917.5" y="284.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="output_sum__port_out1" target="b_3_bit_quantizer__quantizer-inline-in">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="b_3_bit_quantizer__quantizer-inline-out" target="to_workspace__port_in1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1191.735" y="282.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="j_fanout_unit_delay_2__port_out1" target="k1__gain-inline-in">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="593.223" y="384.0" />
+              <mxPoint x="338.032" y="384.0" />
+              <mxPoint x="338.032" y="429.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="" style="edgeStyle=straightEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="k1__gain-inline-out" target="add__sum-inline-in2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="j_fanout_unit_delay1_3__port_out1" target="k2__gain-inline-in">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="917.5" y="384.0" />
+              <mxPoint x="663.032" y="384.0" />
+              <mxPoint x="663.032" y="429.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="" style="edgeStyle=straightEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="k2__gain-inline-out" target="add1__sum-inline-in2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="j_fanout_sine_wave_function_1__port_out1" target="gain__gain-inline-in">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="148.131" y="172.5" />
+              <mxPoint x="673.032" y="172.5" />
+              <mxPoint x="673.032" y="127.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="gain__gain-inline-out" target="output_sum__port_in1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="928.968" y="127.5" />
+              <mxPoint x="928.968" y="270.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="j_fanout_unit_delay_2__port_out1" target="gain1__gain-inline-in">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="593.223" y="226.25" />
+              <mxPoint x="673.032" y="226.25" />
+              <mxPoint x="673.032" y="212.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="gain1__gain-inline-out" target="output_sum__port_in2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1058.968" y="212.5" />
+              <mxPoint x="1058.968" y="287.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="j_fanout_b_3_bit_quantizer_4__port_out1" target="dwa__port_in1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1191.735" y="550.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="dwa__port_out1" target="gain4__gain-inline-in">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630.0" y="550.0" />
+              <mxPoint x="630.0" y="582.5" />
+              <mxPoint x="443.032" y="582.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="" style="edgeStyle=straightEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1.3;" edge="1" parent="1" source="gain4__gain-inline-out" target="input_sum__sum-inline-in2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

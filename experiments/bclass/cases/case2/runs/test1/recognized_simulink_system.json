@@ -1,0 +1,691 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source": "case2_image",
+    "target": "simulink_system_root_xml"
+  },
+  "system": {
+    "properties": {
+      "Location": "[80, 80, 1500, 850]",
+      "ZoomFactor": "100",
+      "SIDHighWatermark": "41"
+    }
+  },
+  "blocks": [
+    {
+      "sid": "1",
+      "id": "x_z",
+      "name": "X(z)",
+      "block_type": "Inport",
+      "semantic_type": "inport",
+      "parameters": {},
+      "port_counts": {
+        "in": 0,
+        "out": 1
+      },
+      "position": [
+        30,
+        245,
+        90,
+        273
+      ],
+      "z_order": 1
+    },
+    {
+      "sid": "2",
+      "id": "b1",
+      "name": "b1",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "b1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        115,
+        230,
+        165,
+        280
+      ],
+      "z_order": 2
+    },
+    {
+      "sid": "3",
+      "id": "sum1",
+      "name": "sum1",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        185,
+        235,
+        221,
+        271
+      ],
+      "z_order": 3
+    },
+    {
+      "sid": "4",
+      "id": "nt1",
+      "name": "NT1",
+      "block_type": "DiscreteTransferFcn",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Numerator": "z^-1",
+        "Denominator": "1-z^-1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        250,
+        220,
+        320,
+        290
+      ],
+      "z_order": 4
+    },
+    {
+      "sid": "5",
+      "id": "c2",
+      "name": "c2",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "c2"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        365,
+        230,
+        420,
+        280
+      ],
+      "z_order": 5
+    },
+    {
+      "sid": "6",
+      "id": "nt2",
+      "name": "NT2",
+      "block_type": "DiscreteTransferFcn",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Numerator": "z^-1",
+        "Denominator": "1-z^-1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        465,
+        220,
+        535,
+        290
+      ],
+      "z_order": 6
+    },
+    {
+      "sid": "7",
+      "id": "sum2",
+      "name": "sum2",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        595,
+        235,
+        631,
+        271
+      ],
+      "z_order": 7
+    },
+    {
+      "sid": "8",
+      "id": "c3",
+      "name": "c3",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "c3"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        675,
+        230,
+        730,
+        280
+      ],
+      "z_order": 8
+    },
+    {
+      "sid": "9",
+      "id": "nt3",
+      "name": "NT3",
+      "block_type": "DiscreteTransferFcn",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Numerator": "z^-1",
+        "Denominator": "1-z^-1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        775,
+        220,
+        845,
+        290
+      ],
+      "z_order": 9
+    },
+    {
+      "sid": "10",
+      "id": "c4",
+      "name": "c4",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "c4"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        900,
+        230,
+        955,
+        280
+      ],
+      "z_order": 10
+    },
+    {
+      "sid": "11",
+      "id": "nt4",
+      "name": "NT4",
+      "block_type": "DiscreteTransferFcn",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Numerator": "z^-1",
+        "Denominator": "1-z^-1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1005,
+        220,
+        1075,
+        290
+      ],
+      "z_order": 11
+    },
+    {
+      "sid": "12",
+      "id": "a4",
+      "name": "a4",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "a4"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1115,
+        230,
+        1170,
+        280
+      ],
+      "z_order": 12
+    },
+    {
+      "sid": "13",
+      "id": "a3",
+      "name": "a3",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "a3"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1115,
+        340,
+        1170,
+        390
+      ],
+      "z_order": 13
+    },
+    {
+      "sid": "14",
+      "id": "a2",
+      "name": "a2",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "a2"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1115,
+        460,
+        1170,
+        510
+      ],
+      "z_order": 14
+    },
+    {
+      "sid": "15",
+      "id": "a1",
+      "name": "a1",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "a1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1115,
+        575,
+        1170,
+        625
+      ],
+      "z_order": 15
+    },
+    {
+      "sid": "16",
+      "id": "b2",
+      "name": "b2",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "b2"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        485,
+        70,
+        540,
+        120
+      ],
+      "z_order": 16
+    },
+    {
+      "sid": "17",
+      "id": "g1",
+      "name": "g1",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "g1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        840,
+        125,
+        895,
+        175
+      ],
+      "z_order": 17,
+      "orientation": "left"
+    },
+    {
+      "sid": "18",
+      "id": "c1",
+      "name": "c1",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "c1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        195,
+        420,
+        250,
+        470
+      ],
+      "z_order": 18,
+      "orientation": "left"
+    },
+    {
+      "sid": "19",
+      "id": "sum_out",
+      "name": "sum_out",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 5,
+        "out": 1
+      },
+      "position": [
+        1315,
+        245,
+        1357,
+        287
+      ],
+      "z_order": 19
+    },
+    {
+      "sid": "20",
+      "id": "single_bit_quantizer",
+      "name": "Single-bit Quantizer",
+      "block_type": "Relay",
+      "semantic_type": "quantizer",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1395,
+        235,
+        1460,
+        300
+      ],
+      "z_order": 20
+    },
+    {
+      "sid": "21",
+      "id": "y_z",
+      "name": "Y(z)",
+      "block_type": "Outport",
+      "semantic_type": "outport",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 0
+      },
+      "position": [
+        1550,
+        245,
+        1620,
+        273
+      ],
+      "z_order": 21
+    }
+  ],
+  "lines": [
+    {
+      "src": "1#out:1",
+      "dst": "2#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 1
+    },
+    {
+      "src": "2#out:1",
+      "dst": "3#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 2
+    },
+    {
+      "src": "3#out:1",
+      "dst": "4#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 3
+    },
+    {
+      "src": "4#out:1",
+      "dst": "5#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 4
+    },
+    {
+      "src": "5#out:1",
+      "dst": "6#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 5
+    },
+    {
+      "src": "6#out:1",
+      "dst": "7#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 6
+    },
+    {
+      "src": "7#out:1",
+      "dst": "8#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 7
+    },
+    {
+      "src": "8#out:1",
+      "dst": "9#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 8
+    },
+    {
+      "src": "9#out:1",
+      "dst": "10#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 9
+    },
+    {
+      "src": "10#out:1",
+      "dst": "11#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 10
+    },
+    {
+      "src": "11#out:1",
+      "dst": "12#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 11
+    },
+    {
+      "src": "12#out:1",
+      "dst": "19#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 12
+    },
+    {
+      "src": "9#out:1",
+      "dst": "13#in:1",
+      "points": [
+        0,
+        90
+      ],
+      "branches": [],
+      "z_order": 13
+    },
+    {
+      "src": "13#out:1",
+      "dst": "19#in:2",
+      "points": [
+        130,
+        0
+      ],
+      "branches": [],
+      "z_order": 14
+    },
+    {
+      "src": "6#out:1",
+      "dst": "14#in:1",
+      "points": [
+        0,
+        210
+      ],
+      "branches": [],
+      "z_order": 15
+    },
+    {
+      "src": "14#out:1",
+      "dst": "19#in:3",
+      "points": [
+        145,
+        0
+      ],
+      "branches": [],
+      "z_order": 16
+    },
+    {
+      "src": "4#out:1",
+      "dst": "15#in:1",
+      "points": [
+        0,
+        320
+      ],
+      "branches": [],
+      "z_order": 17
+    },
+    {
+      "src": "15#out:1",
+      "dst": "19#in:4",
+      "points": [
+        145,
+        0
+      ],
+      "branches": [],
+      "z_order": 18
+    },
+    {
+      "src": "1#out:1",
+      "dst": "16#in:1",
+      "points": [
+        0,
+        -180
+      ],
+      "branches": [],
+      "z_order": 19
+    },
+    {
+      "src": "16#out:1",
+      "dst": "19#in:5",
+      "points": [
+        780,
+        0,
+        0,
+        180
+      ],
+      "branches": [],
+      "z_order": 20
+    },
+    {
+      "src": "11#out:1",
+      "dst": "17#in:1",
+      "points": [
+        0,
+        -85
+      ],
+      "branches": [],
+      "z_order": 21
+    },
+    {
+      "src": "17#out:1",
+      "dst": "7#in:2",
+      "points": [
+        -245,
+        0,
+        0,
+        85
+      ],
+      "branches": [],
+      "z_order": 22
+    },
+    {
+      "src": "19#out:1",
+      "dst": "20#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 23
+    },
+    {
+      "src": "20#out:1",
+      "dst": "21#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 24
+    },
+    {
+      "src": "20#out:1",
+      "dst": "18#in:1",
+      "points": [
+        0,
+        370,
+        -1265,
+        0,
+        0,
+        -170
+      ],
+      "branches": [],
+      "z_order": 25
+    },
+    {
+      "src": "18#out:1",
+      "dst": "3#in:2",
+      "points": [
+        0,
+        -150
+      ],
+      "branches": [],
+      "z_order": 26
+    }
+  ],
+  "annotations": [],
+  "layout": {
+    "recognized_from": "paper_image",
+    "case": "case2"
+  },
+  "style": {
+    "diagram_family": "b_class_control_block_diagram"
+  },
+  "evidence": {
+    "source": "manual image recognition benchmark",
+    "unresolved": []
+  }
+}

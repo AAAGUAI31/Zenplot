@@ -1,0 +1,92 @@
+{
+  "status": "generated",
+  "layout_spec": "layout_spec.json",
+  "component_catalog": "drawio_component_catalog.xml",
+  "component_templates_used": {
+    "b_input_sum": "sum_inline",
+    "b_add": "sum_inline",
+    "b_k1": "gain_inline",
+    "b_add1": "sum_inline",
+    "b_k2": "gain_inline",
+    "b_gain": "gain_inline",
+    "b_gain1": "gain_inline",
+    "b_output_sum": "sum_inline",
+    "b_3_bit_quantizer": "one_bit_quantizer_inline",
+    "b_gain4": "gain_inline"
+  },
+  "node_to_mxcell": {
+    "b_sine_wave_function": "b_sine_wave_function",
+    "b_input_sum": "b_input_sum",
+    "b_add": "b_add",
+    "b_unit_delay": "b_unit_delay",
+    "b_k1": "b_k1",
+    "b_add1": "b_add1",
+    "b_unit_delay1": "b_unit_delay1",
+    "b_k2": "b_k2",
+    "b_gain": "b_gain",
+    "b_gain1": "b_gain1",
+    "b_output_sum": "b_output_sum",
+    "b_3_bit_quantizer": "b_3_bit_quantizer",
+    "b_to_workspace": "b_to_workspace",
+    "b_dwa": "b_dwa",
+    "b_gain4": "b_gain4"
+  },
+  "edge_to_mxcell": {
+    "e_line_0": "e_line_0",
+    "e_line_1": "e_line_1",
+    "e_line_2": "e_line_2",
+    "e_line_3": "e_line_3",
+    "e_line_4": "e_line_4",
+    "e_line_5": "e_line_5",
+    "e_line_6": "e_line_6",
+    "e_line_7": "e_line_7",
+    "e_line_8": "e_line_8",
+    "e_line_9": "e_line_9",
+    "e_line_10": "e_line_10",
+    "e_line_11": "e_line_11",
+    "e_line_12": "e_line_12",
+    "e_line_13": "e_line_13",
+    "e_line_14": "e_line_14",
+    "e_line_15": "e_line_15",
+    "e_line_16": "e_line_16",
+    "e_line_17": "e_line_17",
+    "e_line_18": "e_line_18"
+  },
+  "warnings": [
+    {
+      "type": "missing_component_port",
+      "node": "b_unit_delay",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_unit_delay",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_unit_delay1",
+      "port": "in1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_unit_delay1",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_unit_delay",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_unit_delay1",
+      "port": "out1"
+    },
+    {
+      "type": "missing_component_port",
+      "node": "b_unit_delay",
+      "port": "out1"
+    }
+  ]
+}

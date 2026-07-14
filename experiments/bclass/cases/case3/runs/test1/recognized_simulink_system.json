@@ -1,0 +1,550 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source": "case3_image",
+    "target": "simulink_system_root_xml"
+  },
+  "system": {
+    "properties": {
+      "Location": "[80, 80, 1500, 850]",
+      "ZoomFactor": "100",
+      "SIDHighWatermark": "35"
+    }
+  },
+  "blocks": [
+    {
+      "sid": "1",
+      "id": "sine_wave_function",
+      "name": "Sine Wave Function",
+      "block_type": "Inport",
+      "semantic_type": "inport",
+      "parameters": {},
+      "port_counts": {
+        "in": 0,
+        "out": 1
+      },
+      "position": [
+        40,
+        255,
+        125,
+        325
+      ],
+      "z_order": 1
+    },
+    {
+      "sid": "2",
+      "id": "input_sum",
+      "name": "input_sum",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        170,
+        265,
+        218,
+        313
+      ],
+      "z_order": 2
+    },
+    {
+      "sid": "3",
+      "id": "add",
+      "name": "Add",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        330,
+        250,
+        385,
+        305
+      ],
+      "z_order": 3
+    },
+    {
+      "sid": "4",
+      "id": "unit_delay",
+      "name": "Unit Delay",
+      "block_type": "UnitDelay",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Delay": "1/z"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        455,
+        240,
+        525,
+        310
+      ],
+      "z_order": 4
+    },
+    {
+      "sid": "5",
+      "id": "k1",
+      "name": "K1",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "K1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        365,
+        405,
+        425,
+        453
+      ],
+      "z_order": 5
+    },
+    {
+      "sid": "6",
+      "id": "add1",
+      "name": "Add1",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        660,
+        250,
+        715,
+        305
+      ],
+      "z_order": 6
+    },
+    {
+      "sid": "7",
+      "id": "unit_delay1",
+      "name": "Unit Delay1",
+      "block_type": "UnitDelay",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Delay": "1/z"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        785,
+        240,
+        855,
+        310
+      ],
+      "z_order": 7
+    },
+    {
+      "sid": "8",
+      "id": "k2",
+      "name": "K2",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "K2"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        690,
+        405,
+        750,
+        453
+      ],
+      "z_order": 8
+    },
+    {
+      "sid": "9",
+      "id": "gain",
+      "name": "Gain",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        700,
+        105,
+        760,
+        150
+      ],
+      "z_order": 9
+    },
+    {
+      "sid": "10",
+      "id": "gain1",
+      "name": "Gain1",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "2"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        700,
+        190,
+        760,
+        235
+      ],
+      "z_order": 10
+    },
+    {
+      "sid": "11",
+      "id": "output_sum",
+      "name": "output_sum",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 4,
+        "out": 1
+      },
+      "position": [
+        980,
+        260,
+        1035,
+        315
+      ],
+      "z_order": 11
+    },
+    {
+      "sid": "12",
+      "id": "b_3_bit_quantizer",
+      "name": "3-bit Quantizer",
+      "block_type": "Relay",
+      "semantic_type": "quantizer",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1070,
+        245,
+        1165,
+        320
+      ],
+      "z_order": 12
+    },
+    {
+      "sid": "13",
+      "id": "to_workspace",
+      "name": "To Workspace",
+      "block_type": "Outport",
+      "semantic_type": "outport",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 0
+      },
+      "position": [
+        1220,
+        255,
+        1330,
+        310
+      ],
+      "z_order": 13
+    },
+    {
+      "sid": "14",
+      "id": "dwa",
+      "name": "DWA",
+      "block_type": "SubSystem",
+      "semantic_type": "dwa",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        980,
+        505,
+        1070,
+        595
+      ],
+      "z_order": 14
+    },
+    {
+      "sid": "15",
+      "id": "gain4",
+      "name": "Gain4",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        470,
+        560,
+        530,
+        605
+      ],
+      "z_order": 15
+    }
+  ],
+  "lines": [
+    {
+      "src": "1#out:1",
+      "dst": "2#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 1
+    },
+    {
+      "src": "2#out:1",
+      "dst": "3#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 2
+    },
+    {
+      "src": "3#out:1",
+      "dst": "4#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 3
+    },
+    {
+      "src": "4#out:1",
+      "dst": "6#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 4
+    },
+    {
+      "src": "6#out:1",
+      "dst": "7#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 5
+    },
+    {
+      "src": "7#out:1",
+      "dst": "11#in:3",
+      "points": [],
+      "branches": [],
+      "z_order": 6
+    },
+    {
+      "src": "11#out:1",
+      "dst": "12#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 7
+    },
+    {
+      "src": "12#out:1",
+      "dst": "13#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 8
+    },
+    {
+      "src": "4#out:1",
+      "dst": "5#in:1",
+      "points": [
+        0,
+        145,
+        -80,
+        0
+      ],
+      "branches": [],
+      "z_order": 9
+    },
+    {
+      "src": "5#out:1",
+      "dst": "3#in:2",
+      "points": [
+        -130,
+        0,
+        0,
+        -145
+      ],
+      "branches": [],
+      "z_order": 10
+    },
+    {
+      "src": "7#out:1",
+      "dst": "8#in:1",
+      "points": [
+        0,
+        145,
+        -95,
+        0
+      ],
+      "branches": [],
+      "z_order": 11
+    },
+    {
+      "src": "8#out:1",
+      "dst": "6#in:2",
+      "points": [
+        -130,
+        0,
+        0,
+        -145
+      ],
+      "branches": [],
+      "z_order": 12
+    },
+    {
+      "src": "1#out:1",
+      "dst": "9#in:1",
+      "points": [
+        0,
+        -185
+      ],
+      "branches": [],
+      "z_order": 13
+    },
+    {
+      "src": "9#out:1",
+      "dst": "11#in:1",
+      "points": [
+        170,
+        0,
+        0,
+        143
+      ],
+      "branches": [],
+      "z_order": 14
+    },
+    {
+      "src": "4#out:1",
+      "dst": "10#in:1",
+      "points": [
+        80,
+        0,
+        0,
+        -90
+      ],
+      "branches": [],
+      "z_order": 15
+    },
+    {
+      "src": "10#out:1",
+      "dst": "11#in:2",
+      "points": [
+        300,
+        0,
+        0,
+        75
+      ],
+      "branches": [],
+      "z_order": 16
+    },
+    {
+      "src": "12#out:1",
+      "dst": "14#in:1",
+      "points": [
+        0,
+        330,
+        -100,
+        0
+      ],
+      "branches": [],
+      "z_order": 17
+    },
+    {
+      "src": "14#out:1",
+      "dst": "15#in:1",
+      "points": [
+        -440,
+        0
+      ],
+      "branches": [],
+      "z_order": 18
+    },
+    {
+      "src": "15#out:1",
+      "dst": "2#in:2",
+      "points": [
+        -330,
+        0,
+        0,
+        -275
+      ],
+      "branches": [],
+      "z_order": 19
+    }
+  ],
+  "annotations": [
+    {
+      "sid": "101",
+      "name": "INT1",
+      "position": [
+        280,
+        210,
+        565,
+        455
+      ],
+      "internal_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z_order": 1,
+      "parameters": {}
+    },
+    {
+      "sid": "102",
+      "name": "INT2",
+      "position": [
+        610,
+        210,
+        890,
+        455
+      ],
+      "internal_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z_order": 1,
+      "parameters": {}
+    }
+  ],
+  "layout": {
+    "recognized_from": "paper_image",
+    "case": "case3"
+  },
+  "style": {
+    "diagram_family": "b_class_control_block_diagram"
+  },
+  "evidence": {
+    "source": "manual image recognition benchmark",
+    "unresolved": []
+  }
+}

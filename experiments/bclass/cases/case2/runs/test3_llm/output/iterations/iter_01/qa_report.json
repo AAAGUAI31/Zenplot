@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "version": "0.2",
+    "qa_focus": "port alignment, branch junction dots, Greek alpha labels"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 92,
+    "layout_score": 90
+  },
+  "issues": [],
+  "positive_checks": [
+    "Main chain is aligned by actual port centers.",
+    "Top inputs are aligned to receiving top ports where detected.",
+    "Visible feedback branch points use junction_dot_inline templates.",
+    "ASCII alpha gain labels are converted to Greek visual labels."
+  ]
+}

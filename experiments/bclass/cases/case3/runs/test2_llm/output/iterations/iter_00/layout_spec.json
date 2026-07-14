@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "version": "0.1",
+    "layout_strategy": "llm_planned_from_xml_positions"
+  },
+  "canvas": {
+    "x": 0,
+    "y": 0,
+    "w": 1600,
+    "h": 900,
+    "grid": 10
+  },
+  "nodes": [
+    {
+      "id": "b_sine_wave_function",
+      "source_sid": "1",
+      "component_key": "generic_block",
+      "label": "Sine Wave Function",
+      "orientation": "right",
+      "geometry": {
+        "x": 40.0,
+        "y": 255.0,
+        "w": 85.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 26,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_input_sum",
+      "source_sid": "2",
+      "component_key": "sum_inline",
+      "label": "input_sum",
+      "orientation": "right",
+      "geometry": {
+        "x": 170.0,
+        "y": 265.0,
+        "w": 48.0,
+        "h": 48.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_add",
+      "source_sid": "3",
+      "component_key": "sum_inline",
+      "label": "Add",
+      "orientation": "right",
+      "geometry": {
+        "x": 330.0,
+        "y": 250.0,
+        "w": 55.0,
+        "h": 55.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_unit_delay",
+      "source_sid": "4",
+      "component_key": "discrete_transfer_inline",
+      "label": "Unit Delay",
+      "orientation": "right",
+      "geometry": {
+        "x": 455.0,
+        "y": 240.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_k1",
+      "source_sid": "5",
+      "component_key": "gain_inline",
+      "label": "K1",
+      "orientation": "left",
+      "geometry": {
+        "x": 365.0,
+        "y": 405.0,
+        "w": 60.0,
+        "h": 48.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_add1",
+      "source_sid": "6",
+      "component_key": "sum_inline",
+      "label": "Add1",
+      "orientation": "right",
+      "geometry": {
+        "x": 660.0,
+        "y": 250.0,
+        "w": 55.0,
+        "h": 55.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_unit_delay1",
+      "source_sid": "7",
+      "component_key": "discrete_transfer_inline",
+      "label": "Unit Delay1",
+      "orientation": "right",
+      "geometry": {
+        "x": 785.0,
+        "y": 240.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_k2",
+      "source_sid": "8",
+      "component_key": "gain_inline",
+      "label": "K2",
+      "orientation": "left",
+      "geometry": {
+        "x": 690.0,
+        "y": 405.0,
+        "w": 60.0,
+        "h": 48.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_gain",
+      "source_sid": "9",
+      "component_key": "gain_inline",
+      "label": "1",
+      "orientation": "right",
+      "geometry": {
+        "x": 700.0,
+        "y": 105.0,
+        "w": 60.0,
+        "h": 45.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_gain1",
+      "source_sid": "10",
+      "component_key": "gain_inline",
+      "label": "2",
+      "orientation": "right",
+      "geometry": {
+        "x": 700.0,
+        "y": 190.0,
+        "w": 60.0,
+        "h": 45.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_output_sum",
+      "source_sid": "11",
+      "component_key": "sum_inline",
+      "label": "output_sum",
+      "orientation": "right",
+      "geometry": {
+        "x": 980.0,
+        "y": 260.0,
+        "w": 55.0,
+        "h": 55.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_3_bit_quantizer",
+      "source_sid": "12",
+      "component_key": "one_bit_quantizer_inline",
+      "label": "",
+      "orientation": "right",
+      "geometry": {
+        "x": 1070.0,
+        "y": 245.0,
+        "w": 95.0,
+        "h": 75.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_to_workspace",
+      "source_sid": "13",
+      "component_key": "generic_block",
+      "label": "To Workspace",
+      "orientation": "right",
+      "geometry": {
+        "x": 1220.0,
+        "y": 255.0,
+        "w": 110.0,
+        "h": 55.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 26,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_dwa",
+      "source_sid": "14",
+      "component_key": "generic_block",
+      "label": "DWA",
+      "orientation": "right",
+      "geometry": {
+        "x": 980.0,
+        "y": 505.0,
+        "w": 90.0,
+        "h": 90.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    },
+    {
+      "id": "b_gain4",
+      "source_sid": "15",
+      "component_key": "gain_inline",
+      "label": "1",
+      "orientation": "left",
+      "geometry": {
+        "x": 470.0,
+        "y": 560.0,
+        "w": 60.0,
+        "h": 45.0
+      },
+      "ports": {},
+      "style": {
+        "stroke_width": 3,
+        "font_size": 16,
+        "font_bold": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "l0",
+      "source": "1#out:1",
+      "target": "2#in:1",
+      "source_xy": [
+        125.0,
+        290.0
+      ],
+      "target_xy": [
+        170.0,
+        280.84
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            147.5,
+            290.0
+          ],
+          [
+            147.5,
+            280.84
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l1",
+      "source": "2#out:1",
+      "target": "3#in:1",
+      "source_xy": [
+        218.0,
+        289.0
+      ],
+      "target_xy": [
+        330.0,
+        268.15
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            274.0,
+            289.0
+          ],
+          [
+            274.0,
+            268.15
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l2",
+      "source": "3#out:1",
+      "target": "4#in:1",
+      "source_xy": [
+        385.0,
+        277.5
+      ],
+      "target_xy": [
+        455.0,
+        275.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l3",
+      "source": "4#out:1",
+      "target": "6#in:1",
+      "source_xy": [
+        525.0,
+        275.0
+      ],
+      "target_xy": [
+        660.0,
+        268.15
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l4",
+      "source": "6#out:1",
+      "target": "7#in:1",
+      "source_xy": [
+        715.0,
+        277.5
+      ],
+      "target_xy": [
+        785.0,
+        275.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l5",
+      "source": "7#out:1",
+      "target": "11#in:3",
+      "source_xy": [
+        855.0,
+        275.0
+      ],
+      "target_xy": [
+        980.0,
+        293.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            855.0,
+            293.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l6",
+      "source": "11#out:1",
+      "target": "12#in:1",
+      "source_xy": [
+        1035.0,
+        287.5
+      ],
+      "target_xy": [
+        1070.0,
+        282.5
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l7",
+      "source": "12#out:1",
+      "target": "13#in:1",
+      "source_xy": [
+        1165.0,
+        282.5
+      ],
+      "target_xy": [
+        1220.0,
+        282.5
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l8",
+      "source": "4#out:1",
+      "target": "5#in:1",
+      "source_xy": [
+        525.0,
+        275.0
+      ],
+      "target_xy": [
+        365.0,
+        429.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            525.0,
+            420.0
+          ],
+          [
+            445.0,
+            420.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l9",
+      "source": "5#out:1",
+      "target": "3#in:2",
+      "source_xy": [
+        425.0,
+        429.0
+      ],
+      "target_xy": [
+        330.0,
+        286.85
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            295.0,
+            429.0
+          ],
+          [
+            295.0,
+            284.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l10",
+      "source": "7#out:1",
+      "target": "8#in:1",
+      "source_xy": [
+        855.0,
+        275.0
+      ],
+      "target_xy": [
+        690.0,
+        429.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            855.0,
+            420.0
+          ],
+          [
+            760.0,
+            420.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l11",
+      "source": "8#out:1",
+      "target": "6#in:2",
+      "source_xy": [
+        750.0,
+        429.0
+      ],
+      "target_xy": [
+        660.0,
+        286.85
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            620.0,
+            429.0
+          ],
+          [
+            620.0,
+            284.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l12",
+      "source": "1#out:1",
+      "target": "9#in:1",
+      "source_xy": [
+        125.0,
+        290.0
+      ],
+      "target_xy": [
+        700.0,
+        127.5
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            125.0,
+            105.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l13",
+      "source": "9#out:1",
+      "target": "11#in:1",
+      "source_xy": [
+        760.0,
+        127.5
+      ],
+      "target_xy": [
+        980.0,
+        271.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            930.0,
+            127.5
+          ],
+          [
+            930.0,
+            270.5
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l14",
+      "source": "4#out:1",
+      "target": "10#in:1",
+      "source_xy": [
+        525.0,
+        275.0
+      ],
+      "target_xy": [
+        700.0,
+        212.5
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            605.0,
+            275.0
+          ],
+          [
+            605.0,
+            185.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l15",
+      "source": "10#out:1",
+      "target": "11#in:2",
+      "source_xy": [
+        760.0,
+        212.5
+      ],
+      "target_xy": [
+        980.0,
+        282.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1060.0,
+            212.5
+          ],
+          [
+            1060.0,
+            287.5
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l16",
+      "source": "12#out:1",
+      "target": "14#in:1",
+      "source_xy": [
+        1165.0,
+        282.5
+      ],
+      "target_xy": [
+        980.0,
+        550.0
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1165.0,
+            612.5
+          ],
+          [
+            1065.0,
+            612.5
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l17",
+      "source": "14#out:1",
+      "target": "15#in:1",
+      "source_xy": [
+        1070.0,
+        550.0
+      ],
+      "target_xy": [
+        470.0,
+        582.5
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            630.0,
+            550.0
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    },
+    {
+      "id": "l18",
+      "source": "15#out:1",
+      "target": "2#in:2",
+      "source_xy": [
+        530.0,
+        582.5
+      ],
+      "target_xy": [
+        170.0,
+        297.16
+      ],
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            200.0,
+            582.5
+          ],
+          [
+            200.0,
+            307.5
+          ]
+        ],
+        "stroke_width": 3,
+        "arrow": "block"
+      }
+    }
+  ],
+  "labels": [],
+  "junctions": [],
+  "groups": [],
+  "constraints": {
+    "preserve_topology": true,
+    "prefer_direct_routes": true,
+    "stroke_width_pt": 3,
+    "gain_orientation": [
+      "right",
+      "left",
+      "up",
+      "down"
+    ]
+  },
+  "qa": {}
+}

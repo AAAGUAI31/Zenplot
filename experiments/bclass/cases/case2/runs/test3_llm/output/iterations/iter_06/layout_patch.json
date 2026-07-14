@@ -1,0 +1,6 @@
+{
+  "operations": [
+    "remove_duplicate_junction_dots"
+  ],
+  "reason": "Keep one visible junction node per split."
+}

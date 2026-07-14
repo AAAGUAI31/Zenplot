@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.1",
+    "qa_mode": "llm_visual_contract_basic_png_review"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 88,
+    "layout_score": 88
+  },
+  "issues": [],
+  "positive_checks": [
+    "SemanticSpec separates source_facts from inferred_semantics.",
+    "LayoutSpec preserves XML source-target topology.",
+    "Draw.io XML is generated from LayoutSpec with 3 pt black academic styling."
+  ]
+}

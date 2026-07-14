@@ -1,0 +1,1164 @@
+{
+  "canvas": {
+    "x": 0,
+    "y": 0,
+    "w": 1750,
+    "h": 720
+  },
+  "nodes": [
+    {
+      "id": "b_x_z",
+      "source_fact_id": "1",
+      "component_key": "generic_block",
+      "label": "X(z)",
+      "label_bindings": {
+        "main": "X(z)"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 30.0,
+        "y": 245.0,
+        "w": 60.0,
+        "h": 28.0
+      },
+      "ports": {},
+      "style": {
+        "mx_style": "text;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=30;fontStyle=1;strokeColor=none;fillColor=none;"
+      }
+    },
+    {
+      "id": "b_b1",
+      "source_fact_id": "2",
+      "component_key": "gain_inline",
+      "label": "b1",
+      "label_bindings": {
+        "main": "b1"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 115.0,
+        "y": 230.0,
+        "w": 50.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_sum1",
+      "source_fact_id": "3",
+      "component_key": "sum_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 185.0,
+        "y": 235.0,
+        "w": 36.0,
+        "h": 36.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_nt1",
+      "source_fact_id": "4",
+      "component_key": "discrete_transfer_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 250.0,
+        "y": 220.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_c2",
+      "source_fact_id": "5",
+      "component_key": "gain_inline",
+      "label": "c2",
+      "label_bindings": {
+        "main": "c2"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 365.0,
+        "y": 230.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_nt2",
+      "source_fact_id": "6",
+      "component_key": "discrete_transfer_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 465.0,
+        "y": 220.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_sum2",
+      "source_fact_id": "7",
+      "component_key": "sum_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 595.0,
+        "y": 235.0,
+        "w": 36.0,
+        "h": 36.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_c3",
+      "source_fact_id": "8",
+      "component_key": "gain_inline",
+      "label": "c3",
+      "label_bindings": {
+        "main": "c3"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 675.0,
+        "y": 230.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_nt3",
+      "source_fact_id": "9",
+      "component_key": "discrete_transfer_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 775.0,
+        "y": 220.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_c4",
+      "source_fact_id": "10",
+      "component_key": "gain_inline",
+      "label": "c4",
+      "label_bindings": {
+        "main": "c4"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 900.0,
+        "y": 230.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_nt4",
+      "source_fact_id": "11",
+      "component_key": "discrete_transfer_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1005.0,
+        "y": 220.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_a4",
+      "source_fact_id": "12",
+      "component_key": "gain_inline",
+      "label": "a4",
+      "label_bindings": {
+        "main": "a4"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1115.0,
+        "y": 230.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_a3",
+      "source_fact_id": "13",
+      "component_key": "gain_inline",
+      "label": "a3",
+      "label_bindings": {
+        "main": "a3"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1115.0,
+        "y": 340.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_a2",
+      "source_fact_id": "14",
+      "component_key": "gain_inline",
+      "label": "a2",
+      "label_bindings": {
+        "main": "a2"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1115.0,
+        "y": 460.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_a1",
+      "source_fact_id": "15",
+      "component_key": "gain_inline",
+      "label": "a1",
+      "label_bindings": {
+        "main": "a1"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1115.0,
+        "y": 575.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_b2",
+      "source_fact_id": "16",
+      "component_key": "gain_inline",
+      "label": "b2",
+      "label_bindings": {
+        "main": "b2"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 485.0,
+        "y": 70.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_g1",
+      "source_fact_id": "17",
+      "component_key": "gain_inline",
+      "label": "g1",
+      "label_bindings": {
+        "main": "g1"
+      },
+      "orientation": "left",
+      "geometry": {
+        "x": 840.0,
+        "y": 125.0,
+        "w": 55.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_c1",
+      "source_fact_id": "18",
+      "component_key": "gain_inline",
+      "label": "c1",
+      "label_bindings": {
+        "main": "c1"
+      },
+      "orientation": "up",
+      "geometry": {
+        "x": 175.5,
+        "y": 420,
+        "w": 55,
+        "h": 50
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_sum_out",
+      "source_fact_id": "19",
+      "component_key": "sum_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1315.0,
+        "y": 245.0,
+        "w": 42.0,
+        "h": 42.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_single_bit_quantizer",
+      "source_fact_id": "20",
+      "component_key": "one_bit_quantizer_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1395.0,
+        "y": 235.0,
+        "w": 65.0,
+        "h": 65.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_y_z",
+      "source_fact_id": "21",
+      "component_key": "generic_block",
+      "label": "Y(z)",
+      "label_bindings": {
+        "main": "Y(z)"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1550.0,
+        "y": 245.0,
+        "w": 70.0,
+        "h": 28.0
+      },
+      "ports": {},
+      "style": {
+        "mx_style": "text;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=30;fontStyle=1;strokeColor=none;fillColor=none;"
+      }
+    },
+    {
+      "id": "j_mid_x_b1",
+      "source_fact_id": "j_mid_x_b1",
+      "component_key": "junction_dot_inline",
+      "label": "",
+      "label_bindings": {},
+      "orientation": "right",
+      "geometry": {
+        "x": 97.5,
+        "y": 252.0,
+        "w": 10,
+        "h": 10
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "j_mid_nt1_c2",
+      "source_fact_id": "j_mid_nt1_c2",
+      "component_key": "junction_dot_inline",
+      "label": "",
+      "label_bindings": {},
+      "orientation": "right",
+      "geometry": {
+        "x": 337.5,
+        "y": 250.0,
+        "w": 10,
+        "h": 10
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "j_mid_nt2_sum2",
+      "source_fact_id": "j_mid_nt2_sum2",
+      "component_key": "junction_dot_inline",
+      "label": "",
+      "label_bindings": {},
+      "orientation": "right",
+      "geometry": {
+        "x": 560.0,
+        "y": 249.0,
+        "w": 10,
+        "h": 10
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "j_mid_nt3_c4",
+      "source_fact_id": "j_mid_nt3_c4",
+      "component_key": "junction_dot_inline",
+      "label": "",
+      "label_bindings": {},
+      "orientation": "right",
+      "geometry": {
+        "x": 867.5,
+        "y": 250.0,
+        "w": 10,
+        "h": 10
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "j_mid_nt4_a4",
+      "source_fact_id": "j_mid_nt4_a4",
+      "component_key": "junction_dot_inline",
+      "label": "",
+      "label_bindings": {},
+      "orientation": "right",
+      "geometry": {
+        "x": 1090.0,
+        "y": 250.0,
+        "w": 10,
+        "h": 10
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "j_mid_q_y",
+      "source_fact_id": "j_mid_q_y",
+      "component_key": "junction_dot_inline",
+      "label": "",
+      "label_bindings": {},
+      "orientation": "right",
+      "geometry": {
+        "x": 1535.0,
+        "y": 258.25,
+        "w": 10,
+        "h": 10
+      },
+      "ports": {},
+      "style": {}
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_line_0",
+      "source": "b_x_z",
+      "target": "b_b1.in1",
+      "targets": [
+        "b_b1.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          90.0,
+          259.0
+        ],
+        "target_xy": [
+          115.0,
+          255.0
+        ],
+        "waypoints": [
+          [
+            102.5,
+            257.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_1",
+      "source": "b_b1.out1",
+      "target": "b_sum1.in1",
+      "targets": [
+        "b_sum1.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          165.0,
+          255.0
+        ],
+        "target_xy": [
+          185.0,
+          253.0
+        ],
+        "waypoints": [
+          [
+            165.0,
+            253.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_2",
+      "source": "b_sum1.out1",
+      "target": "b_nt1.in1",
+      "targets": [
+        "b_nt1.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          221.0,
+          253.0
+        ],
+        "target_xy": [
+          250.0,
+          255.0
+        ],
+        "waypoints": [
+          [
+            221.0,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_3",
+      "source": "b_nt1.out1",
+      "target": "b_c2.in1",
+      "targets": [
+        "b_c2.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          320.0,
+          255.0
+        ],
+        "target_xy": [
+          365.0,
+          255.0
+        ],
+        "waypoints": [
+          [
+            342.5,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_4",
+      "source": "b_c2.out1",
+      "target": "b_nt2.in1",
+      "targets": [
+        "b_nt2.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          420.0,
+          255.0
+        ],
+        "target_xy": [
+          465.0,
+          255.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_5",
+      "source": "b_nt2.out1",
+      "target": "b_sum2.in1",
+      "targets": [
+        "b_sum2.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          535.0,
+          255.0
+        ],
+        "target_xy": [
+          595.0,
+          253.0
+        ],
+        "waypoints": [
+          [
+            565.0,
+            254.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_6",
+      "source": "b_sum2.out1",
+      "target": "b_c3.in1",
+      "targets": [
+        "b_c3.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          631.0,
+          253.0
+        ],
+        "target_xy": [
+          675.0,
+          255.0
+        ],
+        "waypoints": [
+          [
+            631.0,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_7",
+      "source": "b_c3.out1",
+      "target": "b_nt3.in1",
+      "targets": [
+        "b_nt3.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          730.0,
+          255.0
+        ],
+        "target_xy": [
+          775.0,
+          255.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_8",
+      "source": "b_nt3.out1",
+      "target": "b_c4.in1",
+      "targets": [
+        "b_c4.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          845.0,
+          255.0
+        ],
+        "target_xy": [
+          900.0,
+          255.0
+        ],
+        "waypoints": [
+          [
+            872.5,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_9",
+      "source": "b_c4.out1",
+      "target": "b_nt4.in1",
+      "targets": [
+        "b_nt4.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          955.0,
+          255.0
+        ],
+        "target_xy": [
+          1005.0,
+          255.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_10",
+      "source": "b_nt4.out1",
+      "target": "b_a4.in1",
+      "targets": [
+        "b_a4.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1075.0,
+          255.0
+        ],
+        "target_xy": [
+          1115.0,
+          255.0
+        ],
+        "waypoints": [
+          [
+            1095.0,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_11",
+      "source": "b_a4.out1",
+      "target": "b_sum_out.in1",
+      "targets": [
+        "b_sum_out.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1170.0,
+          255.0
+        ],
+        "target_xy": [
+          1315.0,
+          266.0
+        ],
+        "waypoints": [
+          [
+            1315.0,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_12",
+      "source": "j_mid_nt3_c4.center",
+      "target": "b_a3.in1",
+      "targets": [
+        "b_a3.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          872.5,
+          255.0
+        ],
+        "target_xy": [
+          1115.0,
+          365.0
+        ],
+        "waypoints": [
+          [
+            872.5,
+            365.0
+          ]
+        ],
+        "stroke_width": 3
+      },
+      "semantic_source": "b_nt3.out1"
+    },
+    {
+      "id": "e_line_13",
+      "source": "b_a3.out1",
+      "target": "b_sum_out.in3",
+      "targets": [
+        "b_sum_out.in3"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1170.0,
+          365.0
+        ],
+        "target_xy": [
+          1336.0,
+          287.0
+        ],
+        "waypoints": [
+          [
+            1336.0,
+            365.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_14",
+      "source": "j_mid_nt2_sum2.center",
+      "target": "b_a2.in1",
+      "targets": [
+        "b_a2.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          565.0,
+          254.0
+        ],
+        "target_xy": [
+          1115.0,
+          485.0
+        ],
+        "waypoints": [
+          [
+            565.0,
+            485.0
+          ]
+        ],
+        "stroke_width": 3
+      },
+      "semantic_source": "b_nt2.out1"
+    },
+    {
+      "id": "e_line_15",
+      "source": "b_a2.out1",
+      "target": "b_sum_out.in3",
+      "targets": [
+        "b_sum_out.in3"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1170.0,
+          485.0
+        ],
+        "target_xy": [
+          1336.0,
+          287.0
+        ],
+        "waypoints": [
+          [
+            1336.0,
+            485.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_16",
+      "source": "j_mid_nt1_c2.center",
+      "target": "b_a1.in1",
+      "targets": [
+        "b_a1.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          342.5,
+          255.0
+        ],
+        "target_xy": [
+          1115.0,
+          600.0
+        ],
+        "waypoints": [
+          [
+            342.5,
+            600.0
+          ]
+        ],
+        "stroke_width": 3
+      },
+      "semantic_source": "b_nt1.out1"
+    },
+    {
+      "id": "e_line_17",
+      "source": "b_a1.out1",
+      "target": "b_sum_out.in4",
+      "targets": [
+        "b_sum_out.in4"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1170.0,
+          600.0
+        ],
+        "target_xy": [
+          1336.0,
+          287.0
+        ],
+        "waypoints": [
+          [
+            1336.0,
+            600.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_18",
+      "source": "j_mid_x_b1.center",
+      "target": "b_b2.in1",
+      "targets": [
+        "b_b2.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          102.5,
+          257.0
+        ],
+        "target_xy": [
+          485.0,
+          95.0
+        ],
+        "waypoints": [
+          [
+            102.5,
+            95.0
+          ]
+        ],
+        "stroke_width": 3
+      },
+      "semantic_source": "b_x_z"
+    },
+    {
+      "id": "e_line_19",
+      "source": "b_b2.out1",
+      "target": "b_sum_out.in5",
+      "targets": [
+        "b_sum_out.in5"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          540.0,
+          95.0
+        ],
+        "target_xy": [
+          1336.0,
+          287.0
+        ],
+        "waypoints": [
+          [
+            1336.0,
+            95.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_20",
+      "source": "j_mid_nt4_a4.center",
+      "target": "b_g1.in1",
+      "targets": [
+        "b_g1.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1095.0,
+          255.0
+        ],
+        "target_xy": [
+          895.0,
+          150.0
+        ],
+        "waypoints": [
+          [
+            1095.0,
+            150.0
+          ]
+        ],
+        "stroke_width": 3
+      },
+      "semantic_source": "b_nt4.out1"
+    },
+    {
+      "id": "e_line_21",
+      "source": "b_g1.out1",
+      "target": "b_sum2.in2",
+      "targets": [
+        "b_sum2.in2"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          840.0,
+          150.0
+        ],
+        "target_xy": [
+          613.0,
+          235.0
+        ],
+        "waypoints": [
+          [
+            613.0,
+            150.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_22",
+      "source": "b_sum_out.out1",
+      "target": "b_single_bit_quantizer.in1",
+      "targets": [
+        "b_single_bit_quantizer.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1357.0,
+          266.0
+        ],
+        "target_xy": [
+          1395.0,
+          267.5
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_23",
+      "source": "b_single_bit_quantizer.out1",
+      "target": "b_y_z",
+      "targets": [
+        "b_y_z"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1460.0,
+          267.5
+        ],
+        "target_xy": [
+          1620.0,
+          259.0
+        ],
+        "waypoints": [
+          [
+            1540.0,
+            263.25
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_24",
+      "source": "j_mid_q_y.center",
+      "target": "b_c1.in1",
+      "targets": [
+        "b_c1.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          1540.0,
+          263.25
+        ],
+        "target_xy": [
+          203.0,
+          470
+        ],
+        "waypoints": [
+          [
+            1540.0,
+            470
+          ]
+        ],
+        "stroke_width": 3
+      },
+      "semantic_source": "b_single_bit_quantizer.out1"
+    },
+    {
+      "id": "e_line_25",
+      "source": "b_c1.out1",
+      "target": "b_sum1.in3",
+      "targets": [
+        "b_sum1.in3"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          203.0,
+          420
+        ],
+        "target_xy": [
+          203.0,
+          271.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    }
+  ],
+  "groups": [],
+  "alignments": [
+    {
+      "type": "main_chain_only",
+      "exclude_side_paths": [
+        "b2",
+        "g1",
+        "c1",
+        "a1",
+        "a2",
+        "a3"
+      ]
+    }
+  ],
+  "layout_rationale": {
+    "notes": "Restore Case2 reference multilane layout from source positions; align only the main chain, preserve side-path lanes."
+  }
+}

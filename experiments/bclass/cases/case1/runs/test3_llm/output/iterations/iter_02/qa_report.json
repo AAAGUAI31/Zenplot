@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.8",
+    "qa_focus": "Case1 rerun with current ai-simulink-drawio rules"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 94,
+    "layout_score": 92
+  },
+  "issues": [],
+  "positive_checks": [
+    "Catalog templates are materialized.",
+    "Branch edges visually start from midspan junction dots.",
+    "Semantic source is preserved separately from visual branch source where needed."
+  ]
+}

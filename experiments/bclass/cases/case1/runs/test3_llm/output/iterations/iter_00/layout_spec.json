@@ -1,0 +1,862 @@
+{
+  "canvas": {
+    "x": 0,
+    "y": 0,
+    "w": 1700,
+    "h": 900
+  },
+  "nodes": [
+    {
+      "id": "b_vin",
+      "source_fact_id": "1",
+      "component_key": "generic_block",
+      "label": "Vin",
+      "label_bindings": {
+        "main": "Vin"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 45.0,
+        "y": 245.0,
+        "w": 30.0,
+        "h": 20.0
+      },
+      "ports": {},
+      "style": {
+        "mx_style": "text;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=30;fontStyle=1;strokeColor=none;fillColor=none;"
+      }
+    },
+    {
+      "id": "b_vbe",
+      "source_fact_id": "16",
+      "component_key": "generic_block",
+      "label": "+VBE",
+      "label_bindings": {
+        "main": "+VBE"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 295.0,
+        "y": 40.0,
+        "w": 50.0,
+        "h": 20.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_alphadeltavbe",
+      "source_fact_id": "13",
+      "component_key": "generic_block",
+      "label": "+alphaDeltaVBE",
+      "label_bindings": {
+        "main": "+alphaDeltaVBE"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 110.0,
+        "y": 40.0,
+        "w": 50.0,
+        "h": 20.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_vbe",
+      "source_fact_id": "17",
+      "component_key": "generic_block",
+      "label": "-VBE",
+      "label_bindings": {
+        "main": "-VBE"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 295.0,
+        "y": 80.0,
+        "w": 50.0,
+        "h": 20.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_alphadeltavbe",
+      "source_fact_id": "14",
+      "component_key": "generic_block",
+      "label": "-alphaDeltaVBE",
+      "label_bindings": {
+        "main": "-alphaDeltaVBE"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 110.0,
+        "y": 80.0,
+        "w": 50.0,
+        "h": 20.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_0_05_ff",
+      "source_fact_id": "12",
+      "component_key": "gain_inline",
+      "label": "0.05",
+      "label_bindings": {
+        "main": "0.05"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 720.0,
+        "y": 235.0,
+        "w": 50.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_0_3_ff",
+      "source_fact_id": "11",
+      "component_key": "gain_inline",
+      "label": "0.3",
+      "label_bindings": {
+        "main": "0.3"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 720.0,
+        "y": 145.0,
+        "w": 50.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_0_8_ff",
+      "source_fact_id": "10",
+      "component_key": "gain_inline",
+      "label": "0.8",
+      "label_bindings": {
+        "main": "0.8"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 720.0,
+        "y": 75.0,
+        "w": 50.0,
+        "h": 50.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_0_8_input",
+      "source_fact_id": "2",
+      "component_key": "gain_inline",
+      "label": "0.8",
+      "label_bindings": {
+        "main": "0.8"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 110.0,
+        "y": 226.0,
+        "w": 50.0,
+        "h": 58.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_1_bit_quantizer",
+      "source_fact_id": "8",
+      "component_key": "one_bit_quantizer_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 920.0,
+        "y": 215.0,
+        "w": 55.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_integrator_1",
+      "source_fact_id": "4",
+      "component_key": "continuous_integrator_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 315.0,
+        "y": 215.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_integrator_2",
+      "source_fact_id": "5",
+      "component_key": "continuous_integrator_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 470.0,
+        "y": 215.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_integrator_3",
+      "source_fact_id": "6",
+      "component_key": "continuous_integrator_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 625.0,
+        "y": 215.0,
+        "w": 70.0,
+        "h": 70.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_vbe_switch",
+      "source_fact_id": "18",
+      "component_key": "generic_block",
+      "label": "VBE switch",
+      "label_bindings": {
+        "main": "VBE switch"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 390.0,
+        "y": 38.0,
+        "w": 50.0,
+        "h": 64.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_alphadeltavbe_switch",
+      "source_fact_id": "15",
+      "component_key": "generic_block",
+      "label": "alphaDeltaVBE switch",
+      "label_bindings": {
+        "main": "alphaDeltaVBE switch"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 205.0,
+        "y": 38.0,
+        "w": 50.0,
+        "h": 64.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_error_sum",
+      "source_fact_id": "3",
+      "component_key": "sum_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 205.0,
+        "y": 235.0,
+        "w": 30.0,
+        "h": 30.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_feedforward_sum",
+      "source_fact_id": "7",
+      "component_key": "sum_inline",
+      "label": "",
+      "label_bindings": {
+        "main": ""
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 845.0,
+        "y": 235.0,
+        "w": 30.0,
+        "h": 30.0
+      },
+      "ports": {},
+      "style": {}
+    },
+    {
+      "id": "b_bs",
+      "source_fact_id": "9",
+      "component_key": "generic_block",
+      "label": "BS",
+      "label_bindings": {
+        "main": "BS"
+      },
+      "orientation": "right",
+      "geometry": {
+        "x": 1080.0,
+        "y": 245.0,
+        "w": 30.0,
+        "h": 20.0
+      },
+      "ports": {},
+      "style": {
+        "mx_style": "text;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=30;fontStyle=1;strokeColor=none;fillColor=none;"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_line_0",
+      "source": "b_vin",
+      "target": "b_0_8_input.in1",
+      "targets": [
+        "b_0_8_input.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          75.0,
+          255.0
+        ],
+        "target_xy": [
+          110.0,
+          255.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_1",
+      "source": "b_0_8_input.out1",
+      "target": "b_error_sum.in1",
+      "targets": [
+        "b_error_sum.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          160.0,
+          255.0
+        ],
+        "target_xy": [
+          205.0,
+          242.5
+        ],
+        "waypoints": [
+          [
+            205.0,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_2",
+      "source": "b_error_sum.out1",
+      "target": "b_integrator_1.in1",
+      "targets": [
+        "b_integrator_1.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          235.0,
+          250.0
+        ],
+        "target_xy": [
+          315.0,
+          250.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_3_b0",
+      "source": "b_integrator_1.out1",
+      "target": "b_integrator_2.in1",
+      "targets": [
+        "b_integrator_2.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          385.0,
+          250.0
+        ],
+        "target_xy": [
+          470.0,
+          250.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_3_b1",
+      "source": "b_integrator_1.out1",
+      "target": "b_0_8_ff.in1",
+      "targets": [
+        "b_0_8_ff.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          385.0,
+          250.0
+        ],
+        "target_xy": [
+          720.0,
+          100.0
+        ],
+        "waypoints": [
+          [
+            385.0,
+            100.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_4_b0",
+      "source": "b_integrator_2.out1",
+      "target": "b_integrator_3.in1",
+      "targets": [
+        "b_integrator_3.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          540.0,
+          250.0
+        ],
+        "target_xy": [
+          625.0,
+          250.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_4_b1",
+      "source": "b_integrator_2.out1",
+      "target": "b_0_3_ff.in1",
+      "targets": [
+        "b_0_3_ff.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          540.0,
+          250.0
+        ],
+        "target_xy": [
+          720.0,
+          170.0
+        ],
+        "waypoints": [
+          [
+            540.0,
+            170.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_5",
+      "source": "b_integrator_3.out1",
+      "target": "b_0_05_ff.in1",
+      "targets": [
+        "b_0_05_ff.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          695.0,
+          250.0
+        ],
+        "target_xy": [
+          720.0,
+          260.0
+        ],
+        "waypoints": [
+          [
+            695.0,
+            260.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_6",
+      "source": "b_0_05_ff.out1",
+      "target": "b_feedforward_sum.in3",
+      "targets": [
+        "b_feedforward_sum.in3"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          770.0,
+          260.0
+        ],
+        "target_xy": [
+          845.0,
+          257.5
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_7",
+      "source": "b_feedforward_sum.out1",
+      "target": "b_1_bit_quantizer.in1",
+      "targets": [
+        "b_1_bit_quantizer.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          875.0,
+          250.0
+        ],
+        "target_xy": [
+          920.0,
+          250.0
+        ],
+        "waypoints": [],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_8_b0_b0",
+      "source": "b_1_bit_quantizer.out1",
+      "target": "b_alphadeltavbe_switch.in1",
+      "targets": [
+        "b_alphadeltavbe_switch.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          975.0,
+          250.0
+        ],
+        "target_xy": [
+          205.0,
+          70.0
+        ],
+        "waypoints": [
+          [
+            975.0,
+            70.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_8_b0_b1",
+      "source": "b_1_bit_quantizer.out1",
+      "target": "b_vbe_switch.in1",
+      "targets": [
+        "b_vbe_switch.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          975.0,
+          250.0
+        ],
+        "target_xy": [
+          390.0,
+          70.0
+        ],
+        "waypoints": [
+          [
+            975.0,
+            70.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_8_b1",
+      "source": "b_1_bit_quantizer.out1",
+      "target": "b_bs",
+      "targets": [
+        "b_bs"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          975.0,
+          250.0
+        ],
+        "target_xy": [
+          1080.0,
+          255.0
+        ],
+        "waypoints": [
+          [
+            975.0,
+            255.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_9",
+      "source": "b_0_8_ff.out1",
+      "target": "b_feedforward_sum.in2",
+      "targets": [
+        "b_feedforward_sum.in2"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          770.0,
+          100.0
+        ],
+        "target_xy": [
+          860.0,
+          235.0
+        ],
+        "waypoints": [
+          [
+            770.0,
+            235.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_10",
+      "source": "b_0_3_ff.out1",
+      "target": "b_feedforward_sum.in2",
+      "targets": [
+        "b_feedforward_sum.in2"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          770.0,
+          170.0
+        ],
+        "target_xy": [
+          860.0,
+          235.0
+        ],
+        "waypoints": [
+          [
+            770.0,
+            235.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_11",
+      "source": "b_alphadeltavbe.out1",
+      "target": "b_alphadeltavbe_switch.in1",
+      "targets": [
+        "b_alphadeltavbe_switch.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          160.0,
+          50.0
+        ],
+        "target_xy": [
+          205.0,
+          70.0
+        ],
+        "waypoints": [
+          [
+            160.0,
+            70.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_12",
+      "source": "b_alphadeltavbe.out1",
+      "target": "b_alphadeltavbe_switch.in1",
+      "targets": [
+        "b_alphadeltavbe_switch.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          160.0,
+          90.0
+        ],
+        "target_xy": [
+          205.0,
+          70.0
+        ],
+        "waypoints": [
+          [
+            160.0,
+            70.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_13",
+      "source": "b_vbe.out1",
+      "target": "b_vbe_switch.in1",
+      "targets": [
+        "b_vbe_switch.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          345.0,
+          50.0
+        ],
+        "target_xy": [
+          390.0,
+          70.0
+        ],
+        "waypoints": [
+          [
+            345.0,
+            70.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_14",
+      "source": "b_vbe.out1",
+      "target": "b_vbe_switch.in1",
+      "targets": [
+        "b_vbe_switch.in1"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          345.0,
+          90.0
+        ],
+        "target_xy": [
+          390.0,
+          70.0
+        ],
+        "waypoints": [
+          [
+            345.0,
+            70.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_15",
+      "source": "b_alphadeltavbe_switch.out1",
+      "target": "b_error_sum.in2",
+      "targets": [
+        "b_error_sum.in2"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          255.0,
+          70.0
+        ],
+        "target_xy": [
+          220.0,
+          235.0
+        ],
+        "waypoints": [
+          [
+            255.0,
+            235.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    },
+    {
+      "id": "e_line_16",
+      "source": "b_vbe_switch.out1",
+      "target": "b_error_sum.in2",
+      "targets": [
+        "b_error_sum.in2"
+      ],
+      "route": {
+        "style": "orthogonal",
+        "source_xy": [
+          440.0,
+          70.0
+        ],
+        "target_xy": [
+          220.0,
+          235.0
+        ],
+        "waypoints": [
+          [
+            440.0,
+            235.0
+          ]
+        ],
+        "stroke_width": 3
+      }
+    }
+  ],
+  "groups": [],
+  "alignments": [],
+  "layout_rationale": {
+    "reference_image": "E:\\文档\\实习\\科研 绘图\\Code\\输入\\B类论文图\\参考_标准答案\\output1.png",
+    "notes": "LLM-planned layout preserves XML topology, uses catalog components, bottom feedback lanes, and vertical-down top inputs."
+  }
+}

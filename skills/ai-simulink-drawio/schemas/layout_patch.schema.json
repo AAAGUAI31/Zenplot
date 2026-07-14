@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LayoutPatch",
+  "type": "object",
+  "required": ["base_iteration", "patches", "expected_improvements"],
+  "properties": {
+    "base_iteration": {"type": "integer"},
+    "patches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["operation", "target", "reason"],
+        "properties": {
+          "operation": {
+            "enum": [
+              "move_node",
+              "resize_node",
+              "set_orientation",
+              "change_component_key",
+              "change_source_port",
+              "change_target_port",
+              "set_waypoints",
+              "change_route_class",
+              "align_nodes",
+              "distribute_nodes",
+              "move_label",
+              "adjust_canvas"
+            ]
+          },
+          "target": {},
+          "value": {},
+          "delta": {},
+          "reason": {"type": "string"},
+          "qa_issue_ids": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "expected_improvements": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

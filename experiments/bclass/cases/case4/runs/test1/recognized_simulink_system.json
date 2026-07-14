@@ -1,0 +1,447 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source": "case4_image",
+    "target": "simulink_system_root_xml"
+  },
+  "system": {
+    "properties": {
+      "Location": "[80, 80, 1500, 850]",
+      "ZoomFactor": "100",
+      "SIDHighWatermark": "34"
+    }
+  },
+  "blocks": [
+    {
+      "sid": "1",
+      "id": "x_z",
+      "name": "X(z)",
+      "block_type": "Inport",
+      "semantic_type": "inport",
+      "parameters": {},
+      "port_counts": {
+        "in": 0,
+        "out": 1
+      },
+      "position": [
+        25,
+        155,
+        90,
+        190
+      ],
+      "z_order": 1
+    },
+    {
+      "sid": "2",
+      "id": "sum1",
+      "name": "sum1",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        120,
+        145,
+        165,
+        190
+      ],
+      "z_order": 2
+    },
+    {
+      "sid": "3",
+      "id": "alpha1",
+      "name": "alpha1",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "alpha1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        205,
+        130,
+        285,
+        195
+      ],
+      "z_order": 3
+    },
+    {
+      "sid": "4",
+      "id": "h1",
+      "name": "H1",
+      "block_type": "DiscreteTransferFcn",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Numerator": "z^-1",
+        "Denominator": "1-z^-1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        330,
+        120,
+        450,
+        200
+      ],
+      "z_order": 4
+    },
+    {
+      "sid": "5",
+      "id": "sum2",
+      "name": "sum2",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        520,
+        145,
+        565,
+        190
+      ],
+      "z_order": 5
+    },
+    {
+      "sid": "6",
+      "id": "alpha2",
+      "name": "alpha2",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "alpha2"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        610,
+        130,
+        690,
+        195
+      ],
+      "z_order": 6
+    },
+    {
+      "sid": "7",
+      "id": "h2",
+      "name": "H2",
+      "block_type": "DiscreteTransferFcn",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Numerator": "z^-1",
+        "Denominator": "1-z^-1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        735,
+        120,
+        855,
+        200
+      ],
+      "z_order": 7
+    },
+    {
+      "sid": "8",
+      "id": "sum3",
+      "name": "sum3",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        930,
+        145,
+        975,
+        190
+      ],
+      "z_order": 8
+    },
+    {
+      "sid": "9",
+      "id": "alpha3",
+      "name": "alpha3",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "alpha3"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1020,
+        130,
+        1100,
+        195
+      ],
+      "z_order": 9
+    },
+    {
+      "sid": "10",
+      "id": "h3",
+      "name": "H3",
+      "block_type": "DiscreteTransferFcn",
+      "semantic_type": "delay_integrator",
+      "parameters": {
+        "Numerator": "z^-1",
+        "Denominator": "1-z^-1"
+      },
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1145,
+        120,
+        1265,
+        200
+      ],
+      "z_order": 10
+    },
+    {
+      "sid": "11",
+      "id": "sum_out",
+      "name": "sum_out",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {},
+      "port_counts": {
+        "in": 2,
+        "out": 1
+      },
+      "position": [
+        1320,
+        145,
+        1365,
+        190
+      ],
+      "z_order": 11
+    },
+    {
+      "sid": "12",
+      "id": "e_z",
+      "name": "E(z)",
+      "block_type": "Inport",
+      "semantic_type": "inport",
+      "parameters": {},
+      "port_counts": {
+        "in": 0,
+        "out": 1
+      },
+      "position": [
+        1310,
+        20,
+        1380,
+        55
+      ],
+      "z_order": 12
+    },
+    {
+      "sid": "13",
+      "id": "y_z",
+      "name": "Y(z)",
+      "block_type": "Outport",
+      "semantic_type": "outport",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 0
+      },
+      "position": [
+        1440,
+        155,
+        1510,
+        190
+      ],
+      "z_order": 13
+    },
+    {
+      "sid": "14",
+      "id": "dac",
+      "name": "DAC",
+      "block_type": "SubSystem",
+      "semantic_type": "dac",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        1145,
+        385,
+        1290,
+        465
+      ],
+      "z_order": 14
+    }
+  ],
+  "lines": [
+    {
+      "src": "1#out:1",
+      "dst": "2#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 1
+    },
+    {
+      "src": "2#out:1",
+      "dst": "3#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 2
+    },
+    {
+      "src": "3#out:1",
+      "dst": "4#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 3
+    },
+    {
+      "src": "4#out:1",
+      "dst": "5#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 4
+    },
+    {
+      "src": "5#out:1",
+      "dst": "6#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 5
+    },
+    {
+      "src": "6#out:1",
+      "dst": "7#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 6
+    },
+    {
+      "src": "7#out:1",
+      "dst": "8#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 7
+    },
+    {
+      "src": "8#out:1",
+      "dst": "9#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 8
+    },
+    {
+      "src": "9#out:1",
+      "dst": "10#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 9
+    },
+    {
+      "src": "10#out:1",
+      "dst": "11#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 10
+    },
+    {
+      "src": "12#out:1",
+      "dst": "11#in:2",
+      "points": [
+        0,
+        110
+      ],
+      "branches": [],
+      "z_order": 11
+    },
+    {
+      "src": "11#out:1",
+      "dst": "13#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 12
+    },
+    {
+      "src": "11#out:1",
+      "dst": "14#in:1",
+      "points": [
+        38,
+        0,
+        0,
+        275,
+        -210,
+        0
+      ],
+      "branches": [],
+      "z_order": 13
+    },
+    {
+      "src": "14#out:1",
+      "dst": "2#in:2",
+      "points": [
+        -1010,
+        0,
+        0,
+        -250
+      ],
+      "branches": [
+        {
+          "dst": "5#in:2",
+          "points": [
+            400,
+            0,
+            0,
+            -250
+          ],
+          "branches": [],
+          "z_order": 0
+        },
+        {
+          "dst": "8#in:2",
+          "points": [
+            810,
+            0,
+            0,
+            -250
+          ],
+          "branches": [],
+          "z_order": 0
+        }
+      ],
+      "z_order": 14
+    }
+  ],
+  "annotations": [],
+  "layout": {
+    "recognized_from": "paper_image",
+    "case": "case4"
+  },
+  "style": {
+    "diagram_family": "b_class_control_block_diagram"
+  },
+  "evidence": {
+    "source": "manual image recognition benchmark",
+    "unresolved": []
+  }
+}

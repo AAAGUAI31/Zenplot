@@ -1,0 +1,897 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source_format": "simulink_system_root_xml",
+    "source_file": "E:\\文档\\实习\\科研 绘图\\Code\\输入\\B类论文图\\test2_LLM\\case1\\system_root.xml"
+  },
+  "source_facts": {
+    "nodes": [
+      {
+        "sid": "1",
+        "id": "b_vin",
+        "name": "Vin",
+        "block_type": "Inport",
+        "parameters": {
+          "Position": "[45, 245, 75, 265]",
+          "ZOrder": "1"
+        },
+        "port_counts": {},
+        "position": [
+          45.0,
+          245.0,
+          75.0,
+          265.0
+        ],
+        "z_order": 1
+      },
+      {
+        "sid": "16",
+        "id": "b_vbe",
+        "name": "+VBE",
+        "block_type": "Constant",
+        "parameters": {
+          "Position": "[295, 40, 345, 60]",
+          "ZOrder": "16",
+          "Value": "VBE"
+        },
+        "port_counts": {},
+        "position": [
+          295.0,
+          40.0,
+          345.0,
+          60.0
+        ],
+        "z_order": 16
+      },
+      {
+        "sid": "13",
+        "id": "b_alphadeltavbe",
+        "name": "+alphaDeltaVBE",
+        "block_type": "Constant",
+        "parameters": {
+          "Position": "[110, 40, 160, 60]",
+          "ZOrder": "13",
+          "Value": "alphaDeltaVBE"
+        },
+        "port_counts": {},
+        "position": [
+          110.0,
+          40.0,
+          160.0,
+          60.0
+        ],
+        "z_order": 13
+      },
+      {
+        "sid": "17",
+        "id": "b_vbe",
+        "name": "-VBE",
+        "block_type": "Constant",
+        "parameters": {
+          "Position": "[295, 80, 345, 100]",
+          "ZOrder": "17",
+          "Value": "-VBE"
+        },
+        "port_counts": {},
+        "position": [
+          295.0,
+          80.0,
+          345.0,
+          100.0
+        ],
+        "z_order": 17
+      },
+      {
+        "sid": "14",
+        "id": "b_alphadeltavbe",
+        "name": "-alphaDeltaVBE",
+        "block_type": "Constant",
+        "parameters": {
+          "Position": "[110, 80, 160, 100]",
+          "ZOrder": "14",
+          "Value": "-alphaDeltaVBE"
+        },
+        "port_counts": {},
+        "position": [
+          110.0,
+          80.0,
+          160.0,
+          100.0
+        ],
+        "z_order": 14
+      },
+      {
+        "sid": "12",
+        "id": "b_0_05_ff",
+        "name": "0.05 ff",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[720, 235, 770, 285]",
+          "ZOrder": "12",
+          "Gain": "0.05"
+        },
+        "port_counts": {},
+        "position": [
+          720.0,
+          235.0,
+          770.0,
+          285.0
+        ],
+        "z_order": 12
+      },
+      {
+        "sid": "11",
+        "id": "b_0_3_ff",
+        "name": "0.3 ff",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[720, 145, 770, 195]",
+          "ZOrder": "11",
+          "Gain": "0.3"
+        },
+        "port_counts": {},
+        "position": [
+          720.0,
+          145.0,
+          770.0,
+          195.0
+        ],
+        "z_order": 11
+      },
+      {
+        "sid": "10",
+        "id": "b_0_8_ff",
+        "name": "0.8 ff",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[720, 75, 770, 125]",
+          "ZOrder": "10",
+          "Gain": "0.8"
+        },
+        "port_counts": {},
+        "position": [
+          720.0,
+          75.0,
+          770.0,
+          125.0
+        ],
+        "z_order": 10
+      },
+      {
+        "sid": "2",
+        "id": "b_0_8_input",
+        "name": "0.8 input",
+        "block_type": "Gain",
+        "parameters": {
+          "Position": "[110, 226, 160, 284]",
+          "ZOrder": "2",
+          "Gain": "0.8"
+        },
+        "port_counts": {},
+        "position": [
+          110.0,
+          226.0,
+          160.0,
+          284.0
+        ],
+        "z_order": 2
+      },
+      {
+        "sid": "8",
+        "id": "b_1_bit_quantizer",
+        "name": "1-bit quantizer",
+        "block_type": "Relay",
+        "parameters": {
+          "Position": "[920, 215, 975, 285]",
+          "ZOrder": "8",
+          "OnSwitchValue": "0",
+          "OffSwitchValue": "0",
+          "OffOutputValue": "-1"
+        },
+        "port_counts": {},
+        "position": [
+          920.0,
+          215.0,
+          975.0,
+          285.0
+        ],
+        "z_order": 8
+      },
+      {
+        "sid": "4",
+        "id": "b_integrator_1",
+        "name": "Integrator 1",
+        "block_type": "Integrator",
+        "parameters": {
+          "Position": "[315, 215, 385, 285]",
+          "ZOrder": "4"
+        },
+        "port_counts": {
+          "in": 1,
+          "out": 1
+        },
+        "position": [
+          315.0,
+          215.0,
+          385.0,
+          285.0
+        ],
+        "z_order": 4
+      },
+      {
+        "sid": "5",
+        "id": "b_integrator_2",
+        "name": "Integrator 2",
+        "block_type": "Integrator",
+        "parameters": {
+          "Position": "[470, 215, 540, 285]",
+          "ZOrder": "5"
+        },
+        "port_counts": {
+          "in": 1,
+          "out": 1
+        },
+        "position": [
+          470.0,
+          215.0,
+          540.0,
+          285.0
+        ],
+        "z_order": 5
+      },
+      {
+        "sid": "6",
+        "id": "b_integrator_3",
+        "name": "Integrator 3",
+        "block_type": "Integrator",
+        "parameters": {
+          "Position": "[625, 215, 695, 285]",
+          "ZOrder": "6"
+        },
+        "port_counts": {
+          "in": 1,
+          "out": 1
+        },
+        "position": [
+          625.0,
+          215.0,
+          695.0,
+          285.0
+        ],
+        "z_order": 6
+      },
+      {
+        "sid": "18",
+        "id": "b_vbe_switch",
+        "name": "VBE switch",
+        "block_type": "Switch",
+        "parameters": {
+          "Position": "[390, 38, 440, 102]",
+          "ZOrder": "18",
+          "InputSameDT": "off",
+          "SaturateOnIntegerOverflow": "off"
+        },
+        "port_counts": {},
+        "position": [
+          390.0,
+          38.0,
+          440.0,
+          102.0
+        ],
+        "z_order": 18
+      },
+      {
+        "sid": "15",
+        "id": "b_alphadeltavbe_switch",
+        "name": "alphaDeltaVBE switch",
+        "block_type": "Switch",
+        "parameters": {
+          "Position": "[205, 38, 255, 102]",
+          "ZOrder": "15",
+          "InputSameDT": "off",
+          "SaturateOnIntegerOverflow": "off"
+        },
+        "port_counts": {},
+        "position": [
+          205.0,
+          38.0,
+          255.0,
+          102.0
+        ],
+        "z_order": 15
+      },
+      {
+        "sid": "3",
+        "id": "b_error_sum",
+        "name": "error sum",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[205, 235, 235, 265]",
+          "ZOrder": "3",
+          "Inputs": "+--"
+        },
+        "port_counts": {
+          "in": 3,
+          "out": 1
+        },
+        "position": [
+          205.0,
+          235.0,
+          235.0,
+          265.0
+        ],
+        "z_order": 3
+      },
+      {
+        "sid": "7",
+        "id": "b_feedforward_sum",
+        "name": "feedforward sum",
+        "block_type": "Sum",
+        "parameters": {
+          "Position": "[845, 235, 875, 265]",
+          "ZOrder": "7",
+          "Inputs": "+++"
+        },
+        "port_counts": {
+          "in": 3,
+          "out": 1
+        },
+        "position": [
+          845.0,
+          235.0,
+          875.0,
+          265.0
+        ],
+        "z_order": 7
+      },
+      {
+        "sid": "9",
+        "id": "b_bs",
+        "name": "BS",
+        "block_type": "Outport",
+        "parameters": {
+          "Position": "[1080, 245, 1110, 265]",
+          "ZOrder": "9"
+        },
+        "port_counts": {},
+        "position": [
+          1080.0,
+          245.0,
+          1110.0,
+          265.0
+        ],
+        "z_order": 9
+      }
+    ],
+    "edges": [
+      {
+        "id": "l0",
+        "src": "1#out:1",
+        "dst": "2#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "l1",
+        "src": "2#out:1",
+        "dst": "3#in:1",
+        "points": [
+          30.0,
+          0.0,
+          0.0,
+          -35.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "l2",
+        "src": "3#out:1",
+        "dst": "4#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "l3",
+        "src": "4#out:1",
+        "dst": null,
+        "points": [
+          60.0,
+          0.0
+        ],
+        "branches": [
+          {
+            "id": "l3_b0",
+            "dst": "5#in:1",
+            "points": [],
+            "branches": []
+          },
+          {
+            "id": "l3_b1",
+            "dst": "10#in:1",
+            "points": [
+              0.0,
+              -150.0
+            ],
+            "branches": []
+          }
+        ]
+      },
+      {
+        "id": "l4",
+        "src": "5#out:1",
+        "dst": null,
+        "points": [
+          60.0,
+          0.0
+        ],
+        "branches": [
+          {
+            "id": "l4_b0",
+            "dst": "6#in:1",
+            "points": [],
+            "branches": []
+          },
+          {
+            "id": "l4_b1",
+            "dst": "11#in:1",
+            "points": [
+              0.0,
+              -80.0
+            ],
+            "branches": []
+          }
+        ]
+      },
+      {
+        "id": "l5",
+        "src": "6#out:1",
+        "dst": "12#in:1",
+        "points": [
+          0.0,
+          10.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "l6",
+        "src": "12#out:1",
+        "dst": "7#in:3",
+        "points": [
+          65.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "l7",
+        "src": "7#out:1",
+        "dst": "8#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "l8",
+        "src": "8#out:1",
+        "dst": null,
+        "points": [
+          0.0,
+          0.0
+        ],
+        "branches": [
+          {
+            "id": "l8_b0",
+            "dst": null,
+            "points": [
+              0.0,
+              -120.0,
+              -610.0,
+              0.0
+            ],
+            "branches": [
+              {
+                "id": "l8_b0_b0",
+                "dst": "15#in:2",
+                "points": [
+                  -185.0,
+                  0.0,
+                  0.0,
+                  -60.0
+                ],
+                "branches": []
+              },
+              {
+                "id": "l8_b0_b1",
+                "dst": "18#in:2",
+                "points": [
+                  0.0,
+                  -60.0
+                ],
+                "branches": []
+              }
+            ]
+          },
+          {
+            "id": "l8_b1",
+            "dst": "9#in:1",
+            "points": [
+              40.0,
+              0.0,
+              0.0,
+              5.0
+            ],
+            "branches": []
+          }
+        ]
+      },
+      {
+        "id": "l9",
+        "src": "10#out:1",
+        "dst": "7#in:1",
+        "points": [
+          85.0,
+          0.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "l10",
+        "src": "11#out:1",
+        "dst": "7#in:2",
+        "points": [
+          25.0,
+          0.0,
+          0.0,
+          80.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "l11",
+        "src": "13#out:1",
+        "dst": "15#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "l12",
+        "src": "14#out:1",
+        "dst": "15#in:3",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "l13",
+        "src": "16#out:1",
+        "dst": "18#in:1",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "l14",
+        "src": "17#out:1",
+        "dst": "18#in:3",
+        "points": [],
+        "branches": []
+      },
+      {
+        "id": "l15",
+        "src": "15#out:1",
+        "dst": "3#in:2",
+        "points": [
+          0.0,
+          140.0,
+          -75.0,
+          0.0,
+          0.0,
+          40.0
+        ],
+        "branches": []
+      },
+      {
+        "id": "l16",
+        "src": "18#out:1",
+        "dst": "3#in:3",
+        "points": [
+          0.0,
+          140.0,
+          -200.0,
+          0.0,
+          0.0,
+          70.0
+        ],
+        "branches": []
+      }
+    ],
+    "branches": [
+      {
+        "line_id": "l3",
+        "branches": [
+          {
+            "id": "l3_b0",
+            "dst": "5#in:1",
+            "points": [],
+            "branches": []
+          },
+          {
+            "id": "l3_b1",
+            "dst": "10#in:1",
+            "points": [
+              0.0,
+              -150.0
+            ],
+            "branches": []
+          }
+        ]
+      },
+      {
+        "line_id": "l4",
+        "branches": [
+          {
+            "id": "l4_b0",
+            "dst": "6#in:1",
+            "points": [],
+            "branches": []
+          },
+          {
+            "id": "l4_b1",
+            "dst": "11#in:1",
+            "points": [
+              0.0,
+              -80.0
+            ],
+            "branches": []
+          }
+        ]
+      },
+      {
+        "line_id": "l8",
+        "branches": [
+          {
+            "id": "l8_b0",
+            "dst": null,
+            "points": [
+              0.0,
+              -120.0,
+              -610.0,
+              0.0
+            ],
+            "branches": [
+              {
+                "id": "l8_b0_b0",
+                "dst": "15#in:2",
+                "points": [
+                  -185.0,
+                  0.0,
+                  0.0,
+                  -60.0
+                ],
+                "branches": []
+              },
+              {
+                "id": "l8_b0_b1",
+                "dst": "18#in:2",
+                "points": [
+                  0.0,
+                  -60.0
+                ],
+                "branches": []
+              }
+            ]
+          },
+          {
+            "id": "l8_b1",
+            "dst": "9#in:1",
+            "points": [
+              40.0,
+              0.0,
+              0.0,
+              5.0
+            ],
+            "branches": []
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "id": "ann_0",
+        "text": "",
+        "parameters": {
+          "Name": "Drawing style: black-and-white academic block diagram; thin orthogonal signal lines; triangular gains; circular summing nodes; three boxed continuous integrators; compact sans-serif math labels.",
+          "Position": "[170, 320, 1031, 335]",
+          "InternalMargins": "[0, 0, 0, 0]",
+          "ZOrder": "-1"
+        }
+      },
+      {
+        "id": "ann_1",
+        "text": "",
+        "parameters": {
+          "Name": "+/- alpha Delta VBE",
+          "Position": "[105, 10, 194, 25]",
+          "InternalMargins": "[0, 0, 0, 0]",
+          "ZOrder": "-2"
+        }
+      },
+      {
+        "id": "ann_2",
+        "text": "",
+        "parameters": {
+          "Name": "+/- VBE",
+          "Position": "[305, 10, 341, 25]",
+          "InternalMargins": "[0, 0, 0, 0]",
+          "ZOrder": "-3"
+        }
+      },
+      {
+        "id": "ann_3",
+        "text": "",
+        "parameters": {
+          "Name": "e",
+          "Position": "[250, 225, 257, 240]",
+          "InternalMargins": "[0, 0, 0, 0]",
+          "ZOrder": "-4"
+        }
+      }
+    ],
+    "system_properties": {
+      "Location": "[276, 76, 1244, 821]",
+      "Open": "on",
+      "ZoomFactor": "80",
+      "ReportName": "simulink-default.rpt",
+      "SIDHighWatermark": "22"
+    }
+  },
+  "inferred_semantics": {
+    "main_signal_flow": [
+      {
+        "nodes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "12",
+          "11",
+          "10",
+          "7",
+          "8",
+          "9"
+        ],
+        "supporting_facts": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "12",
+          "11",
+          "10",
+          "7",
+          "8",
+          "9"
+        ]
+      }
+    ],
+    "feedback_loops": [
+      {
+        "from": "8",
+        "to": "15",
+        "supporting_facts": [
+          "l8"
+        ]
+      },
+      {
+        "from": "8",
+        "to": "18",
+        "supporting_facts": [
+          "l8"
+        ]
+      },
+      {
+        "from": "18",
+        "to": "3",
+        "supporting_facts": [
+          "l16"
+        ]
+      }
+    ],
+    "feedforward_paths": [
+      {
+        "from": "4",
+        "to": "10",
+        "supporting_facts": [
+          "l3"
+        ]
+      },
+      {
+        "from": "5",
+        "to": "11",
+        "supporting_facts": [
+          "l4"
+        ]
+      },
+      {
+        "from": "10",
+        "to": "7",
+        "supporting_facts": [
+          "l9"
+        ]
+      },
+      {
+        "from": "11",
+        "to": "7",
+        "supporting_facts": [
+          "l10"
+        ]
+      },
+      {
+        "from": "14",
+        "to": "15",
+        "supporting_facts": [
+          "l12"
+        ]
+      },
+      {
+        "from": "17",
+        "to": "18",
+        "supporting_facts": [
+          "l14"
+        ]
+      },
+      {
+        "from": "15",
+        "to": "3",
+        "supporting_facts": [
+          "l15"
+        ]
+      }
+    ],
+    "functional_groups": [],
+    "semantic_roles": {
+      "1": "input",
+      "16": "constant",
+      "13": "constant",
+      "17": "constant",
+      "14": "constant",
+      "12": "gain",
+      "11": "gain",
+      "10": "gain",
+      "2": "gain",
+      "8": "quantizer",
+      "4": "state_or_delay",
+      "5": "state_or_delay",
+      "6": "state_or_delay",
+      "18": "switch",
+      "15": "switch",
+      "3": "adder",
+      "7": "adder",
+      "9": "output"
+    },
+    "preferred_signal_directions": {
+      "1": "right",
+      "16": "right",
+      "13": "right",
+      "17": "right",
+      "14": "right",
+      "12": "right",
+      "11": "right",
+      "10": "right",
+      "2": "right",
+      "8": "right",
+      "4": "right",
+      "5": "right",
+      "6": "right",
+      "18": "right",
+      "15": "right",
+      "3": "right",
+      "7": "right",
+      "9": "right"
+    }
+  },
+  "uncertainties": []
+}

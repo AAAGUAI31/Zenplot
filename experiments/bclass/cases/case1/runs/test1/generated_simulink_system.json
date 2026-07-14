@@ -1,0 +1,672 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source": "system_root_xml",
+    "target": "simulink_system_root_xml"
+  },
+  "system": {
+    "properties": {
+      "Location": "[276, 76, 1244, 821]",
+      "Open": "on",
+      "ZoomFactor": "80",
+      "ReportName": "simulink-default.rpt",
+      "SIDHighWatermark": "22"
+    }
+  },
+  "blocks": [
+    {
+      "sid": "1",
+      "id": "vin",
+      "name": "Vin",
+      "block_type": "Inport",
+      "semantic_type": "inport",
+      "parameters": {},
+      "port_counts": {},
+      "position": [
+        45,
+        245,
+        75,
+        265
+      ],
+      "z_order": 1
+    },
+    {
+      "sid": "16",
+      "id": "vbe",
+      "name": "+VBE",
+      "block_type": "Constant",
+      "semantic_type": "constant",
+      "parameters": {
+        "Value": "VBE"
+      },
+      "port_counts": {},
+      "position": [
+        295,
+        40,
+        345,
+        60
+      ],
+      "z_order": 16
+    },
+    {
+      "sid": "13",
+      "id": "alphadeltavbe",
+      "name": "+alphaDeltaVBE",
+      "block_type": "Constant",
+      "semantic_type": "constant",
+      "parameters": {
+        "Value": "alphaDeltaVBE"
+      },
+      "port_counts": {},
+      "position": [
+        110,
+        40,
+        160,
+        60
+      ],
+      "z_order": 13
+    },
+    {
+      "sid": "17",
+      "id": "vbe",
+      "name": "-VBE",
+      "block_type": "Constant",
+      "semantic_type": "constant",
+      "parameters": {
+        "Value": "-VBE"
+      },
+      "port_counts": {},
+      "position": [
+        295,
+        80,
+        345,
+        100
+      ],
+      "z_order": 17
+    },
+    {
+      "sid": "14",
+      "id": "alphadeltavbe",
+      "name": "-alphaDeltaVBE",
+      "block_type": "Constant",
+      "semantic_type": "constant",
+      "parameters": {
+        "Value": "-alphaDeltaVBE"
+      },
+      "port_counts": {},
+      "position": [
+        110,
+        80,
+        160,
+        100
+      ],
+      "z_order": 14
+    },
+    {
+      "sid": "12",
+      "id": "b_0_05_ff",
+      "name": "0.05 ff",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "0.05"
+      },
+      "port_counts": {},
+      "position": [
+        720,
+        235,
+        770,
+        285
+      ],
+      "z_order": 12
+    },
+    {
+      "sid": "11",
+      "id": "b_0_3_ff",
+      "name": "0.3 ff",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "0.3"
+      },
+      "port_counts": {},
+      "position": [
+        720,
+        145,
+        770,
+        195
+      ],
+      "z_order": 11
+    },
+    {
+      "sid": "10",
+      "id": "b_0_8_ff",
+      "name": "0.8 ff",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "0.8"
+      },
+      "port_counts": {},
+      "position": [
+        720,
+        75,
+        770,
+        125
+      ],
+      "z_order": 10
+    },
+    {
+      "sid": "2",
+      "id": "b_0_8_input",
+      "name": "0.8 input",
+      "block_type": "Gain",
+      "semantic_type": "gain",
+      "parameters": {
+        "Gain": "0.8"
+      },
+      "port_counts": {},
+      "position": [
+        110,
+        226,
+        160,
+        284
+      ],
+      "z_order": 2
+    },
+    {
+      "sid": "8",
+      "id": "b_1_bit_quantizer",
+      "name": "1-bit quantizer",
+      "block_type": "Relay",
+      "semantic_type": "quantizer",
+      "parameters": {
+        "OnSwitchValue": "0",
+        "OffSwitchValue": "0",
+        "OffOutputValue": "-1"
+      },
+      "port_counts": {},
+      "position": [
+        920,
+        215,
+        975,
+        285
+      ],
+      "z_order": 8
+    },
+    {
+      "sid": "4",
+      "id": "integrator_1",
+      "name": "Integrator 1",
+      "block_type": "Integrator",
+      "semantic_type": "integrator",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        315,
+        215,
+        385,
+        285
+      ],
+      "z_order": 4
+    },
+    {
+      "sid": "5",
+      "id": "integrator_2",
+      "name": "Integrator 2",
+      "block_type": "Integrator",
+      "semantic_type": "integrator",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        470,
+        215,
+        540,
+        285
+      ],
+      "z_order": 5
+    },
+    {
+      "sid": "6",
+      "id": "integrator_3",
+      "name": "Integrator 3",
+      "block_type": "Integrator",
+      "semantic_type": "integrator",
+      "parameters": {},
+      "port_counts": {
+        "in": 1,
+        "out": 1
+      },
+      "position": [
+        625,
+        215,
+        695,
+        285
+      ],
+      "z_order": 6
+    },
+    {
+      "sid": "18",
+      "id": "vbe_switch",
+      "name": "VBE switch",
+      "block_type": "Switch",
+      "semantic_type": "switch",
+      "parameters": {
+        "InputSameDT": "off",
+        "SaturateOnIntegerOverflow": "off"
+      },
+      "port_counts": {},
+      "position": [
+        390,
+        38,
+        440,
+        102
+      ],
+      "z_order": 18
+    },
+    {
+      "sid": "15",
+      "id": "alphadeltavbe_switch",
+      "name": "alphaDeltaVBE switch",
+      "block_type": "Switch",
+      "semantic_type": "switch",
+      "parameters": {
+        "InputSameDT": "off",
+        "SaturateOnIntegerOverflow": "off"
+      },
+      "port_counts": {},
+      "position": [
+        205,
+        38,
+        255,
+        102
+      ],
+      "z_order": 15
+    },
+    {
+      "sid": "3",
+      "id": "error_sum",
+      "name": "error sum",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {
+        "Inputs": "+--"
+      },
+      "port_counts": {
+        "in": 3,
+        "out": 1
+      },
+      "position": [
+        205,
+        235,
+        235,
+        265
+      ],
+      "z_order": 3
+    },
+    {
+      "sid": "7",
+      "id": "feedforward_sum",
+      "name": "feedforward sum",
+      "block_type": "Sum",
+      "semantic_type": "sum",
+      "parameters": {
+        "Inputs": "+++"
+      },
+      "port_counts": {
+        "in": 3,
+        "out": 1
+      },
+      "position": [
+        845,
+        235,
+        875,
+        265
+      ],
+      "z_order": 7
+    },
+    {
+      "sid": "9",
+      "id": "bs",
+      "name": "BS",
+      "block_type": "Outport",
+      "semantic_type": "outport",
+      "parameters": {},
+      "port_counts": {},
+      "position": [
+        1080,
+        245,
+        1110,
+        265
+      ],
+      "z_order": 9
+    }
+  ],
+  "lines": [
+    {
+      "src": "1#out:1",
+      "dst": "2#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 1
+    },
+    {
+      "src": "2#out:1",
+      "dst": "3#in:1",
+      "points": [
+        30,
+        0,
+        0,
+        -35
+      ],
+      "branches": [],
+      "z_order": 2
+    },
+    {
+      "src": "3#out:1",
+      "dst": "4#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 3
+    },
+    {
+      "src": "4#out:1",
+      "dst": null,
+      "points": [
+        60,
+        0
+      ],
+      "branches": [
+        {
+          "dst": "5#in:1",
+          "points": [],
+          "z_order": 4,
+          "branches": []
+        },
+        {
+          "dst": "10#in:1",
+          "points": [
+            0,
+            -150
+          ],
+          "z_order": 11,
+          "branches": []
+        }
+      ],
+      "z_order": 10
+    },
+    {
+      "src": "5#out:1",
+      "dst": null,
+      "points": [
+        60,
+        0
+      ],
+      "branches": [
+        {
+          "dst": "6#in:1",
+          "points": [],
+          "z_order": 5,
+          "branches": []
+        },
+        {
+          "dst": "11#in:1",
+          "points": [
+            0,
+            -80
+          ],
+          "z_order": 14,
+          "branches": []
+        }
+      ],
+      "z_order": 13
+    },
+    {
+      "src": "6#out:1",
+      "dst": "12#in:1",
+      "points": [
+        0,
+        10
+      ],
+      "branches": [],
+      "z_order": 6
+    },
+    {
+      "src": "12#out:1",
+      "dst": "7#in:3",
+      "points": [
+        65,
+        0,
+        0,
+        20
+      ],
+      "branches": [],
+      "z_order": 7
+    },
+    {
+      "src": "7#out:1",
+      "dst": "8#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 8
+    },
+    {
+      "src": "8#out:1",
+      "dst": null,
+      "points": [
+        0,
+        0
+      ],
+      "branches": [
+        {
+          "dst": null,
+          "points": [
+            0,
+            -120,
+            -610,
+            0
+          ],
+          "z_order": 34,
+          "branches": [
+            {
+              "dst": "15#in:2",
+              "points": [
+                -185,
+                0,
+                0,
+                -60
+              ],
+              "z_order": 23,
+              "branches": []
+            },
+            {
+              "dst": "18#in:2",
+              "points": [
+                0,
+                -60
+              ],
+              "z_order": 24,
+              "branches": []
+            }
+          ]
+        },
+        {
+          "dst": "9#in:1",
+          "points": [
+            40,
+            0,
+            0,
+            5
+          ],
+          "z_order": 9,
+          "branches": []
+        }
+      ],
+      "z_order": 22
+    },
+    {
+      "src": "10#out:1",
+      "dst": "7#in:1",
+      "points": [
+        85,
+        0
+      ],
+      "branches": [],
+      "z_order": 12
+    },
+    {
+      "src": "11#out:1",
+      "dst": "7#in:2",
+      "points": [
+        25,
+        0,
+        0,
+        80
+      ],
+      "branches": [],
+      "z_order": 15
+    },
+    {
+      "src": "13#out:1",
+      "dst": "15#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 16
+    },
+    {
+      "src": "14#out:1",
+      "dst": "15#in:3",
+      "points": [],
+      "branches": [],
+      "z_order": 17
+    },
+    {
+      "src": "16#out:1",
+      "dst": "18#in:1",
+      "points": [],
+      "branches": [],
+      "z_order": 18
+    },
+    {
+      "src": "17#out:1",
+      "dst": "18#in:3",
+      "points": [],
+      "branches": [],
+      "z_order": 19
+    },
+    {
+      "src": "15#out:1",
+      "dst": "3#in:2",
+      "points": [
+        0,
+        140,
+        -75,
+        0,
+        0,
+        40
+      ],
+      "branches": [],
+      "z_order": 20
+    },
+    {
+      "src": "18#out:1",
+      "dst": "3#in:3",
+      "points": [
+        0,
+        140,
+        -200,
+        0,
+        0,
+        70
+      ],
+      "branches": [],
+      "z_order": 21
+    }
+  ],
+  "annotations": [
+    {
+      "sid": "19",
+      "name": "Drawing style: black-and-white academic block diagram; thin orthogonal signal lines; triangular gains; circular summing nodes; three boxed continuous integrators; compact sans-serif math labels.",
+      "position": [
+        170,
+        320,
+        1031,
+        335
+      ],
+      "internal_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z_order": -1,
+      "parameters": {}
+    },
+    {
+      "sid": "20",
+      "name": "+/- alpha Delta VBE",
+      "position": [
+        105,
+        10,
+        194,
+        25
+      ],
+      "internal_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z_order": -2,
+      "parameters": {}
+    },
+    {
+      "sid": "21",
+      "name": "+/- VBE",
+      "position": [
+        305,
+        10,
+        341,
+        25
+      ],
+      "internal_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z_order": -3,
+      "parameters": {}
+    },
+    {
+      "sid": "22",
+      "name": "e",
+      "position": [
+        250,
+        225,
+        257,
+        240
+      ],
+      "internal_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z_order": -4,
+      "parameters": {}
+    }
+  ],
+  "layout": {},
+  "style": {},
+  "evidence": {
+    "unresolved": [],
+    "source_file": "Code\\输入\\B类论文图\\test1\\Case1\\input1\\simulink\\systems\\system_root.xml"
+  }
+}

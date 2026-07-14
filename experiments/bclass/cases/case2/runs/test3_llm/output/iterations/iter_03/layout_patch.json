@@ -1,0 +1,8 @@
+{
+  "operations": [
+    "set_orientation:c1:up",
+    "set_waypoints:quantizer_to_c1",
+    "set_waypoints:c1_to_sum1"
+  ],
+  "reason": "Match Case2 reference vertical c1 feedback path."
+}

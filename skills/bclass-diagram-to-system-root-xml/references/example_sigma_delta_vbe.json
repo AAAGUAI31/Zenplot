@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "diagram_type": "sigma_delta_modulator",
+    "domain": "signal_flow_block_diagram",
+    "version": "0.1",
+    "source": "paper_image"
+  },
+  "nodes": [
+    {"id": "vin", "type": "input", "label": "V_in", "ports": ["out"]},
+    {"id": "gain_in", "type": "gain", "label": "0.8", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "sum_e", "type": "sum", "label": "e", "shape": "circle", "ports": ["in1", "in2", "in3", "out"], "signs": {"in1": "+", "in2": "-", "in3": "-"}},
+    {"id": "bias_alpha", "type": "composite", "role": "switched_bias", "label": "+/-alpha dV_BE", "shape": "switch_pair", "ports": ["out", "ctrl"]},
+    {"id": "bias_vbe", "type": "composite", "role": "switched_bias", "label": "+/-V_BE", "shape": "switch_pair", "ports": ["out", "ctrl"]},
+    {"id": "int1", "type": "integrator", "label": "int", "shape": "box_integral", "ports": ["in", "out"]},
+    {"id": "int2", "type": "integrator", "label": "int", "shape": "box_integral", "ports": ["in", "out"]},
+    {"id": "int3", "type": "integrator", "label": "int", "shape": "box_integral", "ports": ["in", "out"]},
+    {"id": "gain_ff1", "type": "gain", "label": "0.8", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "gain_ff2", "type": "gain", "label": "0.3", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "gain_ff3", "type": "gain", "label": "0.05", "shape": "triangle", "ports": ["in", "out"]},
+    {"id": "sum_out", "type": "sum", "label": "+", "shape": "circle", "ports": ["in1", "in2", "in3", "out"], "signs": {"in1": "+", "in2": "+", "in3": "+"}},
+    {"id": "quantizer", "type": "quantizer", "label": "", "shape": "relay", "ports": ["in", "out"]},
+    {"id": "bs", "type": "output", "label": "BS", "ports": ["in", "out"]}
+  ],
+  "edges": [
+    {"from": "vin.out", "to": "gain_in.in", "type": "main"},
+    {"from": "gain_in.out", "to": "sum_e.in1", "type": "main"},
+    {"from": "bias_alpha.out", "to": "sum_e.in2", "type": "bias"},
+    {"from": "bias_vbe.out", "to": "sum_e.in3", "type": "bias"},
+    {"from": "sum_e.out", "to": "int1.in", "type": "main", "signal": "e"},
+    {"from": "int1.out", "to": ["int2.in", "gain_ff1.in"], "type": "branch"},
+    {"from": "int2.out", "to": ["int3.in", "gain_ff2.in"], "type": "branch"},
+    {"from": "int3.out", "to": "gain_ff3.in", "type": "main"},
+    {"from": "gain_ff1.out", "to": "sum_out.in1", "type": "feedforward", "route": "upper"},
+    {"from": "gain_ff2.out", "to": "sum_out.in2", "type": "feedforward", "route": "upper"},
+    {"from": "gain_ff3.out", "to": "sum_out.in3", "type": "feedforward"},
+    {"from": "sum_out.out", "to": "quantizer.in", "type": "main"},
+    {"from": "quantizer.out", "to": ["bs.in", "bias_alpha.ctrl", "bias_vbe.ctrl"], "type": "feedback_branch", "route": "top_outer"}
+  ],
+  "layout": {
+    "direction": "left_to_right",
+    "main_chain": ["vin", "gain_in", "sum_e", "int1", "int2", "int3", "gain_ff3", "sum_out", "quantizer", "bs"],
+    "upper_branches": [["int1", "gain_ff1", "sum_out"], ["int2", "gain_ff2", "sum_out"]],
+    "top_feedback": ["quantizer", "bias_alpha", "bias_vbe", "sum_e"],
+    "bias_nodes": ["bias_alpha", "bias_vbe"]
+  },
+  "style": {
+    "theme": "paper_black_white",
+    "line_style": "orthogonal",
+    "arrow": true,
+    "font": "latex_math",
+    "gain_shape": "triangle",
+    "integrator_shape": "box_integral",
+    "sum_shape": "circle",
+    "quantizer_shape": "relay",
+    "junction_style": "solid_dot"
+  }
+}

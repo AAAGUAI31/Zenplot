@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2024b_202402211119">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="7712fc9f-2d79-41f4-a4d8-bd89aa256ffb">
+    <defaultEventBehavior type="sltp.mm.core.EventBehavior" uuid="4dc0165a-3604-4f3f-9d34-f53bd5e81965"/>
+    <editorState type="sltp.mm.core.EditorState" uuid="b4cf1fee-d6a7-48ba-9635-97ce91a1277a">
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="15588d5b-8308-465a-94d9-c39a6235cbbc"/>
+    </editorState>
+    <rootTask type="sltp.mm.core.Task" uuid="f33bc2f4-8710-47eb-93c8-300fde4b85e9">
+      <context type="sltp.mm.core.Context" uuid="7712fc9f-2d79-41f4-a4d8-bd89aa256ffb"/>
+      <explicit>false</explicit>
+      <name>Default</name>
+      <priority>-2147483648</priority>
+      <subgraph type="sltp.mm.core.Graph" uuid="64429b9e-0cee-49ea-bfd0-4703b460d6d2"/>
+    </rootTask>
+  </sltp.mm.core.Context>
+</sltp_graph>

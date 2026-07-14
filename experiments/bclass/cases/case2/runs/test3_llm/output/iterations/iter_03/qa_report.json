@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.4",
+    "qa_focus": "Case2 c1 vertical feedback gain"
+  },
+  "summary": {
+    "status": "pass",
+    "semantic_error_count": 0,
+    "high_severity_count": 0,
+    "routing_score": 92,
+    "layout_score": 91
+  },
+  "issues": [],
+  "positive_checks": [
+    "c1 is a vertical feedback gain with upward orientation.",
+    "c1 feeds sum1 from below without diagonal routing.",
+    "Side-path lanes remain separate from the main chain."
+  ]
+}

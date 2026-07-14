@@ -1,0 +1,1216 @@
+{
+  "meta": {
+    "version": "0.1",
+    "source": "simulink_system_json",
+    "target": "drawio_xml"
+  },
+  "canvas": {
+    "width": 1490,
+    "height": 765,
+    "grid_size": 10
+  },
+  "nodes": [
+    {
+      "id": "sine_wave_function",
+      "source_sid": "1",
+      "kind": "block",
+      "semantic_type": "inport",
+      "label": "Sine Wave Function",
+      "geometry": {
+        "x": 40,
+        "y": 247.5,
+        "w": 85,
+        "h": 70.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 40,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "right",
+          "x": 125,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "text",
+        "stroke_width": 3.0,
+        "font_size": 24,
+        "font_style": 1
+      },
+      "label_bindings": {
+        "main": "Sine Wave Function"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "input_sum",
+      "source_sid": "2",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 170,
+        "y": 258.5,
+        "w": 48,
+        "h": 48.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 170.0,
+          "y": 282.5
+        },
+        "in2": {
+          "side": "bottom",
+          "x": 194.0,
+          "y": 306.5
+        },
+        "in3": {
+          "side": "template",
+          "x": 194.0,
+          "y": 305.2376
+        },
+        "out1": {
+          "side": "template",
+          "x": 216.7376,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "add",
+      "source_sid": "3",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 330,
+        "y": 255.0,
+        "w": 55,
+        "h": 55.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 330.0,
+          "y": 282.5
+        },
+        "in2": {
+          "side": "bottom",
+          "x": 357.5,
+          "y": 310.0
+        },
+        "in3": {
+          "side": "template",
+          "x": 357.5,
+          "y": 308.5535
+        },
+        "out1": {
+          "side": "template",
+          "x": 383.5535,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "unit_delay",
+      "source_sid": "4",
+      "kind": "block",
+      "semantic_type": "unit_delay",
+      "label": "Unit Delay",
+      "geometry": {
+        "x": 455,
+        "y": 247.5,
+        "w": 70,
+        "h": 70.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 455.854,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 524.146,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "Unit Delay"
+      },
+      "orientation": "right",
+      "component_key": "discrete_transfer_inline"
+    },
+    {
+      "id": "k1",
+      "source_sid": "5",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "K1",
+      "geometry": {
+        "x": 365,
+        "y": 405,
+        "w": 60,
+        "h": 48
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 366.032,
+          "y": 429.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 423.968,
+          "y": 429.0
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "K1"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "add1",
+      "source_sid": "6",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 660,
+        "y": 255.0,
+        "w": 55,
+        "h": 55.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 660.0,
+          "y": 282.5
+        },
+        "in2": {
+          "side": "bottom",
+          "x": 687.5,
+          "y": 310.0
+        },
+        "in3": {
+          "side": "template",
+          "x": 687.5,
+          "y": 308.5535
+        },
+        "out1": {
+          "side": "template",
+          "x": 713.5535,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right",
+      "component_key": "sum_inline"
+    },
+    {
+      "id": "unit_delay1",
+      "source_sid": "7",
+      "kind": "block",
+      "semantic_type": "unit_delay1",
+      "label": "Unit Delay1",
+      "geometry": {
+        "x": 785,
+        "y": 247.5,
+        "w": 70,
+        "h": 70.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 785.854,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 854.146,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "Unit Delay1"
+      },
+      "orientation": "right",
+      "component_key": "discrete_transfer_inline"
+    },
+    {
+      "id": "k2",
+      "source_sid": "8",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "K2",
+      "geometry": {
+        "x": 690,
+        "y": 405,
+        "w": 60,
+        "h": 48
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 691.032,
+          "y": 429.0
+        },
+        "out1": {
+          "side": "template",
+          "x": 748.968,
+          "y": 429.0
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "K2"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "gain",
+      "source_sid": "9",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "1",
+      "geometry": {
+        "x": 700,
+        "y": 105,
+        "w": 60,
+        "h": 45
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 701.032,
+          "y": 127.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 758.968,
+          "y": 127.5
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "1"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "gain1",
+      "source_sid": "10",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "2",
+      "geometry": {
+        "x": 700,
+        "y": 190,
+        "w": 60,
+        "h": 45
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 701.032,
+          "y": 212.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 758.968,
+          "y": 212.5
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "2"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "output_sum",
+      "source_sid": "11",
+      "kind": "block",
+      "semantic_type": "sum",
+      "label": "+",
+      "geometry": {
+        "x": 980,
+        "y": 255.0,
+        "w": 55,
+        "h": 55.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 980,
+          "y": 266.0
+        },
+        "in2": {
+          "side": "left",
+          "x": 980,
+          "y": 277.0
+        },
+        "in3": {
+          "side": "left",
+          "x": 980,
+          "y": 288.0
+        },
+        "in4": {
+          "side": "left",
+          "x": 980,
+          "y": 299.0
+        },
+        "out1": {
+          "side": "right",
+          "x": 1035,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "ellipse",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "+"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "b_3_bit_quantizer",
+      "source_sid": "12",
+      "kind": "block",
+      "semantic_type": "quantizer",
+      "label": "Q",
+      "geometry": {
+        "x": 1070,
+        "y": 245.0,
+        "w": 95,
+        "h": 75.0
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 1071.5295,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 1163.4705,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "Q"
+      },
+      "orientation": "right",
+      "component_key": "one_bit_quantizer_inline"
+    },
+    {
+      "id": "to_workspace",
+      "source_sid": "13",
+      "kind": "block",
+      "semantic_type": "outport",
+      "label": "To Workspace",
+      "geometry": {
+        "x": 1220,
+        "y": 255.0,
+        "w": 110,
+        "h": 55.0
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 1220,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "right",
+          "x": 1330,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "text",
+        "stroke_width": 3.0,
+        "font_size": 24,
+        "font_style": 1
+      },
+      "label_bindings": {
+        "main": "To Workspace"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "dwa",
+      "source_sid": "14",
+      "kind": "block",
+      "semantic_type": "dwa",
+      "label": "DWA",
+      "geometry": {
+        "x": 980,
+        "y": 505,
+        "w": 90,
+        "h": 90
+      },
+      "ports": {
+        "in1": {
+          "side": "left",
+          "x": 980,
+          "y": 550.0
+        },
+        "out1": {
+          "side": "right",
+          "x": 1070,
+          "y": 550.0
+        }
+      },
+      "style": {
+        "shape": "rectangle",
+        "stroke_width": 3.0,
+        "font_size": 22,
+        "font_style": 1
+      },
+      "label_bindings": {
+        "main": "DWA"
+      },
+      "orientation": "right"
+    },
+    {
+      "id": "gain4",
+      "source_sid": "15",
+      "kind": "block",
+      "semantic_type": "gain",
+      "label": "1",
+      "geometry": {
+        "x": 470,
+        "y": 560,
+        "w": 60,
+        "h": 45
+      },
+      "ports": {
+        "in1": {
+          "side": "template",
+          "x": 471.032,
+          "y": 582.5
+        },
+        "out1": {
+          "side": "template",
+          "x": 528.968,
+          "y": 582.5
+        }
+      },
+      "style": {
+        "shape": "triangle",
+        "stroke_width": 3.0,
+        "font_size": 16
+      },
+      "label_bindings": {
+        "main": "1"
+      },
+      "orientation": "right",
+      "component_key": "gain_inline"
+    },
+    {
+      "id": "j_fanout_sine_wave_function_1",
+      "source_sid": "j_fanout_sine_wave_function_1",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 145.131,
+        "y": 279.5,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 148.131,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "center",
+          "x": 148.131,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "sine_wave_function.out1",
+        "target": "input_sum.in1"
+      }
+    },
+    {
+      "id": "j_fanout_unit_delay_2",
+      "source_sid": "j_fanout_unit_delay_2",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 589.796,
+        "y": 279.5,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 592.796,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "center",
+          "x": 592.796,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "unit_delay.out1",
+        "target": "add1.in1"
+      }
+    },
+    {
+      "id": "j_fanout_unit_delay1_3",
+      "source_sid": "j_fanout_unit_delay1_3",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 914.073,
+        "y": 282.25,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 917.073,
+          "y": 285.25
+        },
+        "out1": {
+          "side": "center",
+          "x": 917.073,
+          "y": 285.25
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "unit_delay1.out1",
+        "target": "output_sum.in3"
+      }
+    },
+    {
+      "id": "j_fanout_b_3_bit_quantizer_4",
+      "source_sid": "j_fanout_b_3_bit_quantizer_4",
+      "kind": "junction",
+      "semantic_type": "branch_junction",
+      "label": "",
+      "geometry": {
+        "x": 1188.735,
+        "y": 279.5,
+        "w": 7,
+        "h": 7
+      },
+      "ports": {
+        "in1": {
+          "side": "center",
+          "x": 1191.735,
+          "y": 282.5
+        },
+        "out1": {
+          "side": "center",
+          "x": 1191.735,
+          "y": 282.5
+        }
+      },
+      "style": {
+        "shape": "junction"
+      },
+      "midspan": {
+        "source": "b_3_bit_quantizer.out1",
+        "target": "to_workspace.in1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "sine_wave_function.out1",
+      "targets": [
+        "input_sum.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_sine_wave_function_1"
+    },
+    {
+      "id": "e2",
+      "source": "input_sum.out1",
+      "targets": [
+        "add.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e3",
+      "source": "add.out1",
+      "targets": [
+        "unit_delay.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e4",
+      "source": "unit_delay.out1",
+      "targets": [
+        "add1.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_unit_delay_2"
+    },
+    {
+      "id": "e5",
+      "source": "add1.out1",
+      "targets": [
+        "unit_delay1.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e6",
+      "source": "unit_delay1.out1",
+      "targets": [
+        "output_sum.in3"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            917.073,
+            285.25
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_unit_delay1_3"
+    },
+    {
+      "id": "e7",
+      "source": "output_sum.out1",
+      "targets": [
+        "b_3_bit_quantizer.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e8",
+      "source": "b_3_bit_quantizer.out1",
+      "targets": [
+        "to_workspace.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1191.735,
+            282.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_b_3_bit_quantizer_4"
+    },
+    {
+      "id": "e9",
+      "source": "j_fanout_unit_delay_2.out1",
+      "targets": [
+        "k1.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            592.796,
+            384.0
+          ],
+          [
+            338.032,
+            384.0
+          ],
+          [
+            338.032,
+            429.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_unit_delay_2"
+    },
+    {
+      "id": "e10",
+      "source": "k1.out1",
+      "targets": [
+        "add.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            357.5,
+            429.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e11",
+      "source": "j_fanout_unit_delay1_3.out1",
+      "targets": [
+        "k2.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            917.073,
+            384.0
+          ],
+          [
+            663.032,
+            384.0
+          ],
+          [
+            663.032,
+            429.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_unit_delay1_3"
+    },
+    {
+      "id": "e12",
+      "source": "k2.out1",
+      "targets": [
+        "add1.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            687.5,
+            429.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e13",
+      "source": "j_fanout_sine_wave_function_1.out1",
+      "targets": [
+        "gain.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            148.131,
+            172.5
+          ],
+          [
+            673.032,
+            172.5
+          ],
+          [
+            673.032,
+            127.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_sine_wave_function_1"
+    },
+    {
+      "id": "e14",
+      "source": "gain.out1",
+      "targets": [
+        "output_sum.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            928.968,
+            127.5
+          ],
+          [
+            928.968,
+            270.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e15",
+      "source": "j_fanout_unit_delay_2.out1",
+      "targets": [
+        "gain1.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            592.796,
+            232.5
+          ],
+          [
+            673.032,
+            232.5
+          ],
+          [
+            673.032,
+            212.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_unit_delay_2"
+    },
+    {
+      "id": "e16",
+      "source": "gain1.out1",
+      "targets": [
+        "output_sum.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1058.968,
+            212.5
+          ],
+          [
+            1058.968,
+            287.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e17",
+      "source": "j_fanout_b_3_bit_quantizer_4.out1",
+      "targets": [
+        "dwa.in1"
+      ],
+      "kind": "branch",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            1191.735,
+            550.0
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      },
+      "junction_node": "j_fanout_b_3_bit_quantizer_4"
+    },
+    {
+      "id": "e18",
+      "source": "dwa.out1",
+      "targets": [
+        "gain4.in1"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            630.0,
+            550.0
+          ],
+          [
+            630.0,
+            582.5
+          ],
+          [
+            443.032,
+            582.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    },
+    {
+      "id": "e19",
+      "source": "gain4.out1",
+      "targets": [
+        "input_sum.in2"
+      ],
+      "kind": "signal",
+      "route": {
+        "style": "orthogonal",
+        "waypoints": [
+          [
+            194.0,
+            582.5
+          ]
+        ],
+        "branches": []
+      },
+      "junctions": [],
+      "style": {
+        "stroke_width": 3.0,
+        "arrow": "classic"
+      }
+    }
+  ],
+  "labels": [
+    {
+      "id": "ann_101",
+      "text": "INT1",
+      "geometry": {
+        "x": 280,
+        "y": 210,
+        "w": 285,
+        "h": 245
+      },
+      "style": {
+        "font_size": 13,
+        "font_style": "normal"
+      }
+    },
+    {
+      "id": "ann_102",
+      "text": "INT2",
+      "geometry": {
+        "x": 610,
+        "y": 210,
+        "w": 280,
+        "h": 245
+      },
+      "style": {
+        "font_size": 13,
+        "font_style": "normal"
+      }
+    }
+  ],
+  "constraints": {
+    "avoid_node_overlap": true,
+    "avoid_edge_through_blocks": true,
+    "orthogonal_edges": true,
+    "feedback_bus_outside_main_chain": true
+  },
+  "qa": {
+    "issues": []
+  }
+}

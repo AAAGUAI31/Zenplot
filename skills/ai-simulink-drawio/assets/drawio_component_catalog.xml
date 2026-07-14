@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-07-12T00:00:00.000Z" agent="Codex" version="26.0.14" type="device">
+  <diagram id="bclass-inline" name="B-class inline components">
+    <mxGraphModel dx="1100" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+
+        <!-- Inline template: Gain. Base size 58 x 44. Bind triangle-value only. -->
+        <mxCell id="gain-inline" value="" style="group;componentKey=gain_inline;templateWidth=58;templateHeight=44;" vertex="1" connectable="0" parent="1"><mxGeometry x="60" y="80" width="58" height="44" as="geometry"/></mxCell>
+        <mxCell id="gain-inline-triangle" value="1" style="shape=triangle;direction=east;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="gain-inline"><mxGeometry x="0" y="0" width="58" height="44" as="geometry"/></mxCell>
+        <mxCell id="gain-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="gain-inline"><mxGeometry x="0" y="19" width="2" height="6" as="geometry"/></mxCell>
+        <mxCell id="gain-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="gain-inline"><mxGeometry x="56" y="19" width="2" height="6" as="geometry"/></mxCell>
+
+        <!-- Inline template: continuous Integrator. Base size 68 x 76. -->
+        <mxCell id="integrator-inline" value="" style="group;componentKey=continuous_integrator_inline;templateWidth=68;templateHeight=76;" vertex="1" connectable="0" parent="1"><mxGeometry x="170" y="65" width="68" height="76" as="geometry"/></mxCell>
+        <mxCell id="integrator-inline-box" value="∫" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=39;fontFamily=Times New Roman;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="integrator-inline"><mxGeometry x="0" y="0" width="68" height="76" as="geometry"/></mxCell>
+        <mxCell id="integrator-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="integrator-inline"><mxGeometry x="0" y="35" width="2" height="6" as="geometry"/></mxCell>
+        <mxCell id="integrator-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="integrator-inline"><mxGeometry x="66" y="35" width="2" height="6" as="geometry"/></mxCell>
+
+        <!-- Inline template: discrete transfer/integrator z^-1 / (1 - z^-1). Base size 82 x 62. -->
+        <mxCell id="discrete-transfer-inline" value="" style="group;componentKey=discrete_transfer_inline;templateWidth=82;templateHeight=62;" vertex="1" connectable="0" parent="1"><mxGeometry x="170" y="165" width="82" height="62" as="geometry"/></mxCell>
+        <mxCell id="discrete-transfer-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2.2;" vertex="1" parent="discrete-transfer-inline"><mxGeometry x="0" y="0" width="82" height="62" as="geometry"/></mxCell>
+        <mxCell id="discrete-transfer-num" value="z&lt;sup&gt;-1&lt;/sup&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#000000;" vertex="1" parent="discrete-transfer-inline"><mxGeometry x="14" y="2" width="54" height="22" as="geometry"/></mxCell>
+        <mxCell id="discrete-transfer-rule" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.8;" edge="1" parent="discrete-transfer-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="8" y="31" as="sourcePoint"/><mxPoint x="74" y="31" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="discrete-transfer-den" value="1 - z&lt;sup&gt;-1&lt;/sup&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Times New Roman;fontSize=22;fontStyle=1;fontColor=#000000;" vertex="1" parent="discrete-transfer-inline"><mxGeometry x="7" y="34" width="68" height="22" as="geometry"/></mxCell>
+        <mxCell id="discrete-transfer-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="discrete-transfer-inline"><mxGeometry x="0" y="28" width="2" height="6" as="geometry"/></mxCell>
+        <mxCell id="discrete-transfer-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="discrete-transfer-inline"><mxGeometry x="80" y="28" width="2" height="6" as="geometry"/></mxCell>
+
+        <!-- Inline template: Sum. Base size 38 x 38. Add sign labels externally from Inputs. -->
+        <mxCell id="sum-inline" value="" style="group;componentKey=sum_inline;templateWidth=38;templateHeight=38;" vertex="1" connectable="0" parent="1"><mxGeometry x="290" y="84" width="38" height="38" as="geometry"/></mxCell>
+        <mxCell id="sum-inline-body" value="+" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontFamily=Helvetica;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="sum-inline"><mxGeometry x="0" y="0" width="38" height="38" as="geometry"/></mxCell>
+        <mxCell id="sum-inline-in1" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="sum-inline"><mxGeometry x="0" y="16" width="2" height="6" as="geometry"/></mxCell>
+        <mxCell id="sum-inline-in2" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in2;" vertex="1" parent="sum-inline"><mxGeometry x="16" y="0" width="6" height="2" as="geometry"/></mxCell>
+        <mxCell id="sum-inline-in3" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in3;" vertex="1" parent="sum-inline"><mxGeometry x="16" y="36" width="6" height="2" as="geometry"/></mxCell>
+        <mxCell id="sum-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="sum-inline"><mxGeometry x="36" y="16" width="2" height="6" as="geometry"/></mxCell>
+
+        <!-- Inline template: one-bit Quantizer. Base size 62 x 78. No caption inside. -->
+        <mxCell id="quantizer-inline" value="" style="group;componentKey=one_bit_quantizer_inline;templateWidth=62;templateHeight=78;" vertex="1" connectable="0" parent="1"><mxGeometry x="390" y="64" width="62" height="78" as="geometry"/></mxCell>
+        <mxCell id="quantizer-inline-box" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;strokeWidth=2.2;" vertex="1" parent="quantizer-inline"><mxGeometry x="0" y="0" width="62" height="78" as="geometry"/></mxCell>
+        <mxCell id="quantizer-inline-step" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=4;rounded=0;" edge="1" parent="quantizer-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="14" y="55" as="sourcePoint"/><Array as="points"><mxPoint x="30" y="55"/><mxPoint x="30" y="25"/></Array><mxPoint x="51" y="25" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="quantizer-inline-in" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=in1;" vertex="1" parent="quantizer-inline"><mxGeometry x="0" y="36" width="2" height="6" as="geometry"/></mxCell>
+        <mxCell id="quantizer-inline-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="quantizer-inline"><mxGeometry x="60" y="36" width="2" height="6" as="geometry"/></mxCell>
+
+        <!-- Inline template: alpha reference selector. Base size 112 x 132. -->
+        <mxCell id="alpha-selector-inline" value="" style="group;componentKey=bipolar_reference_selector_alpha_inline;templateWidth=112;templateHeight=132;" vertex="1" connectable="0" parent="1"><mxGeometry x="540" y="35" width="112" height="132" as="geometry"/></mxCell>
+        <mxCell id="alpha-selector-label" value="±αΔV&lt;sub&gt;BE&lt;/sub&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="0" y="0" width="112" height="24" as="geometry"/></mxCell>
+        <mxCell id="alpha-t1" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="28" y="33" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="alpha-t2" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="60" y="33" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="alpha-c1" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="28" y="66" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="alpha-c2" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="60" y="66" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="alpha-o" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="43" y="91" width="11" height="11" as="geometry"/></mxCell>
+        <mxCell id="alpha-l1" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=2;" edge="1" parent="alpha-selector-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="33" y="43" as="sourcePoint"/><mxPoint x="33" y="66" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="alpha-l2" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=2;" edge="1" parent="alpha-selector-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="65" y="43" as="sourcePoint"/><mxPoint x="65" y="66" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="alpha-w" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=2;" edge="1" parent="alpha-selector-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="48" y="96" as="sourcePoint"/><mxPoint x="33" y="71" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="alpha-arrow" value="◀" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="80" y="56" width="26" height="22" as="geometry"/></mxCell>
+        <mxCell id="alpha-control" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=control;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="106" y="65" width="2" height="5" as="geometry"/></mxCell>
+        <mxCell id="alpha-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="alpha-selector-inline"><mxGeometry x="47" y="102" width="3" height="30" as="geometry"/></mxCell>
+
+        <!-- Inline template: VBE reference selector. Same geometry; different label and wiper direction. -->
+        <mxCell id="vbe-selector-inline" value="" style="group;componentKey=bipolar_reference_selector_vbe_inline;templateWidth=112;templateHeight=132;" vertex="1" connectable="0" parent="1"><mxGeometry x="720" y="35" width="112" height="132" as="geometry"/></mxCell>
+        <mxCell id="vbe-selector-label" value="±V&lt;sub&gt;BE&lt;/sub&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="0" y="0" width="112" height="24" as="geometry"/></mxCell>
+        <mxCell id="vbe-t1" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="28" y="33" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="vbe-t2" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="60" y="33" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="vbe-c1" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="28" y="66" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="vbe-c2" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="60" y="66" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="vbe-o" value="" style="ellipse;strokeColor=#000000;fillColor=#ffffff;strokeWidth=1.7;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="43" y="91" width="11" height="11" as="geometry"/></mxCell>
+        <mxCell id="vbe-l1" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=2;" edge="1" parent="vbe-selector-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="33" y="43" as="sourcePoint"/><mxPoint x="33" y="66" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="vbe-l2" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=2;" edge="1" parent="vbe-selector-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="65" y="43" as="sourcePoint"/><mxPoint x="65" y="66" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="vbe-w" value="" style="endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=2;" edge="1" parent="vbe-selector-inline"><mxGeometry relative="1" as="geometry"><mxPoint x="48" y="96" as="sourcePoint"/><mxPoint x="65" y="71" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="vbe-arrow" value="◀" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="80" y="56" width="26" height="22" as="geometry"/></mxCell>
+        <mxCell id="vbe-control" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=control;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="106" y="65" width="2" height="5" as="geometry"/></mxCell>
+        <mxCell id="vbe-out" value="" style="ellipse;visible=0;opacity=0;fillOpacity=0;strokeOpacity=0;portName=out1;" vertex="1" parent="vbe-selector-inline"><mxGeometry x="47" y="102" width="3" height="30" as="geometry"/></mxCell>
+
+        <!-- Inline template: branch junction. -->
+        <mxCell id="junction-inline" value="" style="group;componentKey=junction_dot_inline;templateWidth=10;templateHeight=10;" vertex="1" connectable="0" parent="1"><mxGeometry x="900" y="95" width="10" height="10" as="geometry"/></mxCell>
+        <mxCell id="junction-inline-dot" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="junction-inline"><mxGeometry x="0" y="0" width="10" height="10" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
